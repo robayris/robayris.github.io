@@ -10,10 +10,8 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
 
-    
-
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -33,14 +31,14 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="cheatsheet.css" rel="stylesheet">
+    <link href="/assets/css/cheatsheet.css" rel="stylesheet">
   </head>
   <body class="bg-light">
     
 <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
   <div class="container-fluid d-flex align-items-center">
     <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-      <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
+      <img src="/assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
       robayris.github.io
     </h1>
     <a href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps" class="ms-auto link-light" hreflang="ar">Garmin Connect</a>
@@ -50,6 +48,17 @@
   <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
   <nav class="small" id="toc">
     <ul class="list-unstyled">
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
+        <ul class="list-unstyled ps-3 collapse" id="defs-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#avgpower">Average Power</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#wpdecay">Watt Prime Decay</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
+        </ul>
+      </li>
       <li class="my-2">
         <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
@@ -62,19 +71,108 @@
     </ul>
   </nav>
 </aside>
+
 <div class="bd-cheatsheet container-fluid bg-body">
-  <section id="content">
+  <section id="Definitions">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Definitions</h2>
+
+    <article class="my-3" id="accordion">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Definitions</h3>
+      </div>
+      <div>
+        <div class="bd-example">
+        <div class="accordion" id="powerzones">
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingpz">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="true" aria-controls="collapsepz">
+                Power Zones
+              </button>
+            </h4>
+            <div id="collapsepz" class="accordion-collapse collapse show" aria-labelledby="headingpz" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingavp">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
+                Average Power
+              </button>
+            </h4>
+            <div id="collapseavp" class="accordion-collapse collapse" aria-labelledby="headingavp" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingwp">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
+                Watt Prime
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingwp" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingdwp">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedwp" aria-expanded="false" aria-controls="collapsedwp">
+                Watt Prime Decay
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingdwp" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingbs">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
+                Battery Status
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingbs" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingw">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
+                Weather
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingw" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+    </section>
+
+    <section id="content">
     <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
 
     <article class="my-3" id="inthezone">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>In The Zone</h3>
-        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">In The Zone</a>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/762771ab-104b-481d-8b94-460a3c44c698"><img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-block mx-lg-auto img-fluid" alt="In The Zone" width="40" loading="lazy"></a>
       </div>
 
       <div>
         <div class="bd-example">
-          <img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 4.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">
+          <img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 4.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 2.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">
         </div>
         <article class="my-3" id="accordion">
           <div>
@@ -273,10 +371,9 @@
     </article>
   </section>
 
-</div>
+  </div>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script src="cheatsheet.js"></script>
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/cheatsheet.js"></script>
   </body>
 </html>
