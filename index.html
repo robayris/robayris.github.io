@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>Cheatsheet · Bootstrap v5.0</title>
+    <title>robayris.github.io</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
 
@@ -51,13 +51,7 @@
   <nav class="small" id="toc">
     <ul class="list-unstyled">
       <li class="my-2">
-        <li class="my-2">
-          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">About</button>
-          <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
-            <li><a class="d-inline-flex align-items-center rounded" href="#about">About</a></li>
-          </ul>
-        </li>
-          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
           <li><a class="d-inline-flex align-items-center rounded" href="#inthezone">In The Zone</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#trainingpower">Training Power</a></li>
@@ -72,42 +66,6 @@
   <section id="content">
     <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
 
-    <article class="my-3" id="about">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>About</h3>
-        <a class="d-flex align-items-center" href="/docs/about/">About</a>
-      </div>
-
-      <div>
-        <div class="bd-example">
-        <p class="display-3">About</p>
-        </div>
-
-        <div class="bd-example">
-        <p class="lead">
-          About the author.
-        </p>
-        </div>
-
-        <div class="bd-example">
-        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-        <p><del>This line of text is meant to be treated as deleted text.</del></p>
-        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-        <p><u>This line of text will render as underlined.</u></p>
-        <p><small>This line of text is meant to be treated as fine print.</small></p>
-        <p><strong>This line rendered as bold text.</strong></p>
-        <p><em>This line rendered as italicized text.</em></p>
-        </div>
-
-        <div class="bd-example">
-        <blockquote class="blockquote">
-          <p>Childe Roland to the Dark Tower came.</p>
-          <footer class="blockquote-footer">Robert Browning<cite title="Source Title">Stephen King - The Dark Tower</cite></footer>
-        </blockquote>
-        </div>
-
-    </article>
     <article class="my-3" id="inthezone">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>In The Zone</h3>
@@ -119,7 +77,109 @@
         <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>In The Zone</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">In The Zone</text></svg>
 
         </div>
-
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    In The Zone
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h1>in the Zone</h1>
+                    Garmin Connect IQ Zone Training App
+                    
+                    This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.
+                    
+                    
+                    <h2>REQUIREMENTS:</h2>
+                    
+                    <h3>This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</h3>
+                    
+                    <h3>There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</h3>
+                    
+                    <h3>Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</h3>
+                      
+                    
+                    <h2>INFORMATION DISPLAYED:</h2>
+                    
+                    <ul>
+                      <li>Battery Status indicator - Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%</li>
+                      <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
+                      <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
+                      <li>Option to display Power (and Average Power/SWA/NP) as Watts/Kg</li>
+                      <li>Watt Prime Balance (See below)</li>
+                      <li>Power & Average Power Zone (See below)</li>
+                      <li>HeartRate & Average HR Zone</li>
+                      <li>Cadence (RPM).  Average Cadence may also be displayed if NP (IF and TSS) is not displayed.</li>
+                      <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
+                      <li>Gradient %</li>
+                      <li>Current Altitude (Metres or Feet, depending on Garmin Profile)</li>
+                      <li>Current Time and Timer display.  Configuration allows on/off display of seconds</li>
+                      <li>Rear Cassette gear (configurable on/off). Front Chain Ring is also highlighted by showing first digit of Cassette gear in Blue if smaller chainring selected, or second digit of cassette gear in blue if larger chainring seleted.</li>
+                      <li>Optional diplay of Weather (N/A on Bontrager 1030):  Current conditions plus a Forecast of next 3 hours.  This display is configurable to display all the time, every minute, for 2 minutes, 4 minutes or 8 minutes.  The weather can update every 20 minutes, or by clicking the LAP button, or both (this is configurable).  Weather information provided by GPS.  If precipitation is 50% chance or greater for a weather forecast, the forecast row will be a Blue colour.  Weather condition icons automatically adjust depending on sunrise and sunset.</li>
+                      <li>Configurable colour of outlines in the display.</li>
+                      <li>Configurable position of all four circles, plus the extra data display.  That is, each primary metric can be moved to a different circle and the extra data display can be placed either top or bottom of screen.</li>
+                      <li>Configurable display of 60 second histograms for HeartRate, Power and/or Both.</li>
+                      <li>In The Zone can only be used as a single field display in an Activity page.</li>  
+                    </ul>
+                    
+                    <h2>POWER ZONES (Coggan - FTP based):</h2>
+                    
+                    <ul>
+                        <li>Z1 = Less than 56% (Recovery - Grey)</li>
+                        <li>Z2 = 56 - 75% (Endurance - Blue)</li>
+                        <li>Z3 = 76 - 90% (Tempo - Green)</li>
+                        <li>Z4 = 91 - 105% (Threshold - Orange)</li>
+                        <li>Z5 = 106 - 120% (Vo2Max - Red)</li>
+                        <li>Z6 = 121 - 150% (Anaerobic - Pink)</li>
+                        <li>Z7 = 151 - MAX% (Neuromuscular - Purple)</li>
+                    </ul>
+                    
+                    <h3>Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</h3>
+                    
+                    
+                    <h2>HR ZONES:</h2>
+                    
+                    <ul>
+                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly there.</li>
+                      <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
+                      <li>The app displays the percentage your HR is within the respective zone.</li>
+                    </ul>
+                    
+                    <h2>Watt Prime (W') BALANCE:</h2>
+                    
+                    An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.
+                    
+                    <ul>
+                      <li>The Watt Prime circle will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.</li>
+                      <li>For a Breakthrough (WP less than zero) it will be the colour purple.</li>
+                      <li>Set W' to zero if not required.</li>
+                    </ul>
+                      
+                    <h2>Watt PRIME (W') AUTO DECAY:</h2>
+                    
+                    The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).
+                    
+                  
+                    <h2>In The Zone is based on my other apps: TrainingPower & TrainingHR.</h2>
+                    
+                    
+                    <h1>What’s New</h1>
+                    
+                    <h3>v1.0.1:</h3>
+                    Initial Release (New combined version - with new configuration options and features - of two of my apps: TrainingPower and TrainingHR).
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+    
       </div>
     </article>
     <article class="my-3" id="trainingpower">
@@ -130,10 +190,30 @@
 
       <div>
         <div class="bd-example">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>In The Zone</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">In The Zone</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Training Power</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Training Power</text></svg>
 
         </div>
-
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+    
       </div>
     </article>
     <article class="my-3" id="traininghr">
@@ -144,10 +224,30 @@
 
       <div>
         <div class="bd-example">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>In The Zone</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">In The Zone</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Training HR</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Training HR</text></svg>
 
         </div>
-
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+    
       </div>
     </article>
     <article class="my-3" id="radian">
@@ -161,190 +261,31 @@
         <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>In The Zone</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">In The Zone</text></svg>
 
         </div>
-
-      </div>
-    </article>
-  </section>
-
-  <section id="components">
-    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Components</h2>
-
-    <article class="my-3" id="accordion">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Accordion</h3>
-        <a class="d-flex align-items-center" href="../components/accordion/">Documentation</a>
-      </div>
-
-      <div>
-        <div class="bd-example">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
-              </button>
-            </h4>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
-              </button>
-            </h4>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h4>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </article>
-
-    <article class="my-3" id="card">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Card</h3>
-        <a class="d-flex align-items-center" href="../components/card/">Documentation</a>
-      </div>
-
-      <div>
-        <div class="bd-example">
-        <div class="row  row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-              <div class="card-footer text-muted">
-                2 days ago
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
-
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </article>
-    <article class="my-3" id="carousel">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Carousel</h3>
-        <a class="d-flex align-items-center" href="../components/carousel/">Documentation</a>
-      </div>
-
-      <div>
-        <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"/><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
-
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"/><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div>
+        </article>
+    
       </div>
     </article>
   </section>
+
 </div>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
