@@ -53,6 +53,15 @@
   <nav class="small" id="toc">
     <ul class="list-unstyled">
       <li class="my-2">
+        <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
+        <ul class="list-unstyled ps-3 collapse show" id="contents-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#inthezone">In The Zone</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#trainingpower">Training Power</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#traininghr">Training HR</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#radian">Radian</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
         <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
         <ul class="list-unstyled ps-3 collapse" id="defs-collapse">
           <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
@@ -61,15 +70,6 @@
           <li><a class="d-inline-flex align-items-center rounded" href="#wattprimedecay">Watt Prime Decay</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
-        </ul>
-      </li>
-      <li class="my-2">
-        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
-        <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-          <li><a class="d-inline-flex align-items-center rounded" href="#inthezone">In The Zone</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="#trainingpower">Training Power</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="#traininghr">Training HR</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="#radian">Radian</a></li>
         </ul>
       </li>
     </ul>
@@ -99,11 +99,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion1">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                     In The Zone
                   </button>
                 </h4>
-                <div id="collapse1" class="accordion-collapse collapse hide" aria-labelledby="accordion1" data-bs-parent="#accordionExample">
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="accordion1" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.</p>
                     <p>&nbsp;</p>                    
@@ -181,11 +181,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion2">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                     Training Power
                   </button>
                 </h4>
-                <div id="collapse2" class="accordion-collapse collapse hide" aria-labelledby="accordion2" data-bs-parent="#accordionExample">
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="accordion2" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>When I'm training I'm particularly focussed on monitoring Power and ensuring I'm sitting in particular zones. I wanted a single data field that could display everything I needed to know, related to power.</p>
                     <p>&nbsp;</p>                    
@@ -248,11 +248,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion3">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                     Training HR
                   </button>
                 </h4>
-                <div id="collapse3" class="accordion-collapse collapse hide" aria-labelledby="accordion3" data-bs-parent="#accordionExample">
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="accordion3" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>When I'm Base Training I'm very focussed on monitoring Heart Rate and ensuring I'm sitting in particular zones. I wanted a single datafield that could display everything I needed to know, related to Heart Rate - that being: HR, HR zone and where I am in that zone, average HR, Average HR zone and Max HR.</p>
                     <p>&nbsp;</p>                    
@@ -290,11 +290,11 @@
                     <p>The Zones will default to the standard Coggan zones, which you can adjust. The standard Coggan HR zones are as follows:</p>
                     <p>&nbsp;</p>                    
                     <ul>  
-                      <li>Z1 = Less than 68% <span class="badge rounded-pill bg-z1">(Recovery)</span></li>
-                      <li>Z2 = 68 - 83% <span class="badge rounded-pill bg-z2">(Endurance)</span></li>
-                      <li>Z3 = 84 - 94% <span class="badge rounded-pill bg-z3">(Tempo)</span></li>
-                      <li>Z4 = 95 - 105% <span class="badge rounded-pill bg-z4">(Threshold)</span></li>
-                      <li>Z5 = 106 - MAX <span class="badge rounded-pill bg-z5">(Vo2Max)</span></li>
+                      <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 68%)</li>
+                      <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (68% - 83%)</li>
+                      <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (84% - 94%)</li>
+                      <li><span class="badge rounded-pill pillz-width bg-z4">Threshold</span> Z4 (95% - 105%)</li>
+                      <li><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span> Z5 (106% - MAX)</li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h5">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
@@ -321,11 +321,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion4">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                     Radian
                   </button>
                 </h4>
-                <div id="collapse4" class="accordion-collapse collapse hide" aria-labelledby="accordion4" data-bs-parent="#accordionExample">
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="accordion4" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>There are a lot of great watch faces on the Garmin app store and I have a few favourites. However, I couldn't find one that had everything I wanted, so I created this one. Key aspects:</p>
                     
@@ -379,22 +379,22 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionpz">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="true" aria-controls="collapsepz">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="false" aria-controls="collapsepz">
                     Power Zones
                   </button>
                 </h4>
-                <div id="collapsepz" class="accordion-collapse collapse hide" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
+                <div id="collapsepz" class="accordion-collapse collapse" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">POWER ZONES (Coggan - FTP based):</p>
+                    <p class="h2">Power Zones (Coggan - FTP based):</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                        <li>Z1 = Less than 56% <span class="badge rounded-pill bg-z1">(Recovery)</span></li>
-                        <li>Z2 = 56 - 75% <span class="badge rounded-pill bg-z2">(Endurance)</span></li>
-                        <li>Z3 = 76 - 90% <span class="badge rounded-pill bg-z3">(Tempo)</span></li>
-                        <li>Z4 = 91 - 105% <span class="badge rounded-pill bg-z4">(Threshold)</span></li>
-                        <li>Z5 = 106 - 120% <span class="badge rounded-pill bg-z5">(Vo2Max)</span></li>
-                        <li>Z6 = 121 - 150% <span class="badge rounded-pill bg-z6">(Anaerobic)</span></li>
-                        <li>Z7 = 151 - MAX% <span class="badge rounded-pill bg-z6">(Neuromuscular)</span></li>
+                        <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 56%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (56 - 75%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (76 - 90%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z4">Threshold</span> Z4 (91 - 105%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span> Z5 (106 - 120%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span> Z6 (121 - 150%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span> Z7 (151 - MAX%)</li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
@@ -418,11 +418,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionavp">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="true" aria-controls="collapseavp">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
                     Average Power
                   </button>
                 </h4>
-                <div id="collapseavp" class="accordion-collapse collapse hide" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
+                <div id="collapseavp" class="accordion-collapse collapse" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <ul>  
                       <li>Standard Average Power</li>
@@ -449,11 +449,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionwp">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="true" aria-controls="collapsewp">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
                     Watt Prime
                   </button>
                 </h4>
-                <div id="collapsewp" class="accordion-collapse collapse hide" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
+                <div id="collapsewp" class="accordion-collapse collapse" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p class="h2">Watt Prime (W') Balance:</p>
                     <p>&nbsp;</p>                    
@@ -484,11 +484,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionwpd">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="true" aria-controls="collapsewpd">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="false" aria-controls="collapsewpd">
                     Watt Prime Decay
                   </button>
                 </h4>
-                <div id="collapsewpd" class="accordion-collapse collapse hide" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
+                <div id="collapsewpd" class="accordion-collapse collapse" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p class="h2">Watt Prime (W') Decay:</p>
                     <p>&nbsp;</p>                    
@@ -513,19 +513,19 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionbs">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="true" aria-controls="collapsebs">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
                     Battery Status
                   </button>
                 </h4>
-                <div id="collapsebs" class="accordion-collapse collapse hide" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
+                <div id="collapsebs" class="accordion-collapse collapse" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>Battery Status indicator - Battery Level:</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                      <li>75-100% <span class="badge rounded-pill bg-bs1">Green</span></li>
-                      <li>50-75% <span class="badge rounded-pill bg-bs2">Blue</span></li>
-                      <li>20-50% <span class="badge rounded-pill bg-bs3">Orange</span></li>
-                      <li>less than 20% <span class="badge rounded-pill bg-bs4">Red</span></li>
+                      <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs2">Blue</span> 50-75%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span>20-50%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs4">Red</span>less than 20%</li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p>The Battery level is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
@@ -549,11 +549,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionw">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="true" aria-controls="collapsew">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
                     Weather
                   </button>
                 </h4>
-                <div id="collapsew" class="accordion-collapse collapse hide" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
+                <div id="collapsew" class="accordion-collapse collapse" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <strong>Garmin Weather Conditions Explained:</strong>
                     <p>&nbsp;</p>                    
@@ -563,7 +563,7 @@
                       <table class="table table-striped">
                         <thead>
                         <tr>
-                          <th scope="col">ID</th>
+                          <th scope="col">Garmin ID</th>
                           <th scope="col">Weather Condition</th>
                           <th scope="col">Day Time Icon</th>
                           <th scope="col">Night Time Icon</th>

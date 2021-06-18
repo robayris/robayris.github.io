@@ -2,6 +2,13 @@
 /* CSS for my Garmin Apps
  */
 
+.pill-width {
+    width: 30px;
+}    
+.pillz-width {
+    width: 60px;
+}    
+
 .bg-z1 {
     background-color: #AAAAAA !important;
   }
