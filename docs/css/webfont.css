@@ -12,6 +12,7 @@
 
 }
 
+/*
 @font-face {
   font-family: "Arrows";
   src:url("/assets/fonts/Arrows.ttf") format("truetype"),
@@ -19,9 +20,12 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 
 .comp-icon {
   font-family: "Arrows" !important;
+  src:url("/assets/fonts/Arrows.ttf") format("truetype"),
+    url("/assets/fonts/Arrows.otf") format("otf");
   content: attr(com-icon);
   font-style: normal !important;
   font-weight: normal !important;
