@@ -108,10 +108,12 @@
                     <p>This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.</p>
                     <p>&nbsp;</p>                    
                     <p class="h4">Requirements:</p>
-                    <p>&nbsp;</p>                    
-                    <p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p>                    
-                    <p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p>                    
-                    <p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p>
+                    <p>&nbsp;</p>             
+                    <ul>
+                      <li><p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p></li>
+                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
+                      <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
+                    </ul>       
                     <p>&nbsp;</p>                    
                     <p class="h4">Information Displayed:</p>
                     <p>&nbsp;</p>                    
@@ -120,9 +122,10 @@
                       <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
                       <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
                       <li>Option to display Power (and Average Power/SWA/NP) as Watts/Kg</li>
-                      <li>Watt Prime Balance</li>
-                      <li>Power & Average Power Zone</li>
-                      <li>HeartRate & Average HR Zone</li>
+                      <li><a href="#wattprime">Watt Prime Balance</a></li>
+                      <li><a href="#wattprimedecay">Watt Prime Automatic Decay</a></li>
+                      <li><a href="#powerzones">Power & Average Power Zone</a></li>
+                      <li>HeartRate & Average HR Zone - from your Garmin Profile Only</li>
                       <li>Cadence (RPM).  Average Cadence may also be displayed if NP (IF and TSS) is not displayed.</li>
                       <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
                       <li>Gradient %</li>
@@ -132,7 +135,7 @@
                       <li>Optional diplay of Weather:  Current conditions plus a Forecast of next 3 hours.  This display is configurable to display all the time, every minute, for 2 minutes, 4 minutes or 8 minutes.  The weather can update every 20 minutes, or by clicking the LAP button, or both (this is configurable).  Weather information provided by GPS.  If precipitation is 50% chance or greater for a weather forecast, the forecast row will be a Blue colour.  Weather condition icons automatically adjust depending on sunrise and sunset.</li>
                       <li>Configurable colour of outlines in the display.</li>
                       <li>Configurable position of all four circles, plus the extra data display.  That is, each primary metric can be moved to a different circle and the extra data display can be placed either top or bottom of screen.</li>
-                      <li>Configurable display of 60 second histograms for HeartRate, Power and/or Both.</li>
+                      <li>Configurable display of 60 second rolling histograms for HeartRate, Power and/or Both.</li>
                       <li>In The Zone can only be used as a single field display in an Activity page.</li>  
                     </ul>
                     <p>&nbsp;</p>                    
@@ -191,9 +194,11 @@
                     <p>&nbsp;</p>                    
                     <p class="h4">Requirements:</p>
                     <p>&nbsp;</p>                    
-                    <p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p>                    
-                    <p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p>                    
-                    <p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p>
+                    <ul>
+                      <li><p class="h6">This data field requires a power meter and cadence sensor to be connected to your Garmin device.</p></li>
+                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
+                      <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
+                    </ul>       
                     <p>&nbsp;</p>                    
                     <p class="h4">Information Displayed:</p>
                     <p class="h6">(Depending on device and screen configuration)</p>
@@ -258,7 +263,7 @@
                     <p>&nbsp;</p>                    
                     <p class="h4">Requirements:</p>
                     <p>&nbsp;</p>                    
-                    <p>This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
+                    <p class="h6">This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
                     <p>&nbsp;</p>                    
                     <p class="h4">The data field has been optimised for full-width display on Garmin Edge type devices.</p>
                     <p>&nbsp;</p>                    
@@ -329,7 +334,7 @@
                   <div class="accordion-body">
                     <p>There are a lot of great watch faces on the Garmin app store and I have a few favourites. However, I couldn't find one that had everything I wanted, so I created this one. Key aspects:</p>
                     
-                    <p>1) Displays the battery remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
+                    <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
                     
                     <p>2) Displays a second hand if watch hardware permits (1hz). Second hand can be triggered to stop displaying by making it the same colour as watchface background.</p>
                     
@@ -337,8 +342,8 @@
                     
                     <p>4) Can be configured to reduce data displayed when in "Do Not Disturb" mode, watch not being worn, or when HR is below resting heart rate (within 5%). By reducing data display in this way, battery life can be conserved during periods when the watch isn't in active use (like, when it's not on your wrist, or you might be asleep). Resting Heart rate comes from your Garmin profile, or if it is not set, then Max HR divided by 3. When configured to reduce display based on resting HR, if you're wearing the watch, your HR needs to be less than Resting HR + 5% for 5 or more minutes. If you're not wearing the watch its 30 seconds.</p>
                     
-                    <p>5) There are 22 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image. The attached colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in settings. Please be aware that colours on the watch face will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
-                    <p><img src="/docs/images/Garmin Colour pallette - 64.png" class="d-inline-block align-top img-fluid" alt="Garmin 64 Colour Pallette" width="150" loading="lazy"></p>
+                    <p>5) There are 22 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in settings. Please be aware that colours on the watch face will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
+                    <p><img src="/docs/images/Garmin Colour pallette - 64.png" class="d-inline-block align-top img-fluid" alt="Garmin 64 Colour Pallette" width="300" loading="lazy"></p>
 
                     <p>6) Displays a graph showing your steps history (from left to right, with left being yesterday and the next to the right being the day before yesterday, and so on). The graph highlights when your steps were above your goal for the day.</p>
                     
@@ -350,11 +355,13 @@
                     
                     <p>10) The steps dial shows steps as well as percentage of steps goal.</p>
                     <p>&nbsp;</p>                    
-                    <p>NOTES:</p>
-                    <p>&nbsp;</p>                    
-                    <p>- All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the battery saving functions.</p>
-                    <p>- If after updating from an earlier release of this watch face it stops working, please uninstall and install again</p>
-                    <p>- If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device. The app crashes are due to a known issue in the Garmin SDK that occurs with older firmware.</p>                    
+                    <p class="h6">NOTES:</p>
+                    <p>&nbsp;</p>          
+                    <ul>
+                      <li>All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the battery saving functions.</li>
+                      <li>If after updating from an earlier release of this watch face it stops working, please uninstall and install again.</li>
+                      <li>If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device.</li>
+                    </ul>          
                   </div>
                 </div>
               </div>
@@ -385,7 +392,7 @@
                 </h4>
                 <div id="collapsepz" class="accordion-collapse collapse" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">Power Zones (Coggan - FTP based):</p>
+                    <strong>Power Zones (Coggan - FTP based)</strong>
                     <p>&nbsp;</p>                    
                     <ul>
                         <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 56%)</li>
@@ -423,12 +430,18 @@
                   </button>
                 </h4>
                 <div id="collapseavp" class="accordion-collapse collapse" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
+                  <strong>Average Power</strong>
+                  <p>&nbsp;</p>                    
                   <div class="accordion-body">
                     <ul>  
                       <li>Standard Average Power</li>
-                      <li>Strava Weighted Average (SWA) Power</li>
-                      <li>Normalized Power (NP).  NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
+                      <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
+                      <li>Normalized Power (NP or isoPower).  <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a></li>
                     </ul>  
+                    <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</p>
+                    <p>&nbsp;</p>                    
+                    <p><a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Nromalized Power, Intensity Factor and Training Stress Score Explained</a></p>
+                    <p>&nbsp;</p>                    
                   </div>
                 </div>
               </div>
@@ -450,20 +463,23 @@
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionwp">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
-                    Watt Prime
+                    Watt Prime Balance
                   </button>
                 </h4>
                 <div id="collapsewp" class="accordion-collapse collapse" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">Watt Prime (W') Balance:</p>
+                    <strong>Watt Prime (W') Balance</strong>
                     <p>&nbsp;</p>                    
-                    <p>An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.</p>
+                    <p>An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke, which recovers faster when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in App Settings.</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                      <li>The Watt Prime circle will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.</li>
-                      <li>For a Breakthrough (WP less than zero) it will be the colour purple.</li>
-                      <li>Set W' to zero if not required.</li>
+                      <li>The Watt Prime circle will display in <span class="badge rounded-pill pill-width bg-z2">Blue</span> for values 50-100%, <span class="badge rounded-pill pill-width bg-z4">Orange</span> for values 20-50% and <span class="badge rounded-pill pill-width bg-z5">Red</span> for values less than 20%.</li>
+                      <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill pill-width bg-z7">Purple</span>.</li>
+                      <li>Set W Prime to zero in App Settings if not required.</li>
                     </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
+                    <p>&nbsp;</p>                    
                   </div>
                 </div>
               </div>
@@ -490,9 +506,11 @@
                 </h4>
                 <div id="collapsewpd" class="accordion-collapse collapse" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">Watt Prime (W') Decay:</p>
+                    <strong>Watt Prime (W') Decay</strong>
                     <p>&nbsp;</p>                    
-                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).</p>
+                    <p>Just as your fitness fades over time when you haven't been exercising, so too does your W Prime.</p>
+                    <p>&nbsp;</p>                    
+                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
                   </div>
                 </div>
               </div>
@@ -514,16 +532,16 @@
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionbs">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
-                    Battery Status
+                    Battery Status Indicator
                   </button>
                 </h4>
                 <div id="collapsebs" class="accordion-collapse collapse" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Device Battery Status indicator:</p>
+                    <strong>Battery Status Indicator</strong>
                     <p>&nbsp;</p>                    
                     <p>The Battery level of the device is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
                     <p>&nbsp;</p>                    
-                    <img src="/docs/TrainingHR/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
+                    <img src="/docs/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
                     <p>&nbsp;</p>                    
                     <ul>
                       <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
@@ -531,6 +549,17 @@
                       <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span>20-50%</li>
                       <li><span class="badge rounded-pill pill-width bg-bs4">Red</span>less than 20%</li>
                     </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">How much battery power does TrainingPower, TrainingHR and InTheZone consume?</p>
+                    <p>&nbsp;</p>                    
+                    <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.  All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps - in order - to reduce the processing (and therefore battery power required) to run the App:</p>
+                    <ol>
+                      <li>Turn off display of the Histograms (both Power and HR).  In The Zone:  Set Histograms to "No Histograms".  TrainingHR:  Set "Display HR Histogram?" to "No".</li>
+                      <li>Turn off Weather display (only applicable to "In The Zone").  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
+                      <li>Turn off W Prime calculation.  In App Settings (In The Zone and Training Power) set the W Prime (J) setting to "0".</li>
+                      <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
+                      <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
+                    </ol>
                   </div>
                 </div>
               </div>
@@ -557,7 +586,7 @@
                 </h4>
                 <div id="collapsew" class="accordion-collapse collapse" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>Garmin Weather Conditions Explained:</strong>
+                    <strong>Garmin Weather Conditions:</strong>
                     <p>&nbsp;</p>                    
                     <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
                     <p>&nbsp;</p>                    
