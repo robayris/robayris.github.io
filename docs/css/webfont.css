@@ -20,7 +20,7 @@
   font-style: normal;
 }
 
-[com-icon]:before {
+.comp-icon {
   font-family: "Arrows" !important;
   content: attr(com-icon);
   font-style: normal !important;
@@ -32,7 +32,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}  
 
 [data-icon]:before {
   font-family: "dripicons-weather" !important;
