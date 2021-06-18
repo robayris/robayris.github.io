@@ -34,6 +34,8 @@
   <link href="/docs/css/cheatsheet.css" rel="stylesheet">
   <!-- Custom Font -->
   <link href="/docs/css/webfont.css" rel="stylesheet">
+  <!-- Garmin App Colours -->
+  <link href="/docs/css/garminapps.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -104,7 +106,6 @@
                 <div id="collapse1" class="accordion-collapse collapse hide" aria-labelledby="accordion1" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.</p>
-                    
                     <p>&nbsp;</p>                    
                     <p class="h4">Requirements:</p>
                     <p>&nbsp;</p>                    
@@ -114,14 +115,13 @@
                     <p>&nbsp;</p>                    
                     <p class="h4">Information Displayed:</p>
                     <p>&nbsp;</p>                    
-                    
                     <ul>
-                      <li>Battery Status indicator - Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%</li>
+                      <li><a href="#battstatus">Battery Status indicator</a></li>
                       <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
                       <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
                       <li>Option to display Power (and Average Power/SWA/NP) as Watts/Kg</li>
-                      <li>Watt Prime Balance (See below)</li>
-                      <li>Power & Average Power Zone (See below)</li>
+                      <li>Watt Prime Balance</li>
+                      <li>Power & Average Power Zone</li>
                       <li>HeartRate & Average HR Zone</li>
                       <li>Cadence (RPM).  Average Cadence may also be displayed if NP (IF and TSS) is not displayed.</li>
                       <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
@@ -135,7 +135,6 @@
                       <li>Configurable display of 60 second histograms for HeartRate, Power and/or Both.</li>
                       <li>In The Zone can only be used as a single field display in an Activity page.</li>  
                     </ul>
-
                     <p>&nbsp;</p>                    
                     <p class="h4">Heartrate Zones:</p>
                     <p>&nbsp;</p>                    
@@ -148,11 +147,10 @@
                     <p class="h4">Power Zones (Coggan - FTP based):</p>
                     <p><a href="#powerzones">Power Zones</a></p>                    
                     <p>&nbsp;</p>                    
-                    <p class="h4"></p>Watt Prime (W') BALANCE:</p>
+                    <p class="h4">Watt Prime (W') BALANCE:</p>
                     <p><a href="#wattprime">Watt Prime</a></p>                    
                     <p>&nbsp;</p>                    
-                    <p class="h4"></p>Watt PRIME (W') AUTO DECAY:</p>
-                    <p>&nbsp;</p>                    
+                    <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
                     <p><a href="#wattprimedecay">Watt Prime Decay</a></p>                    
                   </div>
                 </div>
@@ -218,10 +216,10 @@
                     <p class="h4">POWER ZONES (Coggan - FTP based):</p>
                     <p><a href="#powerzones">Power Zones</a></p>                    
                     <p>&nbsp;</p>                    
-                    <p class="h4"></p>Watt Prime (W') BALANCE:</p>
+                    <p class="h4">Watt Prime (W') BALANCE:</p>
                     <p><a href="#wattprime">Watt Prime</a></p>                    
                     <p>&nbsp;</p>                    
-                    <p class="h4"></p>Watt PRIME (W') AUTO DECAY:</p>
+                    <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
                     <p><a href="#wattprimedecay">Watt Prime Decay</a></p>
                     <p>&nbsp;</p>                    
                     <p class="h5">TrainingPower is designed to be used in two-field screen layouts with my other App - TrainingHR.</p>
@@ -292,11 +290,11 @@
                     <p>The Zones will default to the standard Coggan zones, which you can adjust. The standard Coggan HR zones are as follows:</p>
                     <p>&nbsp;</p>                    
                     <ul>  
-                      <li>Z1 = Less than 68% (Recovery - Grey)</li>
-                      <li>Z2 = 68 - 83% (Endurance - Blue)</li>
-                      <li>Z3 = 84 - 94% (Tempo - Green)</li>
-                      <li>Z4 = 95 - 105% (Threshold - Orange)</li>
-                      <li>Z5 = 106 - MAX (VO2Max - Red)</li>
+                      <li>Z1 = Less than 68% <span class="badge rounded-pill bg-z1">(Recovery)</span></li>
+                      <li>Z2 = 68 - 83% <span class="badge rounded-pill bg-z2">(Endurance)</span></li>
+                      <li>Z3 = 84 - 94% <span class="badge rounded-pill bg-z3">(Tempo)</span></li>
+                      <li>Z4 = 95 - 105% <span class="badge rounded-pill bg-z4">(Threshold)</span></li>
+                      <li>Z5 = 106 - MAX <span class="badge rounded-pill bg-z5">(Vo2Max)</span></li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h5">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
@@ -390,13 +388,13 @@
                     <p class="h2">POWER ZONES (Coggan - FTP based):</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                        <li>Z1 = Less than 56% (Recovery - Grey)</li>
-                        <li>Z2 = 56 - 75% (Endurance - Blue)</li>
-                        <li>Z3 = 76 - 90% (Tempo - Green)</li>
-                        <li>Z4 = 91 - 105% (Threshold - Orange)</li>
-                        <li>Z5 = 106 - 120% (Vo2Max - Red)</li>
-                        <li>Z6 = 121 - 150% (Anaerobic - Pink)</li>
-                        <li>Z7 = 151 - MAX% (Neuromuscular - Purple)</li>
+                        <li>Z1 = Less than 56% <span class="badge rounded-pill bg-z1">(Recovery)</span></li>
+                        <li>Z2 = 56 - 75% <span class="badge rounded-pill bg-z2">(Endurance)</span></li>
+                        <li>Z3 = 76 - 90% <span class="badge rounded-pill bg-z3">(Tempo)</span></li>
+                        <li>Z4 = 91 - 105% <span class="badge rounded-pill bg-z4">(Threshold)</span></li>
+                        <li>Z5 = 106 - 120% <span class="badge rounded-pill bg-z5">(Vo2Max)</span></li>
+                        <li>Z6 = 121 - 150% <span class="badge rounded-pill bg-z6">(Anaerobic)</span></li>
+                        <li>Z7 = 151 - MAX% <span class="badge rounded-pill bg-z6">(Neuromuscular)</span></li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
@@ -524,11 +522,10 @@
                     <p>Battery Status indicator - Battery Level:</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                      <li>75-100% Green</li>
-                      <li>50-75% Blue</li>
-                      <li>20-50% Orange</li>
-                      <li>less than 20% Red</li>
-                      <li></li>
+                      <li>75-100% <span class="badge rounded-pill bg-bs1">Green</span></li>
+                      <li>50-75% <span class="badge rounded-pill bg-bs2">Blue</span></li>
+                      <li>20-50% <span class="badge rounded-pill bg-bs3">Orange</span></li>
+                      <li>less than 20% <span class="badge rounded-pill bg-bs4">Red</span></li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p>The Battery level is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
@@ -560,14 +557,16 @@
                   <div class="accordion-body">
                     <strong>Garmin Weather Conditions Explained:</strong>
                     <p>&nbsp;</p>                    
+                    <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
+                    <p>&nbsp;</p>                    
                     <div class="bd-example">
                       <table class="table table-striped">
                         <thead>
                         <tr>
                           <th scope="col">ID</th>
                           <th scope="col">Weather Condition</th>
-                          <th scope="col">Daytime Icon</th>
-                          <th scope="col">Nighttime Icon</th>
+                          <th scope="col">Day Time Icon</th>
+                          <th scope="col">Night Time Icon</th>
                         </tr>
                         </thead>
                         <tbody>
