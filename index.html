@@ -120,29 +120,32 @@
                     <ul>
                       <li><a href="#battstatus">Battery Status indicator</a></li>
                       <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
-                      <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
+                      <li><a href="#averagepower">Average Power Options</a>:  Average Power, Strava Weighted Average Power, or Normalized Power (NP)</li>
+                      <li>If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS)</li>  
                       <li>Option to display Power (and Average Power/SWA/NP) as Watts/Kg</li>
                       <li><a href="#wattprime">Watt Prime Balance</a></li>
                       <li><a href="#wattprimedecay">Watt Prime Automatic Decay</a></li>
                       <li><a href="#powerzones">Power & Average Power Zone</a></li>
-                      <li>HeartRate & Average HR Zone - from your Garmin Profile Only</li>
-                      <li>Cadence (RPM).  Average Cadence may also be displayed if NP (IF and TSS) is not displayed.</li>
+                      <li>HeartRate & Zone from your Garmin Profile Only</li>
+                      <li>Average HR & Zone</li>
+                      <li>Cadence (RPM).  Average Cadence will be displayed if NP (IF and TSS) is not displayed.</li>
                       <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
                       <li>Gradient %</li>
                       <li>Current Altitude (Metres or Feet, depending on Garmin Profile)</li>
                       <li>Current Time and Timer display.  Configuration allows on/off display of seconds</li>
+                      <li>Timer Configurable:  Off; Elapsed Time; Moving Time; LAP Time</li>
                       <li>Rear Cassette gear (configurable on/off). Front Chain Ring is also highlighted by showing first digit of Cassette gear in Blue if smaller chainring selected, or second digit of cassette gear in blue if larger chainring seleted.</li>
                       <li>Optional diplay of <a href="#weather">Weather</a>:  Current conditions plus a Forecast of next 3 hours.  This display is configurable to display all the time, every minute, for 2 minutes, 4 minutes or 8 minutes.  The weather can update every 20 minutes, or by clicking the LAP button, or both (this is configurable).  Weather information provided by GPS.  If precipitation is 50% chance or greater for a weather forecast, the forecast row will be a <span class="badge rounded-pill pill-width bg-z2">Blue</span> colour.  Weather condition icons automatically adjust depending on sunrise and sunset.</li>
-                      <li>Configurable colour of outlines in the display.</li>
+                      <li>Configurable colour of outlines in the display:  <span class="badge rounded-pill pill-width bg-out0">Grey</span> (Default), <span class="badge rounded-pill pill-width bg-out1">Red</span>, <span class="badge rounded-pill pill-width bg-out2">Blue</span>, <span class="badge rounded-pill pill-width bg-out3">Green</span>, <span class="badge rounded-pill pill-width bg-out4">Yellow</span>, <span class="badge rounded-pill pill-width bg-out5">Orange</span>, <span class="badge rounded-pill pill-width bg-out6">Pink</span></li>
                       <li>Configurable position of all four circles, plus the extra data display.  That is, each primary metric can be moved to a different circle and the extra data display can be placed either top or bottom of screen.</li>
                       <li>Configurable display of 60 second rolling histograms for HeartRate, Power and/or Both.</li>
-                      <li>In The Zone can only be used as a single field display in an Activity page.</li>  
+                      <li><strong>In The Zone can only be used as a single field display in an Activity page</strong></li>  
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h4">Heartrate Zones:</p>
                     <p>&nbsp;</p>                    
                     <ul>
-                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly there.</li>
+                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly in your profile.</li>
                       <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
                       <li>The app displays the percentage your HR is within the respective zone.</li>
                     </ul>
@@ -155,6 +158,9 @@
                     <p>&nbsp;</p>                    
                     <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
                     <p><a href="#wattprimedecay">Watt Prime Decay</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Weather Details:</p>
+                    <p><a href="#weather">Weather</a></p>                    
                   </div>
                 </div>
               </div>
@@ -398,12 +404,12 @@
                     <p>&nbsp;</p>                    
                     <ul>
                         <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 56%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (56 - 75%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (76 - 90%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z4">Threshold</span> Z4 (91 - 105%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span> Z5 (106 - 120%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span> Z6 (121 - 150%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span> Z7 (151 - MAX%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (56% - 75%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (76% - 90%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z4">Threshold</span> Z4 (91% - 105%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span> Z5 (106% - 120%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span> Z6 (121% - 150%)</li>
+                        <li><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span> Z7 (151% - MAX)</li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
@@ -436,7 +442,7 @@
                   <p>&nbsp;</p>                    
                   <div class="accordion-body">
                     <ul>  
-                      <li>Standard Average Power</li>
+                      <li>Standard Average Power (from Garmin Activity Information)</li>
                       <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
                       <li>Normalized Power (NP or isoPower).  <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a></li>
                     </ul>  
@@ -512,7 +518,8 @@
                     <p>&nbsp;</p>                    
                     <p>Just as your fitness fades over time when you haven't been exercising, so too does your W Prime.</p>
                     <p>&nbsp;</p>                    
-                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
+                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings).</p>
+                    <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
                   </div>
                 </div>
               </div>
@@ -554,10 +561,11 @@
                     <p>&nbsp;</p>                    
                     <p class="h6">How much battery power does TrainingPower, TrainingHR and InTheZone consume?</p>
                     <p>&nbsp;</p>                    
-                    <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.  All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps - in order - to reduce the processing (and therefore battery power required) to run the App:</p>
+                    <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.</p>
+                    <p>All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps (in order listed) to reduce the processing and therefore battery power required to run the App:</p>
                     <ol>
                       <li>Turn off display of the Histograms (both Power and HR).  In The Zone:  Set Histograms to "No Histograms".  TrainingHR:  Set "Display HR Histogram?" to "No".</li>
-                      <li>Turn off Weather display (only applicable to "In The Zone").  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
+                      <li>Turn off Weather display (only applicable to In The Zone).  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
                       <li>Turn off W Prime calculation.  In App Settings (In The Zone and Training Power) set the W Prime (J) setting to "0".</li>
                       <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
                       <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
