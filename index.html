@@ -38,7 +38,7 @@
 <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
   <div class="container-fluid d-flex align-items-center">
     <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-      <img src="/assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="robayris.github.io">
+      <img src="/docs/images/Connect-IQ.png" width="38" height="30" class="me-3" alt="robayris.github.io">
       robayris.github.io
     </h1>
     <a href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps" class="ms-auto link-light" hreflang="ar">Garmin Connect</a>
@@ -49,12 +49,13 @@
   <nav class="small" id="toc">
     <ul class="list-unstyled">
       <li class="my-2">
-        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
         <ul class="list-unstyled ps-3 collapse" id="defs-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#hrzones">Heartrate Zones</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="#avgpower">Average Power</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#averagepower">Average Power</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="#wpdecay">Watt Prime Decay</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#wattprimedecay">Watt Prime Decay</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
         </ul>
@@ -74,87 +75,220 @@
 <div class="bd-cheatsheet container-fluid bg-body">
   <section id="defs">
     <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Definitions</h2>
-    <article class="my-3" id="accordion">
+    <article class="my-3" id="hrzones">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Definitions</h3>
+        <h3>Heartrate Zones</h3>
       </div>
       <div>
-        <div class="bd-example">
-          <div class="accordion" id="powerzones">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingpz">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="true" aria-controls="collapsepz">
-                  Power Zones
-                </button>
-              </h4>
-              <div id="collapsepz" class="accordion-collapse collapse show" aria-labelledby="headingpz" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionhrz">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehrz" aria-expanded="true" aria-controls="collapsehrz">
+                    Heartrate Zones
+                  </button>
+                </h4>
+                <div id="collapsehrz" class="accordion-collapse collapse show" aria-labelledby="accordionhrz" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="h2">HR ZONES:</p>
+                    <ul>
+                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly there.</li>
+                      <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
+                      <li>The app displays the percentage your HR is within the respective zone.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingavp">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
-                  Average Power
-                </button>
-              </h4>
-              <div id="collapseavp" class="accordion-collapse collapse" aria-labelledby="headingavp" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingwp">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
-                  Watt Prime
-                </button>
-              </h4>
-              <div id="collapsewp" class="accordion-collapse collapse" aria-labelledby="headingwp" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingdwp">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedwp" aria-expanded="false" aria-controls="collapsedwp">
-                  Watt Prime Decay
-                </button>
-              </h4>
-              <div id="collapsedwp" class="accordion-collapse collapse" aria-labelledby="headingdwp" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingbs">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
-                  Battery Status
-                </button>
-              </h4>
-              <div id="collapsebs" class="accordion-collapse collapse" aria-labelledby="headingbs" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingw">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
-                  Weather
-                </button>
-              </h4>
-              <div id="collapsew" class="accordion-collapse collapse" aria-labelledby="headingw" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
             </div>
           </div>
-        </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="powerzones">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Power Zones</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionpz">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="true" aria-controls="collapsepz">
+                    Power Zones
+                  </button>
+                </h4>
+                <div id="collapsepz" class="accordion-collapse collapse show" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="h2">POWER ZONES (Coggan - FTP based):</p>
+                    
+                    <ul>
+                        <li>Z1 = Less than 56% (Recovery - Grey)</li>
+                        <li>Z2 = 56 - 75% (Endurance - Blue)</li>
+                        <li>Z3 = 76 - 90% (Tempo - Green)</li>
+                        <li>Z4 = 91 - 105% (Threshold - Orange)</li>
+                        <li>Z5 = 106 - 120% (Vo2Max - Red)</li>
+                        <li>Z6 = 121 - 150% (Anaerobic - Pink)</li>
+                        <li>Z7 = 151 - MAX% (Neuromuscular - Purple)</li>
+                    </ul>
+                    
+                    <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="averagepower">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Average Power</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionavp">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="true" aria-controls="collapseavp">
+                    Average Power
+                  </button>
+                </h4>
+                <div id="collapseavp" class="accordion-collapse collapse show" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="wattprime">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Watt Prime</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionwp">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="true" aria-controls="collapsewp">
+                    Watt Prime
+                  </button>
+                </h4>
+                <div id="collapsewp" class="accordion-collapse collapse show" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="h2">Watt Prime (W') BALANCE:</p>
+                    
+                    An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.
+                    
+                    <ul>
+                      <li>The Watt Prime circle will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.</li>
+                      <li>For a Breakthrough (WP less than zero) it will be the colour purple.</li>
+                      <li>Set W' to zero if not required.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="wattprimedecay">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Watt Prime Decay</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionwpd">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="true" aria-controls="collapsewpd">
+                    Watt Prime Decay
+                  </button>
+                </h4>
+                <div id="collapsewpd" class="accordion-collapse collapse show" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="h2">Watt PRIME (W') AUTO DECAY:</p>
+                    
+                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="battstatus">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Battery Status</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionbs">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="true" aria-controls="collapsebs">
+                    Battery Status
+                  </button>
+                </h4>
+                <div id="collapsebs" class="accordion-collapse collapse show" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Battery Status indicator - Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="weather">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Weather</h3>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionw">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="true" aria-controls="collapsew">
+                    Weather
+                  </button>
+                </h4>
+                <div id="collapsew" class="accordion-collapse collapse show" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
       </div>
     </article>
   </section>
@@ -163,12 +297,12 @@
     <article class="my-3" id="inthezone">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>In The Zone</h3>
-        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/762771ab-104b-481d-8b94-460a3c44c698"><img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-block mx-lg-auto img-fluid" alt="In The Zone" width="40" loading="lazy"></a>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/762771ab-104b-481d-8b94-460a3c44c698">Connect IQ App Store</a>
       </div>
 
       <div>
         <div class="bd-example">
-          <img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 4.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 2.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">
+          <img src="/docs/inthezone/images/Edge1030 4.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 3.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;<img src="/docs/inthezone/images/Edge1030 2.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">
         </div>
         <article class="my-3" id="accordion">
           <div>
@@ -214,42 +348,6 @@
                       <li>In The Zone can only be used as a single field display in an Activity page.</li>  
                     </ul>
                     
-                    <p class="h2">POWER ZONES (Coggan - FTP based):</p>
-                    
-                    <ul>
-                        <li>Z1 = Less than 56% (Recovery - Grey)</li>
-                        <li>Z2 = 56 - 75% (Endurance - Blue)</li>
-                        <li>Z3 = 76 - 90% (Tempo - Green)</li>
-                        <li>Z4 = 91 - 105% (Threshold - Orange)</li>
-                        <li>Z5 = 106 - 120% (Vo2Max - Red)</li>
-                        <li>Z6 = 121 - 150% (Anaerobic - Pink)</li>
-                        <li>Z7 = 151 - MAX% (Neuromuscular - Purple)</li>
-                    </ul>
-                    
-                    <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
-                    
-                    <p class="h2">HR ZONES:</p>
-                    
-                    <ul>
-                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly there.</li>
-                      <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
-                      <li>The app displays the percentage your HR is within the respective zone.</li>
-                    </ul>
-                    
-                    <p class="h2">Watt Prime (W') BALANCE:</p>
-                    
-                    An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.
-                    
-                    <ul>
-                      <li>The Watt Prime circle will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.</li>
-                      <li>For a Breakthrough (WP less than zero) it will be the colour purple.</li>
-                      <li>Set W' to zero if not required.</li>
-                    </ul>
-                      
-                    <p class="h2">Watt PRIME (W') AUTO DECAY:</p>
-                    
-                    The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).
-                    
                     <p class="h1">What’s New</p>
                     
                     <p class="h3">v1.0.1:</p>
@@ -267,9 +365,8 @@
     <article class="my-3" id="trainingpower">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Training Power</h3>
-        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Training Power</a>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Connect IQ App Store</a>
       </div>
-
       <div>
         <div class="bd-example">
           <img src="/docs/TrainingPower/images/TrainingPower Cover Image.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">
@@ -299,7 +396,7 @@
     <article class="my-3" id="traininghr">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Training HR</h3>
-        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Training HR</a>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Connect IQ App Store</a>
       </div>
 
       <div>
@@ -333,7 +430,7 @@
     <article class="my-3" id="radian">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Radian</h3>
-        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Radian</a>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Connect IQ App Store</a>
       </div>
 
       <div>
