@@ -14,13 +14,14 @@
 
 @font-face {
   font-family: "Arrows";
-  src:url("/assets/fonts/Arrows.ttf") format("truetype");
+  src:url("/assets/fonts/Arrows.ttf") format("truetype"),
+    url("/assets/fonts/Arrows.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 [com-icon]:before {
   font-family: "Arrows" !important;
-  content: attr(data-icon);
+  content: attr(com-icon);
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
