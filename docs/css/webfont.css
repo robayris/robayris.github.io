@@ -23,7 +23,6 @@
 
 .comp-icon {
   font-family: "Arrows" !important;
-  content: attr(com-icon);
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
