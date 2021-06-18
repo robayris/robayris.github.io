@@ -19,6 +19,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 [com-icon]:before {
   font-family: "Arrows" !important;
   content: attr(com-icon);
@@ -26,7 +27,7 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
   speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
