@@ -103,16 +103,17 @@
                 </h4>
                 <div id="collapse1" class="accordion-collapse collapse hide" aria-labelledby="accordion1" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h1">In The Zone</p>
                     <p>This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.</p>
                     
-                    <p class="h2">REQUIREMENTS:</p>
-                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>                    
                     <p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p>                    
                     <p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p>                    
                     <p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p>
-                      
-                    <p class="h2">INFORMATION DISPLAYED:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p>&nbsp;</p>                    
                     
                     <ul>
                       <li>Battery Status indicator - Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%</li>
@@ -135,17 +136,24 @@
                       <li>In The Zone can only be used as a single field display in an Activity page.</li>  
                     </ul>
 
-                    <p class="h2">HR ZONES:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Heartrate Zones:</p>
+                    <p>&nbsp;</p>                    
                     <ul>
                       <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly there.</li>
                       <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
                       <li>The app displays the percentage your HR is within the respective zone.</li>
                     </ul>
-                    
-                    <p class="h2">What’s New</p>
-                    
-                    <p class="h4">v1.0.1:</p>
-                    <p class="h5">Initial Release (New combined version - with new configuration options and features - of two of my apps: TrainingPower and TrainingHR).</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Power Zones (Coggan - FTP based):</p>
+                    <p><a href="#powerzones">Power Zones</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4"></p>Watt Prime (W') BALANCE:</p>
+                    <p><a href="#wattprime">Watt Prime</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4"></p>Watt PRIME (W') AUTO DECAY:</p>
+                    <p>&nbsp;</p>                    
+                    <p><a href="#wattprimedecay">Watt Prime Decay</a></p>                    
                   </div>
                 </div>
               </div>
@@ -181,121 +189,43 @@
                 </h4>
                 <div id="collapse2" class="accordion-collapse collapse hide" aria-labelledby="accordion2" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    When I'm training I'm particularly focussed on monitoring Power and ensuring I'm sitting in particular zones. I wanted a single data field that could display everything I needed to know, related to power.
-
-                    **REQUIREMENTS:**
-                    
-                    ** This data field requires a power meter and cadence sensor to be connected to your Garmin device. **
-                    
-                    ** There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device. **
-                    
-                    ** Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy. **
-                    
-                    
-                    See Screen shots, below, for details regarding information and layout.
-                    
-                    
-                    **INFORMATION DISPLAYED:**
-                      (depending on device and screen configuration)
-                    
-                    - Display certain metrics as Bars (default) or Circles.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.
-                    - Battery Status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6) Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%
-                    - Current Power Watts (with a configurable 1-30 second moving average)
-                    - Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP) (option to also display as W/Kg).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS), but only in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030) in Circles mode.
-                    - Watt Prime Balance (See below)
-                    - Power Zone (See below)
-                    - Average Power Zone (See below)
-                    - Cadence (RPM)
-                    - Average cadence (RPM)
-                    - Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)
-                    - Gradient %
-                    - Rear Cassette gear (for supported devices). Front Chain Ring is also highlighted on Edge 530/830/1000/1030x devices in circles display mode.
-                    
-                    
-                    **POWER ZONES (Coggan - FTP based):**
-                    
-                    - Z1 = Less than 56% (Recovery - Grey)
-                    - Z2 = 56 - 75% (Endurance - Blue)
-                    - Z3 = 76 - 90% (Tempo - Green)
-                    - Z4 = 91 - 105% (Threshold - Orange)
-                    - Z5 = 106 - 120% (Vo2Max - Red)
-                    - Z6 = 121 - 150% (Anaerobic - Pink)
-                    - Z7 = 151 - MAX% (Neuromuscular - Purple)
-                    - Z2 - Z7 are configurable in the App (MAX is derived). The app displays the percentage your power is within the respective zone.
-                    
-                    
-                    **Watt Prime (W') BALANCE:**
-                    
-                    An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.
-                    
-                    - The Watt Prime bar (or circle) will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.
-                    - For a Breakthrough (WP less than zero) it will be the colour purple.
-                    - Set W' to zero if not required.
-                    
-                    
-                    **Watt PRIME (W') AUTO DECAY:**
-                    
-                    The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).
-                    
-                    
-                    **TrainingPower is designed to be used in two-field screen layouts with my other App - TrainingHR.**
-                    
-                    
-                    # What’s New
-                    
-                    **v1.8.8:**
-                    - Remove useUpdateInterval function which was a yes/no setting that allowed the app to only update the Power display every interval (1-30 seconds depending on setting) as it causes issues in settings when updating the App
-                    - Code optimizations to better support Fenix5 and Forerunner 935
-                    
-                    **v1.8.7:**
-                    - Add new Circles mode Layouts: Layout 4A (Edge 530/830), Layout 3 (Edge 820) and Layouts 3A, 3B, 4B, 5B, 6B, 7B (Edge 520+)
-                    
-                    **v1.8.6:**
-                    - NEW: Display IF (Intensity Factor) and TSS (Training Stress Score) via App setting BUT only when Normalized Power (NP) Averaging has also been set.  Please note, IF and TSS are only available in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030)
-                    - FIX:  Improve the smoothing speed and reactivity of the Filter for the calculation of Gradient (all devices)
-                    - Optimise 2 field layout for the Edge1030 device to make it consistent with other layouts
-                    
-                    **v1.8.5:**
-                    - FIX:  If your power output matched your zone 7 power and also matched your maximum power for the activity, the app would crash
-                    - FIX:  WPrime balance could show a large negative number in certain situations - such as, high power output for long periods during a long activity
-                    - Support the new Garmin AntiAlias feature on supported devices.  With this, graphics are rendered more smoothly, when drawing circles and angular lines
-                    - Add FTP setting to the in-app settings function, for supported devices
-                    
-                    **v1.8.4:**
-                    - Add optional (through app settings) battery status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6) Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red - Level checked every 20 mins and then every 5 mins once below 10%.
-                    - Added New Circles Mode B for Edge devices (except Edge520/130) - Displays Watt Prime as the bar within the left, main Power circle and Average Power (whichever calculation you chose) as the right, large circle.
-                    - Power Zone calculation optimisations
-                    
-                    **v1.8.3:**
-                    - No longer need to supply a Maximum Power setting in App Properties, this is now derived.
-                    
-                    **v1.8.2:**
-                    - NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training Power "In App Settings" will just start working.
-                    - NEW: W Prime Automatic decay (via App Setting)
-                    - Support for new Forerunner 745 device
-                    - Improve efficiency of drawing circles and ARCs
-                    - Improve accuracy of Strava Weighted Average and Normalized Power calculations
-                    - Remove App specific LAP function (from All devices except: original Edge 520, original Fenix5 and FR935) as Garmin and Strava do this better
-                    
-                    **v1.7.5.2:**
-                    - Fix: Distance display now follows the units selected in your Garmin Profile (Metric or Imperial)
-                    
-                    **v1.7.5.1:**
-                    - Fix: TrainingPower can only support 1 and 2 field layouts on on Fenix5, Fenix6 and FR935 specific devices due to memory constraints.
-                    - Highlight downhill gradient green in Edge devices using Circles mode.
-                    
-                    **v1.7.5.0:**
-                    - Increase the font size in use for Average Power and Average Cadence in Circles view on supported Edge devices.
-                    - Compiled under v3.2.1 of Connect IQ SDK
-                    
-                    **v1.7.4.0:**
-                    - Added Settings option to display Normalized Power (isoPower) All supported devices except original Edge 520, FR935 and Original Fenix5. Normalized power will only begin to display 30 seconds after an activity starts.
-                    - Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)
-                    - Fix an issue with W/Kg calculation on Average Power
-                    
-                    **v1.7.3.0:**
-                    - Added support for Edge 130/130+ with the following caveats: 1) There are no colours, black and white only - as such the datafield now displays the Power Zones (as numbers - "PowerZone : AvgPowerZone"); 2) There is no support for di2 (so no di2 gears will be displayed); and 3) The datafield only suppoprts circles mode.
-                    - Remove superfluous Power Z1 setting from App settings.                  </div>
+                    <p>When I'm training I'm particularly focussed on monitoring Power and ensuring I'm sitting in particular zones. I wanted a single data field that could display everything I needed to know, related to power.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p>                    
+                    <p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p>                    
+                    <p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p class="h6">(Depending on device and screen configuration)</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li>Display certain metrics as Bars (default) or Circles.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</li>
+                      <li>Battery Status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6)</li>
+                      <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
+                      <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP) (option to also display as W/Kg).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS), but only in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030) in Circles mode.</li>
+                      <li>Watt Prime Balance (See below)</li>
+                      <li>Power Zone (See below)</li>
+                      <li>Average Power Zone (See below)</li>
+                      <li>Cadence (RPM)</li>
+                      <li>Average cadence (RPM)</li>
+                      <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
+                      <li>Gradient %</li>
+                      <li>Rear Cassette gear (for supported devices). Front Chain Ring is also highlighted on Edge 530/830/1000/1030x devices in circles display mode.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">POWER ZONES (Coggan - FTP based):</p>
+                    <p><a href="#powerzones">Power Zones</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4"></p>Watt Prime (W') BALANCE:</p>
+                    <p><a href="#wattprime">Watt Prime</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4"></p>Watt PRIME (W') AUTO DECAY:</p>
+                    <p><a href="#wattprimedecay">Watt Prime Decay</a></p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">TrainingPower is designed to be used in two-field screen layouts with my other App - TrainingHR.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -326,124 +256,56 @@
                 </h4>
                 <div id="collapse3" class="accordion-collapse collapse hide" aria-labelledby="accordion3" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    When I'm Base Training I'm very focussed on monitoring Heart Rate and ensuring I'm sitting in particular zones. I wanted a single datafield that could display everything I needed to know, related to Heart Rate - that being: HR, HR zone and where I am in that zone, average HR, Average HR zone and Max HR.
-                    
-                    REQUIREMENTS:
-                    
-                    This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.
-                    
-                    ** The data field has been optimised for full-width display on Garmin Edge type devices. **
-                    
-                    **CIRCLES or BARS?:**
-                    
-                    There is a configuration option in the App Settings that will display the HR zone range and Average HR Zone range as circles instead of the default bars, as per the screen shots.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.
-                    
-                    **DISPLAY FIELDS:**
-                    
-                    - Heart Rate (BPM)
-                    
-                    - HR Zone (as per HR Zones note, below)
-                    
-                    - Maximum HR (during this activity)
-                    
-                    - Average HR (BPM)
-                    
-                    - Average HR Zone (as per HR Zones note, below)
-                    
-                    - Time of Day (available in larger screen configurations)
-                    
-                    - Elapsed Time (available in larger screen configurations)
-                    
-                    - Rolling 60 second HR Histogram (Available for Edge 130/130+/530/830/1030x/1000 devices)
-                    
-                    **GARMIN PROFILE?:**
-                    
-                    An App Setting lets you choose whether you want to use the HR Zone settings you've defined within your Garmin Profile OR the zones you define within the App Settings. If you choose your Garmin Profile there is no need to provide values for the HR Zones, LTHR, HRR, MaxHR and the Zone Type in the App Settings, you can leave these blank.
-                    
-                    **HR ZONES:**
-                    
-                    You can define up to 5 HR zones in the App Settings. The zones can be based on Lactate Threshold Heart Rate (LTHR), Maximum Heart Rate (MAXHR), or Heart Rate Reserve (HRR). You must choose which Target HR is the basis for your zones in the App Settings.
-                    
-                    The Zones will default to the standard Coggan zones, which you can adjust. The standard Coggan HR zones are as follows:
-                    
-                    - Z1 = Less than 68% (Recovery - Grey)
-                    - Z2 = 68 - 83% (Endurance - Blue)
-                    - Z3 = 84 - 94% (Tempo - Green)
-                    - Z4 = 95 - 105% (Threshold - Orange)
-                    - Z5 = 106 - MAX (VO2Max - Red)
-                    
-                    **TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.**
-                    
-                    
-                    # What's New
-                    
-                    **v1.7.7:**
-                    - Add new Circles mode Layouts: Layout 4A (Edge 530/830), Layout 3 (Edge 820) and Layouts 3A, 3B, 4B, 5B, 6B, 7B (Edge 520+)
-                    
-                    **v1.7.6**
-                    - Code optimisations to reduce memory and processing
-                    
-                    **v1.7.5:**
-                    - FIX: App crash from start for specific devices - Fenix 5 and ForeRunner 935
-                    - Optimise 1 & 2 field layout for Edge1030 to make it more consistent with other layouts
-                    
-                    **v1.7.4:**
-                    - FIX: App could show an error when accessing the in-app settings on a supported device AND you had previously set "Use my Garmin Profile" to YES.
-                    
-                    **v1.7.3:**
-                    - NEW Settings option for "Activity Timer Display". You can now choose "LAP time" (or, Elapsed Time, Moving Time, or no Timer display).
-                    - Support the new Garmin AntiAlias feature on supported devices. With this, graphics are rendered more smoothly, when drawing circles and angular lines
-                    
-                    **v1.7.2:**
-                    - Heart Rate Zone Calculation Optimisations
-                    
-                    **v1.7.1:**
-                    - NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training HR "In App Settings" will just start working.
-                    - Support for new Forerunner 745 device
-                    - Improve efficiency of drawing circles and ARCs
-                    - Remove App specific LAP function (from All devices except: original Edge 520, original Fenix5 and FR935) as Garmin and Strava do this better
-                    
-                    **v1.6.5.0:**
-                    - Added Settings option to turn on (default) or off the display of Seconds for Time of Day and Timer displays (All devices except original Edge 520). This has the benefit of allowing room for a larger font for Time of Day and Timer.
-                    - Compiled under v3.2.1 of Connect IQ SDK
-                    
-                    **v1.6.4.0:**
-                    - Added Settings option to display Elapsed Time (since Timer Start), Moving Time (excludes time auto-paused), or No Timer
-                    - Added Settings option to turn off display of "Time of Day"
-                    - Added ability to set Zone1 start at zero (effectively means Zone1 can range from 0 to the start of Zone2)
-                    
-                    **v1.6.3.0:**
-                    - Automatically update MAXHR into settings when new maximum achieved. MAXHR will turn blue when a new maximum has been reached.
-                    - Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)
-                    
-                    **v1.6.2.0:**
-                    - Covid-19 Lockdown Release
-                    - New Circles layouts for configurations 3A, 3B, 4B, 5B, 6B, 7B layouts for Edge 530 / 830
-                    - New Circles layouts for 2 field screen configurations for Edge 520+ / 820
-                    - Added support for Fenix 6 / 6sPro / 6Pro / 6XPro in screen configurations 1, 2 and 4C
-                    - Added support for Marq Golfer in screen configurations 1, 2 and 4B
-                    
-                    **v1.6.0.0:**
-                    - Added support for Garmin Edge 1030+ devices
-                    - New Circles layouts for configurations 2, 3A, 3B, 4B, 5B, 6B, 7B layouts for Edge 1030/1030Bont/1030+
-                    - New circles layouts for 2 datafield display in Edge 530/830
-                    - New circles layouts for 2 & 3 datafield display in Edge 1000
-                    - Added rolling 60 second HR histogram to the new Circles configuration for Edge 530/830/1030x/1000 devices (new property to activate this in settings - default is off)
-                    
-                    **V1.5.6.2:**
-                    - Support for MARQ Adventurer and Commander (in 1,2 and 4B datafield layouts) and Fenix 6S (in 1, 2 and 4C datafield layouts).
-                    
-                    **V1.5.6:**
-                    - Support for Edge 530/830, Forerunner 945 and Marq devices (in 1, 2 and 4 field display modes)
-                    - Add 4 field display options to supported wearable devices
-                    - Add LAP function. This works differently to a standard LAP function as I see the main problem with a standard LAP function is what if you want to revert back to Average HR for the entire activity? You can't. With my LAP function when you press the LAP button it starts calculating and displaying average HR from that point - a red "LAP" icon is displayed on screen - When you press the LAP button again, the display reverts back to showing Average HR for the entire activity. This way you can ride out to the bottom of a hill, press the LAP button and see your average HR up the hill, when you get to the top of the hill you can hit the LAP button again and revert to showing average HR for the entire activity. You can do this as many times as you like in an activity. You can also turn off the app's ability to respond to the LAP button in app settings.                  </div>
+                    <p>When I'm Base Training I'm very focussed on monitoring Heart Rate and ensuring I'm sitting in particular zones. I wanted a single datafield that could display everything I needed to know, related to Heart Rate - that being: HR, HR zone and where I am in that zone, average HR, Average HR zone and Max HR.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>                    
+                    <p>This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">The data field has been optimised for full-width display on Garmin Edge type devices.</div>p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Circles or Bars?:</p>
+                    <p>&nbsp;</p>                    
+                    <p>There is a configuration option in the App Settings that will display the HR zone range and Average HR Zone range as circles instead of the default bars, as per the screen shots.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li>Heart Rate (BPM)</li>
+                      <li>HR Zone (see below)</li>
+                      <li>Maximum HR (during this activity)</li>
+                      <li>Average HR (BPM)</li>
+                      <li>Average HR Zone (as per HR Zones note, below)</li>
+                      <li>Time of Day (available in larger screen configurations)</li>
+                      <li>Elapsed Time (available in larger screen configurations)</li>
+                      <li>Rolling 60 second HR Histogram (Available for Edge 130/130+/530/830/1030x/1000 devices)</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Garmin Profile?:</p>
+                    <p>&nbsp;</p>                    
+                    <p>An App Setting lets you choose whether you want to use the HR Zone settings you've defined within your Garmin Profile OR the zones you define within the App Settings. If you choose your Garmin Profile there is no need to provide values for the HR Zones, LTHR, HRR, MaxHR and the Zone Type in the App Settings, you can leave these blank.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Heartrate Zones:</p>
+                    <p>&nbsp;</p>                    
+                    <p>You can define up to 5 HR zones in the App Settings. The zones can be based on Lactate Threshold Heart Rate (LTHR), Maximum Heart Rate (MAXHR), or Heart Rate Reserve (HRR). You must choose which Target HR is the basis for your zones in the App Settings.</p>
+                    <p>&nbsp;</p>                    
+                    <p>The Zones will default to the standard Coggan zones, which you can adjust. The standard Coggan HR zones are as follows:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>  
+                      <li>Z1 = Less than 68% (Recovery - Grey)</li>
+                      <li>Z2 = 68 - 83% (Endurance - Blue)</li>
+                      <li>Z3 = 84 - 94% (Tempo - Green)</li>
+                      <li>Z4 = 95 - 105% (Threshold - Orange)</li>
+                      <li>Z5 = 106 - MAX (VO2Max - Red)</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
                 </div>
               </div>
             </div>
             </div>
           </div>
         </article>
-    
       </div>
     </article>
     <article class="my-3" id="radian">
@@ -451,7 +313,6 @@
         <h4>Radian</h4>
         <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps">Connect IQ App Store</a>
       </div>
-
       <div>
         <div class="bd-example">
           <img src="/docs/Radian/images/Fenix6XPro 2.png" class="d-inline-block align-top img-fluid" alt="Radian - Fenix6XPro" width="150" loading="lazy">
@@ -490,31 +351,12 @@
                     <p>9) The HR dial shows HR as well as percentage of maximum HR, if you've defined this in your Garmin profile or created any heart rate zones. if no maximum HR is set it will default to using the old standard "220 - your age", so long as your age is set in your Garmin profile.</p>
                     
                     <p>10) The steps dial shows steps as well as percentage of steps goal.</p>
-                    
+                    <p>&nbsp;</p>                    
                     <p>NOTES:</p>
-                    
+                    <p>&nbsp;</p>                    
                     <p>- All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the battery saving functions.</p>
-                    
                     <p>- If after updating from an earlier release of this watch face it stops working, please uninstall and install again</p>
-                    
-                    <p>- If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device. The app crashes are due to a known issue in the Garmin SDK that occurs with older firmware.</p>
-                    
-                    <p>- Support for other watch devices coming soon...</p>
-                    
-                    <p class="h2">What’s New</p>
-                    
-                    <p class="h4">v1.1.0:</p>
-                    <p class="h5">- Added support for full range of Fenix6 devices.</p>
-                    <p class="h5">- Added AntiAlias improvements for devices that support it - currently Fenix 6, D2 and MARQ series devices.</p>
-                    
-                    <p class="h4">1.0.4.0</p>
-                    <p class="h5">- Added support fo MARQ Golfer</p>
-                    
-                    <p class="h4">1.0.30</p>
-                    <p class="h5">- Add support for MARQ Adventurer and Commander</p>
-                    
-                    <p class="h4">1.0.29</p>
-                    <p class="h5">- Better handling of heart rate zones and current sport for max HR calculation. Better handling of Altitude to ensure numerical data</p>
+                    <p>- If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device. The app crashes are due to a known issue in the Garmin SDK that occurs with older firmware.</p>                    
                   </div>
                 </div>
               </div>
@@ -546,7 +388,7 @@
                 <div id="collapsepz" class="accordion-collapse collapse hide" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p class="h2">POWER ZONES (Coggan - FTP based):</p>
-                    
+                    <p>&nbsp;</p>                    
                     <ul>
                         <li>Z1 = Less than 56% (Recovery - Grey)</li>
                         <li>Z2 = 56 - 75% (Endurance - Blue)</li>
@@ -556,7 +398,7 @@
                         <li>Z6 = 121 - 150% (Anaerobic - Pink)</li>
                         <li>Z7 = 151 - MAX% (Neuromuscular - Purple)</li>
                     </ul>
-                    
+                    <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
                   </div>
                 </div>
@@ -584,7 +426,11 @@
                 </h4>
                 <div id="collapseavp" class="accordion-collapse collapse hide" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</p>
+                    <ul>  
+                      <li>Standard Average Power</li>
+                      <li>Strava Weighted Average (SWA) Power</li>
+                      <li>Normalized Power (NP).  NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</li>
+                    </ul>  
                   </div>
                 </div>
               </div>
@@ -611,10 +457,10 @@
                 </h4>
                 <div id="collapsewp" class="accordion-collapse collapse hide" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">Watt Prime (W') BALANCE:</p>
-                    
-                    An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.
-                    
+                    <p class="h2">Watt Prime (W') Balance:</p>
+                    <p>&nbsp;</p>                    
+                    <p>An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke - App default, which recovers quicker when power dips below threshold) or the INTEGRAL (Default) calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in Settings.</p>
+                    <p>&nbsp;</p>                    
                     <ul>
                       <li>The Watt Prime circle will display in Blue for values 50-100%, Orange for values 20-50% and Red for less than 20%.</li>
                       <li>For a Breakthrough (WP less than zero) it will be the colour purple.</li>
@@ -646,8 +492,8 @@
                 </h4>
                 <div id="collapsewpd" class="accordion-collapse collapse hide" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p class="h2">Watt PRIME (W') AUTO DECAY:</p>
-                    
+                    <p class="h2">Watt Prime (W') Decay:</p>
+                    <p>&nbsp;</p>                    
                     <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings). Example, if my WPrime is 20000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each App start. If you don't want your W Prime to automatically decay, set the decay to zero (default setting).</p>
                   </div>
                 </div>
@@ -675,7 +521,17 @@
                 </h4>
                 <div id="collapsebs" class="accordion-collapse collapse hide" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Battery Status indicator - Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red, Level checked every 20 mins and then every 5 mins once below 10%</p>
+                    <p>Battery Status indicator - Battery Level:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li>75-100% Green</li>
+                      <li>50-75% Blue</li>
+                      <li>20-50% Orange</li>
+                      <li>less than 20% Red</li>
+                      <li></li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p>The Battery level is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
                   </div>
                 </div>
               </div>
@@ -702,7 +558,8 @@
                 </h4>
                 <div id="collapsew" class="accordion-collapse collapse hide" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>Weather Conditions Explained</strong>
+                    <strong>Garmin Weather Conditions Explained:</strong>
+                    <p>&nbsp;</p>                    
                     <div class="bd-example">
                       <table class="table table-striped">
                         <thead>
