@@ -99,7 +99,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion1">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                     In The Zone
                   </button>
                 </h4>
@@ -181,7 +181,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion2">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                     Training Power
                   </button>
                 </h4>
@@ -248,7 +248,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion3">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                     Training HR
                   </button>
                 </h4>
@@ -260,7 +260,7 @@
                     <p>&nbsp;</p>                    
                     <p>This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
                     <p>&nbsp;</p>                    
-                    <p class="h4">The data field has been optimised for full-width display on Garmin Edge type devices.</div>p>
+                    <p class="h4">The data field has been optimised for full-width display on Garmin Edge type devices.</p>
                     <p>&nbsp;</p>                    
                     <p class="h4">Circles or Bars?:</p>
                     <p>&nbsp;</p>                    
@@ -321,7 +321,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordion4">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                     Radian
                   </button>
                 </h4>
@@ -379,7 +379,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionpz">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="false" aria-controls="collapsepz">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="false" aria-controls="collapsepz">
                     Power Zones
                   </button>
                 </h4>
@@ -418,7 +418,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionavp">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
                     Average Power
                   </button>
                 </h4>
@@ -449,7 +449,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionwp">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
                     Watt Prime
                   </button>
                 </h4>
@@ -484,7 +484,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionwpd">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="false" aria-controls="collapsewpd">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="false" aria-controls="collapsewpd">
                     Watt Prime Decay
                   </button>
                 </h4>
@@ -513,13 +513,17 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionbs">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
                     Battery Status
                   </button>
                 </h4>
                 <div id="collapsebs" class="accordion-collapse collapse" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Battery Status indicator - Battery Level:</p>
+                    <p>Device Battery Status indicator:</p>
+                    <p>&nbsp;</p>                    
+                    <p>The Battery level of the device is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
+                    <p>&nbsp;</p>                    
+                    <img src="/docs/TrainingHR/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
                     <p>&nbsp;</p>                    
                     <ul>
                       <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
@@ -527,8 +531,6 @@
                       <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span>20-50%</li>
                       <li><span class="badge rounded-pill pill-width bg-bs4">Red</span>less than 20%</li>
                     </ul>
-                    <p>&nbsp;</p>                    
-                    <p>The Battery level is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
                   </div>
                 </div>
               </div>
@@ -549,7 +551,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="accordionw">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
                     Weather
                   </button>
                 </h4>
