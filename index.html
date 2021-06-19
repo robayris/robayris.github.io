@@ -63,6 +63,7 @@
       <li class="my-2">
         <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
         <ul class="list-unstyled ps-3 collapse show" id="defs-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#appsettings">In App Settings</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#averagepower">Average Power</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
@@ -385,6 +386,50 @@
   </section>
   <section id="defs">
     <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Definitions</h2>
+    <article class="my-3" id="appsettings">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>App Settings</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionas">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseas" aria-expanded="false" aria-controls="collapseas">
+                    In App Settings
+                  </button>
+                </h4>
+                <div id="collapseas" class="accordion-collapse collapse" aria-labelledby="accordionas" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>In App Settings</strong>
+                    <p>&nbsp;</p>                    
+                    <p>InTheZone, TrainingPower and TrainingHR all support In App Settings, which is a way to update app settings directly on the device without using Garmin Express or a Phone.  Not all devices support this feature - it depends on Garmin's rollout of firmware.  However, if your device does support it, you can access it with the following steps:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Edge Device Settings</p>
+                    <ol>
+                      <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, press the top-right button.</li>
+                      <li>In the menu of options that appears, scroll down till you see "Data Fields".</li>
+                      <li>Press the top-right button on your device, or touch the "Data Fields" menu option on a touch screen device.</li>
+                      <li>Scroll down to "Connect IQ Datafields" and choose the App you want to edit settings for.</li>
+                    </ol>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Watch Device Settings</p>
+                    <ol>
+                      <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, Long press the Menu (scroll-up) button.</li>
+                      <li>In the menu of options that appears, scroll down till you see "ConnectIQ Fields" then select it.</li>
+                      <li>Choose the App you want to edit settings for.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
     <article class="my-3" id="powerzones">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h4>Power Zones</h4>
@@ -450,8 +495,7 @@
                     </ul>  
                     <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</p>
                     <p>&nbsp;</p>                    
-                    <p><a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Nromalized Power, Intensity Factor and Training Stress Score Explained</a></p>
-                    <p>&nbsp;</p>                    
+                    <p><a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a></p>
                   </div>
                 </div>
               </div>
@@ -489,7 +533,6 @@
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
-                    <p>&nbsp;</p>                    
                   </div>
                 </div>
               </div>
