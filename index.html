@@ -302,15 +302,11 @@
                     <p>&nbsp;</p>                    
                     <p>An App Setting lets you choose whether you want to use the HR Zone settings you've defined within your Garmin Profile OR the zones you define within the App Settings. If you choose your Garmin Profile there is no need to provide values for the HR Zones, LTHR, HRR, MaxHR and the Zone Type in the App Settings, you can leave these blank.</p>
                     <p>&nbsp;</p>                    
-                    <p class="h4">Heartrate Zones:</p>
+                    <p class="h4">Heart Rate Zones:</p>
                     <p>&nbsp;</p>                    
                     <p>You can define up to 5 HR zones in the App Settings. The zones can be based on Lactate Threshold Heart Rate (LTHR), Maximum Heart Rate (MAXHR), or Heart Rate Reserve (HRR). You must choose which Target HR is the basis for your zones in the App Settings.</p>
                     <p>&nbsp;</p>                    
-                    <p>The Zones will default to the standard Coggan zones, which you can adjust. The standard Coggan HR zones are as follows:</p>
-                    <p>&nbsp;</p>                    
-                    <p>&nbsp;</p>                    
-                    <p class="h4">Heart Rate Zones:</p>
-                    <p><a href="#hrzones">Heart Rate Zones</a></p>                    
+                    <p>The Zones will default to the standard Coggan zones, which you can adjust. Click <a href="#hrzones">here</a> for more information on the standard Coggan HR zones.</p>
                     <p>&nbsp;</p>                    
                     <p class="h5">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
                 </div>
@@ -584,7 +580,7 @@
                 </h4>
                 <div id="collapsehrz" class="accordion-collapse collapse" aria-labelledby="accordionhrz" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>Heart Rate Zones </strong>
+                    <strong>Heart Rate Zones (Coggan)</strong>
                     <p>&nbsp;</p>         
                     <p>Use the following table to experiment with Heart Rate Zones.  Update your source HR (LTHR, MAXHR, HRR), below then click the Calculate button below the table.  You can also change each Heart Rate Zone start and End percentages and see the impact.</p>
                     <p>&nbsp;</p>         
@@ -650,29 +646,29 @@
                          </tbody>
                       </table>
                       <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
-                      <script type="text/javascript">
-                        $(function(){
-                          $('#pCalcButton').click(function(){
-                            $('#powerZoneTable td').each(function(){
-                              if ($(this).attr('zone-data')){
-                                ob = $(this).attr('zone-data');
-                                $("#"+ob+"ws").text(Math.floor($("#ftp").val() * ($("#"+ob+"ps").val() / 100)));
-                                $("#"+ob+"we").text(Math.floor($("#ftp").val() * ($("#"+ob+"pe").val() / 100)));
-                                $("#"+ob+"wks").text(($("#"+ob+"ws").text() / $("#weight").val()).toFixed(2));
-                                $("#"+ob+"wke").text(($('#'+ob+"we").text() / $("#weight").val()).toFixed(2));
-                              }
+                        <script type="text/javascript">
+                          $(function(){
+                            $('#pCalcButton').click(function(){
+                              $('#powerZoneTable td').each(function(){
+                                if ($(this).attr('zone-data')){
+                                  ob = $(this).attr('zone-data');
+                                  $("#"+ob+"ws").text(Math.floor($("#ftp").val() * ($("#"+ob+"ps").val() / 100)));
+                                  $("#"+ob+"we").text(Math.floor($("#ftp").val() * ($("#"+ob+"pe").val() / 100)));
+                                  $("#"+ob+"wks").text(($("#"+ob+"ws").text() / $("#weight").val()).toFixed(2));
+                                  $("#"+ob+"wke").text(($('#'+ob+"we").text() / $("#weight").val()).toFixed(2));
+                                }
+                              });
+                            });
+                            $('#hrCalcButton').click(function(){
+                              $('#hrZoneTable td').each(function(){
+                                if ($(this).attr('zone-data')){
+                                  ob = $(this).attr('zone-data');
+                                  $("#"+ob+"hrs").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrps").val() / 100)));
+                                  $("#"+ob+"hre").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrpe").val() / 100)));
+                                }
+                              });
                             });
                           });
-                          $('#hrCalcButton').click(function(){
-                            $('#hrZoneTable td').each(function(){
-                              if ($(this).attr('zone-data')){
-                                ob = $(this).attr('zone-data');
-                                $("#"+ob+"hrs").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrps").val() / 100)));
-                                $("#"+ob+"hre").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrpe").val() / 100)));
-                              }
-                            });
-                          });
-                        });
                         </script>
                       </div>        
                     <p>&nbsp;</p>                    
