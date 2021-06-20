@@ -472,7 +472,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
                             <td zone-data="z1">Z1</td>
                             <td id="z1ps">0</td>
                             <td id="z1pe">55</td>
@@ -482,7 +482,7 @@
                             <td id="z1wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
                             <td zone-data="z2">Z2</td>
                             <td id="z2ps">56</td>
                             <td id="z2pe">75</td>
@@ -492,7 +492,7 @@
                             <td id="z2wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
                             <td zone-data="z3">Z3</td>
                             <td id="z3ps">76</td>
                             <td id="z3pe">90</td>
@@ -502,7 +502,7 @@
                             <td id="z3wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z4">Sweet Spot</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Sweet Spot</span></th>
                             <td zone-data="z4a">Sweet Spot</td>
                             <td id="z4aps">88</td>
                             <td id="z4ape">93</td>
@@ -512,7 +512,7 @@
                             <td id="z4awke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
                             <td zone-data="z4">Z4</td>
                             <td id="z4ps">91</td>
                             <td id="z4pe">105</td>
@@ -522,7 +522,7 @@
                             <td id="z4wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
                             <td zone-data="z5">Z5</td>
                             <td id="z5ps">106</td>
                             <td id="z5pe">120</td>
@@ -532,7 +532,7 @@
                             <td id="z5wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span></th>
                             <td zone-data="z6">Z6</td>
                             <td id="z6ps">121</td>
                             <td id="z6pe">150</td>
@@ -542,10 +542,10 @@
                             <td id="z6wke">0</td>
                           </tr>
                           <tr>
-                            <th scope="row">span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span></th>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span></th>
                             <td zone-data="z7">Z7</td>
-                            <td id="z7ps">121</td>
-                            <td id="z7pe">150</td>
+                            <td id="z7ps">151</td>
+                            <td id="z7pe">600</td>
                             <td id="z7ws">0</td>
                             <td id="z7we">0</td>
                             <td id="z7wks">0</td>
@@ -561,10 +561,10 @@
                             $('#powerZoneTable td').each(function(){
                               if ($(this).attr('zone-data')){
                                 ob = $(this).attr('zone-data');
-                                $(ob+'ws').text(Math.floor($('#ftp').text() * ($(ob+'ps').text()/100)));
-                                $(ob+'we').text(Math.floor($('#ftp').text() * ($(ob+'pe').text()/100)));
-                                $(ob+'wks').text(($(ob+'ws').text()/($('#weight').val()*100)/100).toFixed(2));
-                                $(ob+'wke').text(($(ob+'we').text()/($('#weight').val()*100)/100).toFixed(2));
+                                (ob+'ws').text(Math.floor($('#ftp').text() * ((ob+'ps').text() / 100)));
+                                (ob+'we').text(Math.floor($('#ftp').text() * ((ob+'pe').text() / 100)));
+                                (ob+'wks').text(((ob+'ws').text() / ($('#weight').val() * 100) / 100).toFixed(2));
+                                (ob+'wke').text(((ob+'we').text() / ($('#weight').val() * 100) / 100).toFixed(2));
                               }
                             });
                           });
