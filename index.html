@@ -563,10 +563,10 @@
                             $('#powerZoneTable td').each(function(){
                               if ($(this).attr('zone-data')){
                                 ob = $(this).attr('zone-data');
-                                (ob+'ws').text(Math.floor($('#ftp').text() * ((ob+'ps').text() / 100)));
-                                (ob+'we').text(Math.floor($('#ftp').text() * ((ob+'pe').text() / 100)));
-                                (ob+'wks').text(((ob+'ws').text() / ($('#weight').val() * 100) / 100).toFixed(2));
-                                (ob+'wke').text(((ob+'we').text() / ($('#weight').val() * 100) / 100).toFixed(2));
+                                $(ob+'ws').text(Math.floor($('#ftp').text() * ($(ob+'ps').text() / 100)));
+                                $(ob+'we').text(Math.floor($('#ftp').text() * ($(ob+'pe').text() / 100)));
+                                $(ob+'wks').text(((ob+'ws').text() / ($('#weight').val() * 100) / 100).toFixed(2));
+                                $(ob+'wke').text(((ob+'we').text() / ($('#weight').val() * 100) / 100).toFixed(2));
                               }
                             });
                           });
