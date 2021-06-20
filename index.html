@@ -447,8 +447,132 @@
                 <div id="collapsepz" class="accordion-collapse collapse" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <strong>Power Zones (Coggan - FTP based)</strong>
-                    <p>&nbsp;</p>                    
-                    <ul>
+                    <p>&nbsp;</p>         
+                    <div class="form-floating mb-3">
+                      <input type="ftp" class="form-control" id="floatingInput" placeholder="200">
+                      <label for="floatingInput">FTP (Watts)</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="weight" class="form-control" id="floatingInput" placeholder="80.0">
+                      <label for="floatingInput">Weight (Kg)</label>
+                    </div>
+                    <div class="bd-example">
+                      <table class="table table-striped" id="powerZoneTable">
+                        <thead>
+                        <tr>
+                          <th scope="col">Power Zone</th>
+                          <th scope="col">Zone</th>
+                          <th scope="col">Zone Start%</th>
+                          <th scope="col">Zone End%</th>
+                          <th scope="col">Watts Start</th>
+                          <th scope="col">Watts End</th>
+                          <th scope="col">W/Kg Start</th>
+                          <th scope="col">W/Kg End</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
+                            <td zone-data="z1">Z1</td>
+                            <td id="z1ps">0</td>
+                            <td id="z1pe">55</td>
+                            <td id="z1ws">0</td>
+                            <td id="z1we">0</td>
+                            <td id="z1wks">0</td>
+                            <td id="z1wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
+                            <td zone-data="z2">Z2</td>
+                            <td id="z2ps">56</td>
+                            <td id="z2pe">75</td>
+                            <td id="z2ws">0</td>
+                            <td id="z2we">0</td>
+                            <td id="z2wks">0</td>
+                            <td id="z2wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
+                            <td zone-data="z3">Z3</td>
+                            <td id="z3ps">76</td>
+                            <td id="z3pe">90</td>
+                            <td id="z3ws">0</td>
+                            <td id="z3we">0</td>
+                            <td id="z3wks">0</td>
+                            <td id="z3wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z4">Sweet Spot</span></th>
+                            <td zone-data="z4a">Sweet Spot</td>
+                            <td id="z4aps">88</td>
+                            <td id="z4ape">93</td>
+                            <td id="z4aws">0</td>
+                            <td id="z4awe">0</td>
+                            <td id="z4awks">0</td>
+                            <td id="z4awke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
+                            <td zone-data="z4">Z4</td>
+                            <td id="z4ps">91</td>
+                            <td id="z4pe">105</td>
+                            <td id="z4ws">0</td>
+                            <td id="z4we">0</td>
+                            <td id="z4wks">0</td>
+                            <td id="z4wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
+                            <td zone-data="z5">Z5</td>
+                            <td id="z5ps">106</td>
+                            <td id="z5pe">120</td>
+                            <td id="z5ws">0</td>
+                            <td id="z5we">0</td>
+                            <td id="z5wks">0</td>
+                            <td id="z5wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span></th>
+                            <td zone-data="z6">Z6</td>
+                            <td id="z6ps">121</td>
+                            <td id="z6pe">150</td>
+                            <td id="z6ws">0</td>
+                            <td id="z6we">0</td>
+                            <td id="z6wks">0</td>
+                            <td id="z6wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span></th>
+                            <td zone-data="z7">Z7</td>
+                            <td id="z7ps">121</td>
+                            <td id="z7pe">150</td>
+                            <td id="z7ws">0</td>
+                            <td id="z7we">0</td>
+                            <td id="z7wks">0</td>
+                            <td id="z7wke">0</td>
+                          </tr>
+                         </tbody>
+                      </table>
+                      <button type="button" id="calcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
+
+                      <script type="text/javascript">
+                        $(function(){
+                          $('#calcButton').click(function(){
+                            $('#powerZoneTable td').each(function(){
+                              if ($(this).attr('zone-data')){
+                                ob = $(this).attr('zone-data');
+                                $(ob+'ws').text(Math.floor($('#ftp').text() * ($(ob+'ps').text()/100)));
+                                $(ob+'we').text(Math.floor($('#ftp').text() * ($(ob+'pe').text()/100)));
+                                $(ob+'wks').text(($(ob+'ws').text()/($('#weight').val()*100)/100).toFixed(2));
+                                $(ob+'wke').text(($(ob+'we').text()/($('#weight').val()*100)/100).toFixed(2));
+                              }
+                            });
+                          });
+                        });
+                        </script>
+                      </div>        
+<!--
+                      <ul>
                         <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 56%)</li>
                         <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (56% - 75%)</li>
                         <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (76% - 90%)</li>
@@ -457,6 +581,7 @@
                         <li><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span> Z6 (121% - 150%)</li>
                         <li><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span> Z7 (151% - MAX)</li>
                     </ul>
+-->                    
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
                   </div>
