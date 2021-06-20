@@ -157,9 +157,6 @@
                     <p class="h4">Power Zones (Coggan - FTP based):</p>
                     <p><a href="#powerzones">Power Zones</a></p>                    
                     <p>&nbsp;</p>                    
-                    <p class="h4">Heart Rate Zones:</p>
-                    <p><a href="#hrzones">Heart Rate Zones</a></p>                    
-                    <p>&nbsp;</p>                    
                     <p class="h4">Watt Prime (W') BALANCE:</p>
                     <p><a href="#wattprime">Watt Prime</a></p>                    
                     <p>&nbsp;</p>                    
@@ -478,8 +475,8 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
                             <td zone-data="z1">Z1</td>
-                            <td><input type="text" id="z1ps" maxlength=6 value="0"></td>
-                            <td><input type="text" id="z1pe" maxlength=6 value="55"></td>
+                            <td><input type="text" id="z1ps" maxlength=6 size=6 value="0">%</td>
+                            <td><input type="text" id="z1pe" maxlength=6 size=6 value="55">%</td>
                             <td id="z1ws">0</td>
                             <td id="z1we">0</td>
                             <td id="z1wks">0</td>
@@ -488,8 +485,8 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
                             <td zone-data="z2">Z2</td>
-                            <td><input type="text" id="z2ps" maxlength=6 value="56">%</td>
-                            <td><input type="text" id="z2pe" maxlength=6 value="75">%</td>
+                            <td><input type="text" id="z2ps" maxlength=6 size=6 value="56">%</td>
+                            <td><input type="text" id="z2pe" maxlength=6 size=6 value="75">%</td>
                             <td id="z2ws">0</td>
                             <td id="z2we">0</td>
                             <td id="z2wks">0</td>
@@ -498,8 +495,8 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
                             <td zone-data="z3">Z3</td>
-                            <td><input type="text" id="z3ps" maxlength=6 value="76">%</td>
-                            <td><input type="text" id="z3pe" maxlength=6 value="90">%</td>
+                            <td><input type="text" id="z3ps" maxlength=6 size=6 value="76">%</td>
+                            <td><input type="text" id="z3pe" maxlength=6 size=6 value="90">%</td>
                             <td id="z3ws">0</td>
                             <td id="z3we">0</td>
                             <td id="z3wks">0</td>
@@ -508,8 +505,8 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
                             <td zone-data="z4">Z4</td>
-                            <td><input type="text" id="z4ps" maxlength=6 value="91">%</td>
-                            <td><input type="text" id="z4pe" maxlength=6 value="105">%</td>
+                            <td><input type="text" id="z4ps" maxlength=6 size=6 value="91">%</td>
+                            <td><input type="text" id="z4pe" maxlength=6 size=6 value="105">%</td>
                             <td id="z4ws">0</td>
                             <td id="z4we">0</td>
                             <td id="z4wks">0</td>
@@ -558,23 +555,6 @@
                          </tbody>
                       </table>
                       <button type="button" id="pCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
-<!--
-                      <script type="text/javascript">
-                        $(function(){
-                          $('#pCalcButton').click(function(){
-                            $('#powerZoneTable td').each(function(){
-                              if ($(this).attr('zone-data')){
-                                ob = $(this).attr('zone-data');
-                                $("#"+ob+"ws").text(Math.floor($("#ftp").val() * ($("#"+ob+"ps").val() / 100)));
-                                $("#"+ob+"we").text(Math.floor($("#ftp").val() * ($("#"+ob+"pe").val() / 100)));
-                                $("#"+ob+"wks").text(($("#"+ob+"ws").text() / $("#weight").val()).toFixed(2));
-                                $("#"+ob+"wke").text(($('#'+ob+"we").text() / $("#weight").val()).toFixed(2));
-                              }
-                            });
-                          });
-                        });
-                        </script>
--->                        
                       </div>        
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
@@ -587,7 +567,6 @@
         </article>
       </div>
     </article>
-
     <article class="my-3" id="hrzones">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h4>Heart Rate Zones</h4>
@@ -632,32 +611,32 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
                             <td zone-data="z1">Z1</td>
-                            <td><input type="text" id="z1hrps" maxlength=6 value="0"></td>
-                            <td><input type="text" id="z1hrpe" maxlength=6 value="67"></td>
+                            <td><input type="text" id="z1hrps" maxlength=6 size=6 value="0">%</td>
+                            <td><input type="text" id="z1hrpe" maxlength=6 size=6 value="67">%</td>
                             <td id="z1hrs">0</td>
                             <td id="z1hre">0</td>
                           </tr>
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
                             <td zone-data="z2">Z2</td>
-                            <td><input type="text" id="z2hrps" maxlength=6 value="68">%</td>
-                            <td><input type="text" id="z2hrpe" maxlength=6 value="83">%</td>
+                            <td><input type="text" id="z2hrps" maxlength=6 size=6 value="68">%</td>
+                            <td><input type="text" id="z2hrpe" maxlength=6 size=6 value="83">%</td>
                             <td id="z2hrs">0</td>
                             <td id="z2hre">0</td>
                           </tr>
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
                             <td zone-data="z3">Z3</td>
-                            <td><input type="text" id="z3hrps" maxlength=6 value="84">%</td>
-                            <td><input type="text" id="z3hrpe" maxlength=6 value="94">%</td>
+                            <td><input type="text" id="z3hrps" maxlength=6 size=6 value="84">%</td>
+                            <td><input type="text" id="z3hrpe" maxlength=6 size=6 value="94">%</td>
                             <td id="z3hrs">0</td>
                             <td id="z3hre">0</td>
                           </tr>
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
                             <td zone-data="z4">Z4</td>
-                            <td><input type="text" id="z4hrps" maxlength=6 value="95">%</td>
-                            <td><input type="text" id="z4hrpe" maxlength=6 value="105">%</td>
+                            <td><input type="text" id="z4hrps" maxlength=6 size=6 value="95">%</td>
+                            <td><input type="text" id="z4hrpe" maxlength=6 size=6 value="105">%</td>
                             <td id="z4hrs">0</td>
                             <td id="z4hre">0</td>
                           </tr>
@@ -665,7 +644,7 @@
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
                             <td zone-data="z5">Z5</td>
                             <td><input type="text" id="z5hrps" maxlength=6 value="106">%</td>
-                            <td><input type="text" id="z5hrpe" maxlength=6 value="200">%</td>
+                            <td><input type="text" id="z5hrpe" maxlength=6 value="180">%</td>
                             <td id="z5hrs">0</td>
                             <td id="z5hre">0</td>
                           </tr>
