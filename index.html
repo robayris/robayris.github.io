@@ -563,27 +563,16 @@
                             $('#powerZoneTable td').each(function(){
                               if ($(this).attr('zone-data')){
                                 ob = $(this).attr('zone-data');
-                                $('#'+ob+'ws').text(Math.floor($('#ftp').text() * ($('#'+ob+'ps').text() / 100)));
-                                $('#'+ob+'we').text(Math.floor($('#ftp').text() * ($('#'+ob+'pe').text() / 100)));
-                                $('#'+ob+'wks').text((('#'+ob+'ws').text() / ($('#weight').val() * 100) / 100).toFixed(2));
-                                $('#'+ob+'wke').text((('#'+ob+'we').text() / ($('#weight').val() * 100) / 100).toFixed(2));
+                                $("#"+ob+"ws").text(Math.floor($('#ftp').text() * ($("#"+ob+"ps").text() / 100)));
+                                $("#"+ob+"we").text(Math.floor($('#ftp').text() * ($("#"+ob+"pe").text() / 100)));
+                                $("#"+ob+"wks").text(($("#"+ob+"ws").text() / ($('#weight').val() * 100) / 100).toFixed(2));
+                                $("#"+ob+"wke").text(($('#'+ob+"we").text() / ($('#weight').val() * 100) / 100).toFixed(2));
                               }
                             });
                           });
                         });
                         </script>
                       </div>        
-<!--
-                      <ul>
-                        <li><span class="badge rounded-pill pillz-width bg-z1">Recovery</span> Z1 (Less than 56%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z2">Endurance</span> Z2 (56% - 75%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z3">Tempo</span> Z3 (76% - 90%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z4">Threshold</span> Z4 (91% - 105%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span> Z5 (106% - 120%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span> Z6 (121% - 150%)</li>
-                        <li><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span> Z7 (151% - MAX)</li>
-                    </ul>
--->                    
                     <p>&nbsp;</p>                    
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is derived).  The app displays the percentage your power is within the respective zone.</p>
                   </div>
