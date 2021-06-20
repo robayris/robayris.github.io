@@ -447,7 +447,7 @@
                   <div class="accordion-body">
                     <strong>Power Zones (Coggan - FTP based)</strong>
                     <p>&nbsp;</p>         
-                    <p>Use the following table to experiment with Power Zones.  Update your FTP and Weight in the two fields at the top of the table adn then click the Calculate button below the table.  You can also change each Power Zone start and End percentages and see the impacts.</p>
+                    <p>Use the following table to experiment with Power Zones.  Update your FTP and Weight in the two fields at the top of the table and then click the Calculate button below the table.  You can also change each Power Zone start and End percentages and see the impact.</p>
                     <p>&nbsp;</p>         
                     <div class="form-floating mb-3">
                       <input type="text" class="form-control" id="ftp" placeholder="200" maxlength=6 value="200">
@@ -586,11 +586,11 @@
                   <div class="accordion-body">
                     <strong>Heart Rate Zones </strong>
                     <p>&nbsp;</p>         
-                    <p>Use the following table to experiment with Heart Rate Zones.  Update your FTP and Weight in the two fields at the top of the table adn then click the Calculate button below the table.  You can also change each Power Zone start and End percentages and see the impacts.</p>
+                    <p>Use the following table to experiment with Heart Rate Zones.  Update your source HR (LTHR, MAXHR, HRR), below then click the Calculate button below the table.  You can also change each Heart Rate Zone start and End percentages and see the impact.</p>
                     <p>&nbsp;</p>         
                     <div class="form-floating mb-3">
                       <input type="text" class="form-control" id="hrftp" placeholder="161" maxlength=6 value="161">
-                      <label for="hrftp">LTHR, MAXHR or HRR</label>
+                      <label for="hrftp">Source HR:  LTHR, MAXHR or HRR</label>
                     </div>
                     <p>LTHR = Lactate Threshold Heart Rate; MAXHR = Maximum Heart Rate; HRR = Heart Rate Reserve (based on Resting HR).</p>
                     <p>&nbsp;</p>         
@@ -642,8 +642,8 @@
                           <tr>
                             <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
                             <td zone-data="z5">Z5</td>
-                            <td><input type="text" id="z5hrps" maxlength=4 value="106">%</td>
-                            <td><input type="text" id="z5hrpe" maxlength=4 value="180">%</td>
+                            <td><input type="text" id="z5hrps" maxlength=4 size=6 value="106">%</td>
+                            <td><input type="text" id="z5hrpe" maxlength=4 size=6 value="180">%</td>
                             <td id="z5hrs">0</td>
                             <td id="z5hre">0</td>
                           </tr>
