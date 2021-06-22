@@ -10968,7 +10968,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../../docs/images/bike.jpg");
+  background-image: url("/docs/images/bike.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11280,7 +11280,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #1b1d1f;
-  background-image: url("../../assets/img/map-image.png");
+  background-image: url("/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
