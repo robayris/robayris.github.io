@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "dripicons-weather";
-  src:url("/assets/fonts/dripicons-weather.eot");
-  src:url("/assets/fonts/dripicons-weather.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/dripicons-weather.woff") format("woff"),
-    url("/assets/fonts/dripicons-weather.ttf") format("truetype"),
-    url("/assets/fonts/dripicons-weather.svg#dripicons-weather") format("svg");
+  src:url("./docs/fonts/dripicons-weather.eot");
+  src:url("./docs/fonts/dripicons-weather.eot?#iefix") format("embedded-opentype"),
+    url("./docs/fonts/dripicons-weather.woff") format("woff"),
+    url("./docs/fonts/dripicons-weather.ttf") format("truetype"),
+    url("./docs/fonts/dripicons-weather.svg#dripicons-weather") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -14,8 +14,8 @@
 
 @font-face {
   font-family: "Arrows";
-  src:url("/assets/fonts/Arrows.ttf") format("truetype"),
-    url("/assets/fonts/Arrows.otf") format("otf");
+  src:url("./docs/fonts/Arrows.ttf") format("truetype"),
+    url("./docs/fonts/Arrows.otf") format("otf");
   font-weight: normal;
   font-style: normal;
   
@@ -60,7 +60,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*
 .diw-cloud:before {
   content: "a";
 }
@@ -334,3 +334,4 @@
 .diw-wind:before {
   content: "|";
 }
+*/

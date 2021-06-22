@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>robayris.github.io</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
+  <!-- JQuery core  -->
+  <script src="./docs/js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="./docs/css/cheatsheet.css" rel="stylesheet">
+  <!-- Custom Font -->
+  <link href="./docs/css/webfont.css" rel="stylesheet">
+  <!-- Garmin App Colours -->
+  <link href="./docs/css/garminapps.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+  <div class="container-fluid d-flex align-items-center">
+    <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      <a href="https://apps.garmin.com/en-US/developer/e1cbb65c-94cc-477d-a171-32cd12162b29/apps" class="ms-auto link-light" hreflang="ar"><img src="./docs/images/Connect-IQ.png" width="40" class="me-3" alt="robayris.github.io"></a>
+      robayris.github.io
+    </h1>
+  </div>
+</header>
+<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+  <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+  <nav class="small" id="toc">
+    <ul class="list-unstyled">
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Connect IQ Apps</button>
+        <ul class="list-unstyled ps-3 collapse show" id="contents-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#inthezone">In The Zone</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#trainingpower">Training Power</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#traininghr">Training HR</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#radian">Radian</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#defs-collapse" aria-controls="defs-collapse">Definitions</button>
+        <ul class="list-unstyled ps-3 collapse show" id="defs-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#appsettings">In App Settings</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#hrzones">Heart Rate Zones</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#averagepower">Average Power</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#wattprimedecay">Watt Prime Decay</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="bd-cheatsheet container-fluid bg-body">
+  <section id="apps">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Apps</h2>
+    <article class="my-3" id="inthezone">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>In The Zone</h4>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/762771ab-104b-481d-8b94-460a3c44c698">Connect IQ App Store</a>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <img src="./docs/inthezone/images/Edge1030 3.jpg" class="d-inline-block align-top img-fluid" alt="" width="200" loading="lazy">&nbsp;
+          <img src="./docs/inthezone/images/Edge1030 4.jpg" class="d-inline-block align-top img-fluid" alt="" width="110" loading="lazy">&nbsp;
+          <img src="./docs/inthezone/images/Edge1030 2.jpg" class="d-inline-block align-top img-fluid" alt="" width="160" loading="lazy">&nbsp;
+          <img src="./docs/inthezone/images/Edge830 3.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;
+          <img src="./docs/inthezone/images/Edge830 4.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">&nbsp;
+          <img src="./docs/inthezone/images/Edge830 6.jpg" class="d-inline-block align-top img-fluid" alt="" width="150" loading="lazy">
+        </div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordion1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    In The Zone
+                  </button>
+                </h4>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="accordion1" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>This App has been written specifically for cycling devices that can handle the newer Connect IQ and device firmware.  It includes many new features and configuration options, particularly display of current weather conditions and a localised (depending on GPS) forecast for the next 3 hours.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>             
+                    <ul>
+                      <li><p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p></li>
+                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
+                      <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
+                    </ul>       
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li><a href="#appsettings">App Settings</a> can be set directly on the device - no need to use your Phone or Garmin Express to update Settings</li>
+                      <li><a href="#battstatus">Battery Status indicator</a></li>
+                      <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
+                      <li><a href="#averagepower">Average Power Options</a>:  Average Power, Strava Weighted Average Power, or Normalized Power (NP)</li>
+                      <li>If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS)</li>  
+                      <li>Option to display Power (and Average Power/SWA/NP) as Watts/Kg</li>
+                      <li><a href="#wattprime">Watt Prime Balance</a></li>
+                      <li><a href="#wattprimedecay">Watt Prime Automatic Decay</a></li>
+                      <li><a href="#powerzones">Power & Average Power Zone</a></li>
+                      <li>HeartRate & Zone from your Garmin Profile Only</li>
+                      <li>Average HR & Zone</li>
+                      <li>Cadence (RPM).  Average Cadence will be displayed if NP (IF and TSS) is not displayed.</li>
+                      <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
+                      <li>Gradient %</li>
+                      <li>Current Altitude (Metres or Feet, depending on Garmin Profile)</li>
+                      <li>Current Time and Timer display.  Configuration allows on/off display of seconds</li>
+                      <li>Timer Configurable:  Off; Elapsed Time; Moving Time; LAP Time</li>
+                      <li>Rear Cassette gear (configurable on/off). Front Chain Ring is also highlighted by showing first digit of Cassette gear in Blue if smaller chainring selected, or second digit of cassette gear in blue if larger chainring seleted.</li>
+                      <li>Optional display of <a href="#weather">Weather</a>:  Current conditions plus a Forecast of next 3 hours.  This display is configurable to show all the time, every minute, every 2 minutes, 4 minutes or 8 minutes.  The weather can update every 20 minutes, or by clicking the LAP button, or both (this is configurable).  Weather information provided by GPS.  If precipitation is 50% chance or greater for a weather forecast, the forecast row will be a <span class="badge rounded-pill bg-z2"> Blue </span> colour.  Weather condition icons automatically adjust depending on sunrise and sunset.</li>
+                      <li>Configurable colour of outlines in the display:  <span class="badge rounded-pill bg-bs5"> Grey </span> (Default), <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span>, <span class="badge rounded-pill bg-bs7"> Yellow </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-z7"> Pink </span></li>
+                      <li>Configurable position of all four circles, plus the extra data display.  That is, each primary metric can be moved to a different circle and the extra data display can be placed either top or bottom of screen.  There are currently 12 different combinations defined in App settings to choose from.</li>
+                      <li>Configurable display of 60 second rolling histograms for HeartRate, Power and/or Both.</li>
+                      <li><strong>In The Zone can only be used as a single field display in an Activity page</strong></li>  
+                    </ul>
+
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Screen Layouts:</p>
+                    <p>&nbsp;</p>                    
+
+                    <div>
+                      <div class="bd-example">
+                      <div id="carouselExampleCaptions" class="carousel slide col-3" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./docs/inthezone/images/carousel/1.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>1 PW / avPW / HR / avHR / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/2.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>2 Other / PW / avPW / HR / avHR</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/3.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>3 PW / HR / avPW / avHR / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/4.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>4 Other / PW / HR / avPW / avHR</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/5.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>5 HR / avHR / PW / avPW / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/6.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>6 Other / HR / avHR / PW / avPW</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/7.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>7 HR / PW / avHR / avPW / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/8.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>8 Other / HR / PW / avHR / avPW</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/9.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>9 avPW / avHR / PW / HR / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/10.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>10 Other / avPW / avHR / PW / HR</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/11.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>11 avHR / avPW / HR / PW / Other</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./docs/inthezone/images/carousel/12.jpg" class="" alt="" width="250" loading="lazy">
+                            <div class="carousel-cap-garm d-none d-md-block">
+                              <h6>12 Other / avHR / avPW / HR / PW</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                    </div>
+
+
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Heartrate Zones:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li>Are automatically retrieved from your Garmin profile, so please ensure they are setup correctly in your profile.</li>
+                      <li>If you are planning to display Power as Watts/KG, please also ensure you set your correct weight in your Garmin profile.</li>
+                      <li>The app displays the percentage your HR is within the respective zone.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Power Zones (Coggan - FTP based):</p>
+                    <p><a href="#powerzones">Power Zones</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Watt Prime (W') BALANCE:</p>
+                    <p><a href="#wattprime">Watt Prime</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
+                    <p><a href="#wattprimedecay">Watt Prime Decay</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Weather Details:</p>
+                    <p><a href="#weather">Weather</a></p>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="trainingpower">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Training Power</h4>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/4d0a6a24-400c-4589-ae10-fd26fe01b4ba">Connect IQ App Store</a>
+      </div>
+      <div>
+        <div class="bd-example">
+          <img src="./docs/TrainingPower/images/TrainingPower Cover Image.jpg" class="d-inline-block align-top img-fluid" alt="Training Power - Edge530" width="170" loading="lazy">
+          <img src="./docs/TrainingPower/images/TrainingPower Edge1030.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge1030" width="150" loading="lazy">&nbsp;
+          <img src="./docs/TrainingPower/images/TrainingPower Edge1000.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge1000" width="150" loading="lazy">&nbsp;
+          <img src="./docs/TrainingPower/images/TrainingPower Edge530 Circles Mode A Legend.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge530A" width="170" loading="lazy">&nbsp;
+          <img src="./docs/TrainingPower/images/TrainingPower Edge530 Circles Mode B Legend.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge530B" width="170" loading="lazy">&nbsp;
+          <img src="./docs/TrainingPower/images/TrainingPower Fenix6XPro.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Fenix6XPro" width="170" loading="lazy">
+         </div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordion2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Training Power
+                  </button>
+                </h4>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="accordion2" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>When I'm training I'm particularly focussed on monitoring Power and ensuring I'm sitting in particular zones. I wanted a single data field that could display everything I needed to know, related to power.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li><p class="h6">This data field requires a power meter and cadence sensor to be connected to your Garmin device.</p></li>
+                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
+                      <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
+                    </ul>       
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p class="h6">(Depending on device and screen configuration)</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li><a href="#appsettings">App Settings</a> can be set directly on the device (for supported devices) - no need to use your Phone or Garmin Express to update Settings</li>
+                      <li>Display certain metrics as Bars (default) or Circles.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</li>
+                      <li><a href="#battstatus">Battery Status</a> indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6)</li>
+                      <li>Current Power Watts (with a configurable 1-30 second moving average)</li>
+                      <li>Average Power, Strava Weighted Average (SWA) Power, or Normalized Power (NP) (option to also display as W/Kg).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS), but only in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030) in Circles mode.</li>
+                      <li><a href="#wattprime">Watt Prime Balance</a> (See below)</li>
+                      <li><a href="#powerzones">Power Zone</a> (See below)</li>
+                      <li>Average Power Zone (See below)</li>
+                      <li>Cadence (RPM)</li>
+                      <li>Average cadence (RPM)</li>
+                      <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
+                      <li>Gradient %</li>
+                      <li>Rear Cassette gear (for supported devices). Front Chain Ring is also highlighted on Edge 530/830/1000/1030x devices in circles display mode.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">POWER ZONES (Coggan - FTP based):</p>
+                    <p><a href="#powerzones">Power Zones</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Watt Prime (W') BALANCE:</p>
+                    <p><a href="#wattprime">Watt Prime</a></p>                    
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
+                    <p><a href="#wattprimedecay">Watt Prime Decay</a></p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">TrainingPower is designed to be used in two-field screen layouts with my other App - TrainingHR.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="traininghr">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Training HR</h4>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/6397a4a3-b2d1-4b0e-ac18-145b07fb0a31">Connect IQ App Store</a>
+      </div>
+      <div>
+        <div class="bd-example">
+          <img src="./docs/TrainingHR/images/Edge530.jpg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge530" width="170" loading="lazy">&nbsp;
+          <img src="./docs/TrainingHR/images/Edge530 legend.jpeg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge530 Legend" width="170" loading="lazy">&nbsp;
+          <img src="./docs/TrainingHR/images/Edge1030 trHR.jpeg" class="d-inline-block align-top img-fluid" alt="Training HR - Edge1030" width="150" loading="lazy">&nbsp; 
+          <img src="./docs/TrainingHR/images/Fenix5 trHR.jpeg" class="d-inline-block align-top img-fluid" alt="Training HR - Fenix5+ Legend" width="170" loading="lazy">
+        </div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordion3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    Training HR
+                  </button>
+                </h4>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="accordion3" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>When I'm Base Training I'm very focussed on monitoring Heart Rate and ensuring I'm sitting in particular zones. I wanted a single datafield that could display everything I needed to know, related to Heart Rate - that being: HR, HR zone and where I am in that zone, average HR, Average HR zone and Max HR.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Requirements:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">The data field has been optimised for full-width display on Garmin Edge type devices.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Circles or Bars?:</p>
+                    <p>&nbsp;</p>                    
+                    <p>There is a configuration option in the App Settings that will display the HR zone range and Average HR Zone range as circles instead of the default bars, as per the screen shots.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Information Displayed:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li><a href="#appsettings">App Settings</a> can be set directly on the device (for supported devices) - no need to use your Phone or Garmin Express to update Settings</li>
+                      <li>Heart Rate (BPM)</li>
+                      <li>HR Zone (see below)</li>
+                      <li>Maximum HR (during this activity)</li>
+                      <li>Average HR (BPM)</li>
+                      <li>Average HR Zone (as per HR Zones note, below)</li>
+                      <li>Time of Day (available in larger screen configurations)</li>
+                      <li>Elapsed Time (available in larger screen configurations)</li>
+                      <li>Rolling 60 second HR Histogram (Available for Edge 130/130+/530/830/1030x/1000 devices)</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Garmin Profile?:</p>
+                    <p>&nbsp;</p>                    
+                    <p>An App Setting lets you choose whether you want to use the HR Zone settings you've defined within your Garmin Profile OR the zones you define within the App Settings. If you choose your Garmin Profile there is no need to provide values for the HR Zones, LTHR, HRR, MaxHR and the Zone Type in the App Settings, you can leave these blank.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Heart Rate Zones:</p>
+                    <p>&nbsp;</p>                    
+                    <p>You can define up to 5 HR zones in the App Settings. The zones can be based on Lactate Threshold Heart Rate (LTHR), Maximum Heart Rate (MAXHR), or Heart Rate Reserve (HRR). You must choose which Target HR is the basis for your zones in the App Settings.</p>
+                    <p>&nbsp;</p>                    
+                    <p>The Zones will default to the standard Coggan zones, which you can adjust. Click <a href="#hrzones">here</a> for more information on the standard Coggan HR zones.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="radian">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Radian</h4>
+        <a class="d-flex align-items-center" href="https://apps.garmin.com/en-US/apps/1b19a80f-906c-4a5e-ba6e-57c193b61387">Connect IQ App Store</a>
+      </div>
+      <div>
+        <div class="bd-example">
+          <img src="./docs/Radian/images/Fenix6XPro 2.png" class="d-inline-block align-top img-fluid" alt="Radian - Fenix6XPro" width="170" loading="lazy">
+        </div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordion4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Radian
+                  </button>
+                </h4>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="accordion4" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>There are a lot of great watch faces on the Garmin app store and I have a few favourites. However, I couldn't find one that had everything I wanted, so I created this one. Key aspects:</p>
+                    
+                    <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
+                    
+                    <p>2) Displays a second hand if watch hardware permits (1hz). Second hand can be triggered to stop displaying by making it the same colour as watchface background.</p>
+                    
+                    <p>3) Displays 3 dials, one of which can be configured to display Calories (and percentage of calorie target), Altitude, or distance moved today, but also the ability to cycle between these three displays. Dial display cycle will occur every 20 seconds in full-power mode, or every minute in low-power mode. The gauge hand in the dials can be turned off by making it the same colour as the dial background colour.</p>
+                    
+                    <p>4) Can be configured to reduce data displayed when in "Do Not Disturb" mode, watch not being worn, or when HR is below resting heart rate (within 5%). By reducing data display in this way, battery life can be conserved during periods when the watch isn't in active use (like, when it's not on your wrist, or you might be asleep). Resting Heart rate comes from your Garmin profile, or if it is not set, then Max HR divided by 3. When configured to reduce display based on resting HR, if you're wearing the watch, your HR needs to be less than Resting HR + 5% for 5 or more minutes. If you're not wearing the watch its 30 seconds.</p>
+                    
+                    <p>5) There are 22 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in settings. Please be aware that colours on the watch face will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
+                    <p><img src="./docs/images/Garmin Colour pallette - 64.png" class="d-inline-block align-top img-fluid" alt="Garmin 64 Colour Pallette" width="300" loading="lazy"></p>
+
+                    <p>6) Displays a graph showing your steps history (from left to right, with left being yesterday and the next to the right being the day before yesterday, and so on). The graph highlights when your steps were above your goal for the day.</p>
+                    
+                    <p>7) Displays Floors climbed graphic as an ARC between 7 and 8 on the watch face. The display shows floors climbed as a percentage of goal. The number of floors climbed is also displayed in the Steps dial (above the steps count), once some floors have actually been climbed.</p>
+                    
+                    <p>8) Shows the current day number of the month as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    
+                    <p>9) The HR dial shows HR as well as percentage of maximum HR, if you've defined this in your Garmin profile or created any heart rate zones. if no maximum HR is set it will default to using the old standard "220 - your age", so long as your age is set in your Garmin profile.</p>
+                    
+                    <p>10) The steps dial shows steps as well as percentage of steps goal.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">NOTES:</p>
+                    <p>&nbsp;</p>          
+                    <ul>
+                      <li>All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the battery saving functions.</li>
+                      <li>If after updating from an earlier release of this watch face it stops working, please uninstall and install again.</li>
+                      <li>If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device.</li>
+                    </ul>          
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+  </section>
+  <section id="defs">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Definitions</h2>
+    <article class="my-3" id="appsettings">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>App Settings</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionas">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseas" aria-expanded="false" aria-controls="collapseas">
+                    In App Settings
+                  </button>
+                </h4>
+                <div id="collapseas" class="accordion-collapse collapse" aria-labelledby="accordionas" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>In App Settings</strong>
+                    <p>&nbsp;</p>                    
+                    <p>InTheZone, TrainingPower and TrainingHR all support In App Settings, which is a way to update app settings directly on the device without using Garmin Express or a Phone.  Not all devices support this feature - it depends on Garmin's rollout of firmware.  However, if your device does support it, you can access it with the following steps:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Edge Device Settings</p>
+                    <ol>
+                      <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, press the top-right button.</li>
+                      <li>In the menu of options that appears, scroll down till you see "Data Fields".</li>
+                      <li>Press the top-right button on your device, or touch the "Data Fields" menu option on a touch screen device.</li>
+                      <li>Scroll down to "Connect IQ Datafields" and choose the App you want to edit settings for.</li>
+                    </ol>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Watch Device Settings</p>
+                    <ol>
+                      <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, Long press the Menu (scroll-up) button.</li>
+                      <li>In the menu of options that appears, scroll down till you see "ConnectIQ Fields" then select it.</li>
+                      <li>Choose the App you want to edit settings for.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="powerzones">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Power Zones</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionpz">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsepz" aria-expanded="false" aria-controls="collapsepz">
+                    Power Zones
+                  </button>
+                </h4>
+                <div id="collapsepz" class="accordion-collapse collapse" aria-labelledby="accordionpz" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Power Zones (Coggan - FTP based)</strong>
+                    <p>&nbsp;</p>         
+                    <p>Use the following table to experiment with Power Zones.  Update your FTP and Weight in the two fields at the top of the table and then click the Calculate button below the table.  You can also change each Power Zone start and End percentages and see the impact.</p>
+                    <p>&nbsp;</p>         
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="ftp" placeholder="200" maxlength=6 value="200">
+                      <label for="ftp">FTP (Watts)</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="weight" placeholder="80.0" maxlength=6 value="80.0">
+                      <label for="weight">Weight (Kg)</label>
+                    </div>
+                    <div class="bd-example">
+                      <table class="table table-striped" id="powerZoneTable">
+                        <thead>
+                        <tr>
+                          <th scope="col">Power Zone</th>
+                          <th scope="col">Zone</th>
+                          <th scope="col">Zone Start%</th>
+                          <th scope="col">Zone End%</th>
+                          <th scope="col">Watts Start</th>
+                          <th scope="col">Watts End</th>
+                          <th scope="col">W/Kg Start</th>
+                          <th scope="col">W/Kg End</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
+                            <td zone-data="z1">Z1</td>
+                            <td><input type="text" id="z1ps" maxlength=4 size=6 value="0">%</td>
+                            <td><input type="text" id="z1pe" maxlength=4 size=6 value="55">%</td>
+                            <td id="z1ws">0</td>
+                            <td id="z1we">0</td>
+                            <td id="z1wks">0</td>
+                            <td id="z1wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
+                            <td zone-data="z2">Z2</td>
+                            <td><input type="text" id="z2ps" maxlength=4 size=6 value="56">%</td>
+                            <td><input type="text" id="z2pe" maxlength=4 size=6 value="75">%</td>
+                            <td id="z2ws">0</td>
+                            <td id="z2we">0</td>
+                            <td id="z2wks">0</td>
+                            <td id="z2wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
+                            <td zone-data="z3">Z3</td>
+                            <td><input type="text" id="z3ps" maxlength=4 size=6 value="76">%</td>
+                            <td><input type="text" id="z3pe" maxlength=4 size=6 value="90">%</td>
+                            <td id="z3ws">0</td>
+                            <td id="z3we">0</td>
+                            <td id="z3wks">0</td>
+                            <td id="z3wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
+                            <td zone-data="z4">Z4</td>
+                            <td><input type="text" id="z4ps" maxlength=4 size=6 value="91">%</td>
+                            <td><input type="text" id="z4pe" maxlength=4 size=6 value="105">%</td>
+                            <td id="z4ws">0</td>
+                            <td id="z4we">0</td>
+                            <td id="z4wks">0</td>
+                            <td id="z4wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill bg-z4">Sweet Spot</span></th>
+                            <td zone-data="z4a">Sweet Spot</td>
+                            <td><input type="text" id="z4aps" maxlength=4 size=6 value="88">%</td>
+                            <td><input type="text" id="z4ape" maxlength=4 size=6 value="93">%</td>
+                            <td id="z4aws">0</td>
+                            <td id="z4awe">0</td>
+                            <td id="z4awks">0</td>
+                            <td id="z4awke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
+                            <td zone-data="z5">Z5</td>
+                            <td><input type="text" id="z5ps" maxlength=4 size=6 value="106">%</td>
+                            <td><input type="text" id="z5pe" maxlength=4 size=6 value="120">%</td>
+                            <td id="z5ws">0</td>
+                            <td id="z5we">0</td>
+                            <td id="z5wks">0</td>
+                            <td id="z5wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z6">Anaerobic</span></th>
+                            <td zone-data="z6">Z6</td>
+                            <td><input type="text" id="z6ps" maxlength=4 size=6 value="121">%</td>
+                            <td><input type="text" id="z6pe" maxlength=4 size=6 value="150">%</td>
+                            <td id="z6ws">0</td>
+                            <td id="z6we">0</td>
+                            <td id="z6wks">0</td>
+                            <td id="z6wke">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z7">Neuromuscular</span></th>
+                            <td zone-data="z7">Z7</td>
+                            <td><input type="text" id="z7ps" maxlength=4 size=6 value="151">%</td>
+                            <td><input type="text" id="z7pe" maxlength=4 size=6 value="600"> MAX%</td>
+                            <td id="z7ws">0</td>
+                            <td id="z7we">0</td>
+                            <td id="z7wks">0</td>
+                            <td id="z7wke">0</td>
+                          </tr>
+                         </tbody>
+                      </table>
+                      <button type="button" id="pCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
+                      </div>        
+                    <p>&nbsp;</p>                    
+                    <p class="h6">Z2 - Z7 are configurable in the App (MAX is continuously calculated during an Activity).  The app displays the percentage your power is within the respective zone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="hrzones">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Heart Rate Zones</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionhrz">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehrz" aria-expanded="false" aria-controls="collapsehrz">
+                    Heart Rate Zones
+                  </button>
+                </h4>
+                <div id="collapsehrz" class="accordion-collapse collapse" aria-labelledby="accordionhrz" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Heart Rate Zones (Coggan)</strong>
+                    <p>&nbsp;</p>         
+                    <p>Use the following table to experiment with Heart Rate Zones.  Update your source HR (LTHR, MAXHR, HRR), below then click the Calculate button below the table.  You can also change each Heart Rate Zone start and End percentages and see the impact.</p>
+                    <p>&nbsp;</p>         
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="hrftp" placeholder="161" maxlength=6 value="161">
+                      <label for="hrftp">Source HR:  LTHR, MAXHR or HRR</label>
+                    </div>
+                    <p>LTHR = Lactate Threshold Heart Rate; MAXHR = Maximum Heart Rate; HRR = Heart Rate Reserve (based on Resting HR).</p>
+                    <p>&nbsp;</p>         
+                    <div class="bd-example">
+                      <table class="table table-striped" id="hrZoneTable">
+                        <thead>
+                        <tr>
+                          <th scope="col">Heart Rate Zone</th>
+                          <th scope="col">Zone</th>
+                          <th scope="col">Zone Start%</th>
+                          <th scope="col">Zone End%</th>
+                          <th scope="col">HR Start</th>
+                          <th scope="col">HR End</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
+                            <td zone-data="z1">Z1</td>
+                            <td><input type="text" id="z1hrps" maxlength=4 size=6 value="0">%</td>
+                            <td><input type="text" id="z1hrpe" maxlength=4 size=6 value="67">%</td>
+                            <td id="z1hrs">0</td>
+                            <td id="z1hre">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
+                            <td zone-data="z2">Z2</td>
+                            <td><input type="text" id="z2hrps" maxlength=4 size=6 value="68">%</td>
+                            <td><input type="text" id="z2hrpe" maxlength=4 size=6 value="83">%</td>
+                            <td id="z2hrs">0</td>
+                            <td id="z2hre">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
+                            <td zone-data="z3">Z3</td>
+                            <td><input type="text" id="z3hrps" maxlength=4 size=6 value="84">%</td>
+                            <td><input type="text" id="z3hrpe" maxlength=4 size=6 value="94">%</td>
+                            <td id="z3hrs">0</td>
+                            <td id="z3hre">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
+                            <td zone-data="z4">Z4</td>
+                            <td><input type="text" id="z4hrps" maxlength=4 size=6 value="95">%</td>
+                            <td><input type="text" id="z4hrpe" maxlength=4 size=6 value="105">%</td>
+                            <td id="z4hrs">0</td>
+                            <td id="z4hre">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
+                            <td zone-data="z5">Z5</td>
+                            <td><input type="text" id="z5hrps" maxlength=4 size=6 value="106">%</td>
+                            <td><input type="text" id="z5hrpe" maxlength=4 size=6 value="125"> MAX%</td>
+                            <td id="z5hrs">0</td>
+                            <td id="z5hre">0</td>
+                          </tr>
+                         </tbody>
+                      </table>
+                      <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
+                      <script type="text/javascript">
+                        $(function(){
+                          $('#pCalcButton').click(function(){
+                            $('#powerZoneTable td').each(function(){
+                              if ($(this).attr('zone-data')){
+                                ob = $(this).attr('zone-data');
+                                $("#"+ob+"ws").text(Math.floor($("#ftp").val() * ($("#"+ob+"ps").val() / 100)));
+                                $("#"+ob+"we").text(Math.floor($("#ftp").val() * ($("#"+ob+"pe").val() / 100)));
+                                $("#"+ob+"wks").text(($("#"+ob+"ws").text() / $("#weight").val()).toFixed(2));
+                                $("#"+ob+"wke").text(($('#'+ob+"we").text() / $("#weight").val()).toFixed(2));
+                              }
+                            });
+                          });
+                          $('#hrCalcButton').click(function(){
+                            $('#hrZoneTable td').each(function(){
+                              if ($(this).attr('zone-data')){
+                                ob = $(this).attr('zone-data');
+                                $("#"+ob+"hrs").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrps").val() / 100)));
+                                $("#"+ob+"hre").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrpe").val() / 100)));
+                              }
+                            });
+                          });
+                          $("#pCalcButton").trigger("click");
+                          $("#hrCalcButton").trigger("click");
+                        });
+                      </script>
+                    </div>        
+                    <p>&nbsp;</p>                    
+                    <p class="h6">Z2 - Z5 are configurable in the App (MAX is continuously calculated during an Activity).  The app displays the percentage your HR is within the respective zone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="averagepower">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Average Power</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionavp">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavp" aria-expanded="false" aria-controls="collapseavp">
+                    Average Power
+                  </button>
+                </h4>
+                <div id="collapseavp" class="accordion-collapse collapse" aria-labelledby="accordionavp" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Average Power</strong>
+                    <p>&nbsp;</p>                    
+                    <ul>  
+                      <li>Standard Average Power (from Garmin Activity Information)</li>
+                      <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
+                      <li>Normalized Power (NP or isoPower).  <strong>NOTE:</strong>&nbsp;&nbsp;NP starts showing from 60 seconds into an Activity.  <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a></li>
+                    </ul>  
+                    <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).</p>
+                    <p>&nbsp;</p>                    
+                    <p><a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="wattprime">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Watt Prime</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionwp">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewp" aria-expanded="false" aria-controls="collapsewp">
+                    Watt Prime Balance
+                  </button>
+                </h4>
+                <div id="collapsewp" class="accordion-collapse collapse" aria-labelledby="accordionwp" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Watt Prime (W') Balance</strong>
+                    <p>&nbsp;</p>                    
+                    <p>An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke, which recovers faster when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in App Settings.</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li>The Watt Prime circle will display in <span class="badge rounded-pill bg-z2"> Blue </span> for values 50-100%, <span class="badge rounded-pill bg-z4"> Orange </span> for values 20-50% and <span class="badge rounded-pill bg-z5"> Red </span> for values less than 20%.</li>
+                      <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill bg-z7"> Purple </span>.</li>
+                      <li>Set W Prime to zero in App Settings if not required.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="wattprimedecay">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Watt Prime Decay</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionwpd">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewpd" aria-expanded="false" aria-controls="collapsewpd">
+                    Watt Prime Decay
+                  </button>
+                </h4>
+                <div id="collapsewpd" class="accordion-collapse collapse" aria-labelledby="accordionwpd" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Watt Prime (W') Decay</strong>
+                    <p>&nbsp;</p>                    
+                    <p>Just as your fitness fades over time when you haven't been exercising, so too does your W Prime.</p>
+                    <p>&nbsp;</p>                    
+                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings).</p>
+                    <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="battstatus">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Battery Status</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionbs">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebs" aria-expanded="false" aria-controls="collapsebs">
+                    Battery Status Indicator
+                  </button>
+                </h4>
+                <div id="collapsebs" class="accordion-collapse collapse" aria-labelledby="accordionbs" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Battery Status Indicator</strong>
+                    <p>&nbsp;</p>                    
+                    <p>The Battery level of the device is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
+                    <p>&nbsp;</p>                    
+                    <img src="./docs/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
+                    <p>&nbsp;</p>                    
+                    <ul>
+                      <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs2">Blue</span> 50-75%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span>20-50%</li>
+                      <li><span class="badge rounded-pill pill-width bg-bs4">Red</span>less than 20%</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">How much battery power does TrainingPower, TrainingHR and InTheZone consume?</p>
+                    <p>&nbsp;</p>                    
+                    <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.</p>
+                    <p>All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps (in order listed) to reduce the processing and therefore battery power required to run the App:</p>
+                    <ol>
+                      <li>Turn off display of the Histograms (both Power and HR).  In The Zone:  Set Histograms to "No Histograms".  TrainingHR:  Set "Display HR Histogram?" to "No".</li>
+                      <li>Turn off Weather display (only applicable to In The Zone).  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
+                      <li>Turn off W Prime calculation.  In App Settings (In The Zone and Training Power) set the W Prime (J) setting to "0".</li>
+                      <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
+                      <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="my-3" id="weather">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h4>Weather</h4>
+      </div>
+      <div>
+        <article class="my-3" id="accordion">
+          <div>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="accordionw">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsew" aria-expanded="false" aria-controls="collapsew">
+                    Weather
+                  </button>
+                </h4>
+                <div id="collapsew" class="accordion-collapse collapse" aria-labelledby="accordionw" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Apps Displaying Weather Details (currently only InTheZone)</strong>
+                    <p>&nbsp;</p>         
+                    <p><strong>NOTE:</strong>&nbsp;&nbsp;Unless you have Show Weather set to "Always", the weather will not begin to display until the Activity timer has started.  Also note, if Show Weather is set to anything other than "Never" or "Always" AND you have Update Weather set to "On LAP Press" then Weather will not be displayed until you press the LAP button.</p>
+                    <p>&nbsp;</p>         
+                    <strong>Wind Direction:</strong>
+                    <p>&nbsp;</p>         
+                    <p>The App will display the current Wind Speed (in km/h or miles/hr depending on your Garmin Profile) and diection by showing a compass arrow indicating the direction the Wind is blowing from.</p>           
+                    <div class="bd-example">
+                      <table class="table table-striped">
+                        <thead>
+                        <tr>
+                          <th scope="col">Compass Point</th>
+                          <th scope="col">Wind Direction</th>
+                          <th scope="col">Icon Displayed</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">North (N)</th>
+                            <td>Wind blowing from the North</td>
+                            <td><div class="icon comp-icon">c</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">North East (NE)</th>
+                            <td>Wind blowing from the North East</td>
+                            <td><div class="icon comp-icon">g</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">East (E)</th>
+                            <td>Wind blowing from the East</td>
+                            <td><div class="icon comp-icon">a</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">South East (SE)</th>
+                            <td>Wind blowing from the South East</td>
+                            <td><div class="icon comp-icon">h</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">South (S)</th>
+                            <td>Wind blowing from the South</td>
+                            <td><div class="icon comp-icon">d</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">South West (SW)</th>
+                            <td>Wind blowing from the South West</td>
+                            <td><div class="icon comp-icon">f</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">West (W)</th>
+                            <td>Wind blowing from the West</td>
+                            <td><div class="icon comp-icon">b</div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">North West (NW)</th>
+                            <td>Wind blowing from the North< West/td>
+                            <td><div class="icon comp-icon">e</div></td>
+                           </tr>
+                         </tbody>
+                      </table>
+                    </div>        
+                    <p>&nbsp;</p>                    
+                    <strong>Garmin Weather Conditions:</strong>
+                    <p>&nbsp;</p>                    
+                    <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
+                    <p>&nbsp;</p>                    
+                    <div class="bd-example">
+                      <table class="table table-striped">
+                        <thead>
+                        <tr>
+                          <th scope="col">Garmin ID</th>
+                          <th scope="col">Weather Condition</th>
+                          <th scope="col">Day Time Icon</th>
+                          <th scope="col">Night Time Icon</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">0</th>
+                            <td>Clear</td>
+                            <td><div data-icon="/" class="icon"></div></td>
+                            <td><div data-icon="+" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">1</th>
+                            <td>Partly cloudy</td>
+                            <td><div data-icon="4" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">2</th>
+                            <td>Mostly cloudy</td>
+                            <td><div data-icon="3" class="icon"></div></td>
+                            <td><div data-icon="2" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">3</th>
+                            <td>Rain</td>
+                            <td><div data-icon="L" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">4</th>
+                            <td>Snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">5</th>
+                            <td>Windy</td>
+                            <td><div data-icon="Z" class="icon"></div></td>
+                            <td><div data-icon="Y" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">6</th>
+                            <td>Thunderstorms</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">7</th>
+                            <td>Wintry mix</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">8</th>
+                            <td>Fog</td>
+                            <td><div data-icon="m" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">9</th>
+                            <td>Hazy</td>
+                            <td><div data-icon="n" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">10</th>
+                            <td>Hail</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">11</th>
+                            <td>Scattered showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">12</th>
+                            <td>Scattered thunderstorms</td>
+                            <td><div data-icon="y" class="icon"></div></td>
+                            <td><div data-icon="x" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">13</th>
+                            <td>Unknown precipitation</td>
+                            <td><div data-icon="{" class="icon"></div></td>
+                            <td><div data-icon="{" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">14</th>
+                            <td>Light rain</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">15</th>
+                            <td>Heavy rain</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">16</th>
+                            <td>Light snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">17</th>
+                            <td>Heavy snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">18</th>
+                            <td>Light rain snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">19</th>
+                            <td>Heavy rain snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">20</th>
+                            <td>Cloudy</td>
+                            <td><div data-icon="1" class="icon"></div></td>
+                            <td><div data-icon="1" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">21</th>
+                            <td>Rain snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">22</th>
+                            <td>Partly clear</td>
+                            <td><div data-icon="S" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">23</th>
+                            <td>Mostly clear</td>
+                            <td><div data-icon="R" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">24</th>
+                            <td>Light showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">25</th>
+                            <td>Showers</td>
+                            <td><div data-icon="F" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">26</th>
+                            <td>Heavy showers</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">27</th>
+                            <td>Chance of showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">28</th>
+                            <td>Chance of thunderstorms</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">29</th>
+                            <td>Mist</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">30</th>
+                            <td>Dust</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">31</th>
+                            <td>Drizzle</td>
+                            <td><div data-icon="h" class="icon"></div></td>
+                            <td><div data-icon="g" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">32</th>
+                            <td>Tornado</td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">33</th>
+                            <td>Smoke</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">34</th>
+                            <td>Ice</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">35</th>
+                            <td>Sand</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">36</th>
+                            <td>Squall</td>
+                            <td><div data-icon="W" class="icon"></div></td>
+                            <td><div data-icon="V" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">37</th>
+                            <td>Sandstorm</td>
+                            <td><div data-icon="0" class="icon"></div></td>
+                            <td><div data-icon="Y" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">38</th>
+                            <td>Volcanic ash</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">39</th>
+                            <td>Haze</td>
+                            <td><div data-icon="n" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">40</th>
+                            <td>Fair</td>
+                            <td><div data-icon="3" class="icon"></div></td>
+                            <td><div data-icon="2" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">41</th>
+                            <td>Hurricane</td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">42</th>
+                            <td>Tropical storm</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">43</th>
+                            <td>Chance of snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">44</th>
+                            <td>Chance of rain snow</td>
+                            <td><div data-icon="Q" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">45</th>
+                            <td>Cloudy chance of rain</td>
+                            <td><div data-icon="L" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">46</th>
+                            <td>Cloudy chance of snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">47</th>
+                            <td>Cloudy chance of rain snow</td>
+                            <td><div data-icon="Q" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">48</th>
+                            <td>Flurries</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">49</th>
+                            <td>Freezing rain</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">50</th>
+                            <td>Sleet</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">51</th>
+                            <td>Ice snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">52</th>
+                            <td>Thin clouds</td>
+                            <td><div data-icon="R" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                           </tr>
+                           <tr>
+                            <th scope="row">53</th>
+                            <td>Unknown</td>
+                            <td><div data-icon="" class="icon"></div></td>
+                            <td><div data-icon="" class="icon"></div></td>
+                           </tr>                        
+                          </tbody>
+                      </table>
+                      </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+  </section>
+</div>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./docs/js/cheatsheet.js"></script>
+</body>
+</html>
