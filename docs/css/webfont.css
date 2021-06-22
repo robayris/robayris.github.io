@@ -48,6 +48,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
 [class^="diw-"]:before,
 [class*=" diw-"]:before {
   font-family: "dripicons-weather" !important;
@@ -60,7 +61,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*
+
 .diw-cloud:before {
   content: "a";
 }
