@@ -3848,7 +3848,7 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: block;
+/*  display: block;*/
   padding: 0.5rem 1rem;
   color: #ffc800;
   text-decoration: none;
