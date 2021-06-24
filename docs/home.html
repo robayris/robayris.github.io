@@ -26,9 +26,8 @@
   </head>
   <body id="page-top" data-spy="scroll" data-target="#mainNav">
 
-<!--    <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">-->
     <!-- Navigation-->
-    <nav class="bd-header navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#page-top"><img src="/docs/images/mullard_el34.png" height="100px" alt="robayris.github.io" /></a>&nbsp;<h6 class="section-subheading fst-italic text-white-50">robayris.github.io</h6>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +44,13 @@
         </div>
     </nav>
 
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+          <div class="masthead-subheading text-uppercase">Connect IQ App Documentation & Settings</div>
+        </div>
+    </header>
+  
     <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
         <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
         <nav class="small" id="toc">
@@ -66,34 +72,34 @@
         </nav>
     </aside>
       
-    <div class="bd-cheatsheet container-fluid bg-body">
+    <div class="bd-cheatsheet container-fluid bg-body bg-light">
 
         <section id="documentation">
 
             <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Documentation</h2>
 
             <article class="my-3" id="appsettings">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>In App Settings</h5>
-            </div>
-            <div>
-                <p>InTheZone, TrainingPower and TrainingHR all support In App Settings, which is a way to update app settings directly on the device without using Garmin Express or a Phone.  Not all devices support this feature - it depends on Garmin's rollout of firmware.  However, if your device does support it, you can access it with the following steps:</p>
-                <p>&nbsp;</p>                    
-                <p class="h5">Accessing Edge Device Settings</p>
-                <ol>
-                    <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, press the top-right button.</li>
-                    <li>In the menu of options that appears, scroll down till you see "Data Fields".</li>
-                    <li>Press the top-right button on your device, or touch the "Data Fields" menu option on a touch screen device.</li>
-                    <li>Scroll down to "Connect IQ Datafields" and choose the App you want to edit settings for.</li>
-                </ol>
-                <p>&nbsp;</p>                    
-                <p class="h5">Accessing Watch Device Settings</p>
-                <ol>
-                    <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, Long press the Menu (scroll-up) button.</li>
-                    <li>In the menu of options that appears, scroll down till you see "ConnectIQ Fields" then select it.</li>
-                    <li>Choose the App you want to edit settings for.</li>
-                </ol>
-            </div>
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>In App Settings</h5>
+                </div>
+                <div>
+                    <p>InTheZone, TrainingPower and TrainingHR all support In App Settings, which is a way to update app settings directly on the device without using Garmin Express or a Phone.  Not all devices support this feature - it depends on Garmin's rollout of firmware.  However, if your device does support it, you can access it with the following steps:</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Edge Device Settings</p>
+                    <ol>
+                        <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, press the top-right button.</li>
+                        <li>In the menu of options that appears, scroll down till you see "Data Fields".</li>
+                        <li>Press the top-right button on your device, or touch the "Data Fields" menu option on a touch screen device.</li>
+                        <li>Scroll down to "Connect IQ Datafields" and choose the App you want to edit settings for.</li>
+                    </ol>
+                    <p>&nbsp;</p>                    
+                    <p class="h5">Accessing Watch Device Settings</p>
+                    <ol>
+                        <li>With one of the Apps (InTheZone, TrainingPower or TrainingHR) displayed on the screen, Long press the Menu (scroll-up) button.</li>
+                        <li>In the menu of options that appears, scroll down till you see "ConnectIQ Fields" then select it.</li>
+                        <li>Choose the App you want to edit settings for.</li>
+                    </ol>
+                </div>
             </article>
 
             <article class="my-3" id="powerzones">
@@ -318,492 +324,492 @@
             </article>
 
             <article class="my-3" id="averagepower">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>Average Power</h5>
-            </div>
-            <div>
-                <p>There are three Average Power calculations available:</p>          
-                <ul>  
-                <li>Standard Average Power (direct from the Garmin Activity Information)</li>
-                <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
-                <li>Normalized Power (NP or isoPower).  <strong>NOTE:</strong>&nbsp;&nbsp;NP starts showing from 60 seconds into an Activity. 
-                    <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a>
-                </li>
-                </ul>  
-                <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).
-                    <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a>
-                </p>
-            </div>
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>Average Power</h5>
+                </div>
+                <div>
+                    <p>There are three Average Power calculations available:</p>          
+                    <ul>  
+                        <li>Standard Average Power (direct from the Garmin Activity Information)</li>
+                        <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
+                        <li>Normalized Power (NP or isoPower).  <strong>NOTE:</strong>&nbsp;&nbsp;NP starts showing from 60 seconds into an Activity. 
+                            <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a>
+                        </li>
+                    </ul>  
+                    <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).
+                        <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a>
+                    </p>
+                </div>
             </article>
 
             <article class="my-3" id="wattprime">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>Watt Prime</h5>
-            </div>
-            <div>
-                <p>Watt Prime (W') Balance is a representation of the amount of critical energy you have remaining above FTP.  An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke, which recovers faster when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in App Settings.</p>
-                <p>&nbsp;</p>                    
-                <ul>
-                    <li>The Watt Prime circle will display in <span class="badge rounded-pill bg-z2"> Blue </span> for values 50-100%, <span class="badge rounded-pill bg-z4"> Orange </span> for values 20-50% and <span class="badge rounded-pill bg-z5"> Red </span> for values less than 20%.</li>
-                    <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill bg-z7"> Purple </span>.</li>
-                    <li>Set W Prime to zero in App Settings if not required.</li>
-                </ul>
-                <p>&nbsp;</p>                    
-                <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
-            </div>
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>Watt Prime</h5>
+                </div>
+                <div>
+                    <p>Watt Prime (W') Balance is a representation of the amount of critical energy you have remaining above FTP.  An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke, which recovers faster when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in App Settings.</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                        <li>The Watt Prime circle will display in <span class="badge rounded-pill bg-z2"> Blue </span> for values 50-100%, <span class="badge rounded-pill bg-z4"> Orange </span> for values 20-50% and <span class="badge rounded-pill bg-z5"> Red </span> for values less than 20%.</li>
+                        <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill bg-z7"> Purple </span>.</li>
+                        <li>Set W Prime to zero in App Settings if not required.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
+                </div>
             </article>
 
             <article class="my-3" id="wattprimedecay">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>Watt Prime Decay</h5>
-            </div>
-            <div>
-                <p>Just as your fitness fades over time when you haven't been exercising, so too does your W Prime.</p>
-                <p>&nbsp;</p>                    
-                <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings).</p>
-                <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
-            </div>
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>Watt Prime Decay</h5>
+                </div>
+                <div>
+                    <p>Just as your fitness fades over time when you haven't been exercising, so too does your W Prime.</p>
+                    <p>&nbsp;</p>                    
+                    <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings).</p>
+                    <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
+                </div>
             </article>
 
             <article class="my-3" id="battstatus">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>Battery Status Indicator</h5>
-            </div>
-            <div>
-                <p>The Battery level of the device is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
-                <p>&nbsp;</p>                    
-                <img src="/docs/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
-                <p>&nbsp;</p>                    
-                <ul>
-                <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
-                <li><span class="badge rounded-pill pill-width bg-bs2">Blue</span> 50-75%</li>
-                <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span> 20-50%</li>
-                <li><span class="badge rounded-pill pill-width bg-bs4">Red</span> less than 20%</li>
-                </ul>
-                <p>&nbsp;</p>                    
-                <p class="h6">How much battery power does TrainingPower, TrainingHR and InTheZone consume?</p>
-                <p>&nbsp;</p>                    
-                <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.</p>
-                <p>All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps (in order listed) to reduce the processing and therefore battery power required to run the App:</p>
-                <ol>
-                <li>Turn off display of the Histograms (both Power and HR).  In The Zone:  Set Histograms to "No Histograms".  TrainingHR:  Set "Display HR Histogram?" to "No".</li>
-                <li>Turn off Weather display (only applicable to In The Zone).  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
-                <li>Turn off W Prime calculation.  In App Settings (In The Zone and Training Power) set the W Prime (J) setting to "0".</li>
-                <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
-                <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
-                </ol>
-            </div>
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>Battery Status Indicator</h5>
+                </div>
+                <div>
+                    <p>The Battery level of the device is checked every 20 minutes and then every 5 mins once the level is below 10%</p>
+                    <p>&nbsp;</p>                    
+                    <img src="/docs/images/battery status icon.jpg" class="d-inline-block align-top img-fluid" alt="Device Battery Status" loading="lazy">
+                    <p>&nbsp;</p>                    
+                    <ul>
+                    <li><span class="badge rounded-pill pill-width bg-bs1">Green</span> 75-100%</li>
+                    <li><span class="badge rounded-pill pill-width bg-bs2">Blue</span> 50-75%</li>
+                    <li><span class="badge rounded-pill pill-width bg-bs3">Orange</span> 20-50%</li>
+                    <li><span class="badge rounded-pill pill-width bg-bs4">Red</span> less than 20%</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">How much battery power does TrainingPower, TrainingHR and InTheZone consume?</p>
+                    <p>&nbsp;</p>                    
+                    <p>Connect IQ apps are not written in the native language of a Garmin device.  They are built, compiled and run as "byte-code" within a Virtual Machine running on your device.  As such, Connect IQ devices tend to use more processing power, which leads to the consumption of more battery power.</p>
+                    <p>All of my Apps were built with a primary focus on reducing processing and therefore, power consumption.  However, some key aspects of the Apps do require considerable calculation and processing power to present all the features.  In practice, battery consumption also depends on a lot of external factors, such as prevailing temperature, existing charge state, battery and device age.  If you find the Apps to be consuming more battery than you might have expected, you can try the following steps (in order listed) to reduce the processing and therefore battery power required to run the App:</p>
+                    <ol>
+                    <li>Turn off display of the Histograms (both Power and HR).  In The Zone:  Set Histograms to "No Histograms".  TrainingHR:  Set "Display HR Histogram?" to "No".</li>
+                    <li>Turn off Weather display (only applicable to In The Zone).  This is achieved by setting "Show Weather" and "Update Weather" both to "NEVER".</li>
+                    <li>Turn off W Prime calculation.  In App Settings (In The Zone and Training Power) set the W Prime (J) setting to "0".</li>
+                    <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
+                    <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
+                    </ol>
+                </div>
             </article>
 
             <article class="my-3" id="weather">
-            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                <h5>Weather</h5>
-            </div>
-            <div>
-                <p>Apps Displaying Weather Details (currently only InTheZone)</p>
-                <p>&nbsp;</p>         
-                <p><strong>NOTE:</strong>&nbsp;&nbsp;Unless you have Show Weather set to "Always", the weather will not begin to display until the Activity timer has started.  Also note, if Show Weather is set to anything other than "Never" or "Always" AND you have Update Weather set to "On LAP Press" then Weather will not be displayed until you press the LAP button.</p>
-                <p>&nbsp;</p>         
-                <strong>Wind Direction:</strong>
-                <p>&nbsp;</p>         
-                <p>The App will display the current Wind Speed (in km/h or miles/hr depending on your Garmin Profile) and diection by showing a compass arrow indicating the direction the Wind is blowing from.</p>           
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h5>Weather</h5>
+                </div>
                 <div>
-                    <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">Compass Point</th>
-                        <th scope="col">Wind Direction</th>
-                        <th scope="col">Icon Displayed</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                    <p>Apps Displaying Weather Details (currently only InTheZone)</p>
+                    <p>&nbsp;</p>         
+                    <p><strong>NOTE:</strong>&nbsp;&nbsp;Unless you have Show Weather set to "Always", the weather will not begin to display until the Activity timer has started.  Also note, if Show Weather is set to anything other than "Never" or "Always" AND you have Update Weather set to "On LAP Press" then Weather will not be displayed until you press the LAP button.</p>
+                    <p>&nbsp;</p>         
+                    <strong>Wind Direction:</strong>
+                    <p>&nbsp;</p>         
+                    <p>The App will display the current Wind Speed (in km/h or miles/hr depending on your Garmin Profile) and diection by showing a compass arrow indicating the direction the Wind is blowing from.</p>           
+                    <div>
+                        <table class="table table-striped">
+                        <thead>
                         <tr>
-                        <th scope="row">North (N)</th>
-                        <td>Wind blowing from the North</td>
-                        <td><div class="icon comp-icon">c</div></td>
+                            <th scope="col">Compass Point</th>
+                            <th scope="col">Wind Direction</th>
+                            <th scope="col">Icon Displayed</th>
                         </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">North (N)</th>
+                            <td>Wind blowing from the North</td>
+                            <td><div class="icon comp-icon">c</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">North East (NE)</th>
+                            <td>Wind blowing from the North East</td>
+                            <td><div class="icon comp-icon">g</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">East (E)</th>
+                            <td>Wind blowing from the East</td>
+                            <td><div class="icon comp-icon">a</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">South East (SE)</th>
+                            <td>Wind blowing from the South East</td>
+                            <td><div class="icon comp-icon">h</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">South (S)</th>
+                            <td>Wind blowing from the South</td>
+                            <td><div class="icon comp-icon">d</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">South West (SW)</th>
+                            <td>Wind blowing from the South West</td>
+                            <td><div class="icon comp-icon">f</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">West (W)</th>
+                            <td>Wind blowing from the West</td>
+                            <td><div class="icon comp-icon">b</div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">North West (NW)</th>
+                            <td>Wind blowing from the North West</td>
+                            <td><div class="icon comp-icon">e</div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>        
+                    <p>&nbsp;</p>                    
+                    <strong>Garmin Weather Conditions:</strong>
+                    <p>&nbsp;</p>                    
+                    <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
+                    <p>&nbsp;</p>                    
+                    <div>
+                        <table class="table table-striped">
+                        <thead>
                         <tr>
-                        <th scope="row">North East (NE)</th>
-                        <td>Wind blowing from the North East</td>
-                        <td><div class="icon comp-icon">g</div></td>
+                            <th scope="col">Garmin ID</th>
+                            <th scope="col">Weather Condition</th>
+                            <th scope="col">Day Time Icon</th>
+                            <th scope="col">Night Time Icon</th>
                         </tr>
-                        <tr>
-                        <th scope="row">East (E)</th>
-                        <td>Wind blowing from the East</td>
-                        <td><div class="icon comp-icon">a</div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">South East (SE)</th>
-                        <td>Wind blowing from the South East</td>
-                        <td><div class="icon comp-icon">h</div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">South (S)</th>
-                        <td>Wind blowing from the South</td>
-                        <td><div class="icon comp-icon">d</div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">South West (SW)</th>
-                        <td>Wind blowing from the South West</td>
-                        <td><div class="icon comp-icon">f</div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">West (W)</th>
-                        <td>Wind blowing from the West</td>
-                        <td><div class="icon comp-icon">b</div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">North West (NW)</th>
-                        <td>Wind blowing from the North West</td>
-                        <td><div class="icon comp-icon">e</div></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>        
-                <p>&nbsp;</p>                    
-                <strong>Garmin Weather Conditions:</strong>
-                <p>&nbsp;</p>                    
-                <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
-                <p>&nbsp;</p>                    
-                <div>
-                    <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">Garmin ID</th>
-                        <th scope="col">Weather Condition</th>
-                        <th scope="col">Day Time Icon</th>
-                        <th scope="col">Night Time Icon</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">0</th>
-                        <td>Clear</td>
-                        <td><div data-icon="/" class="icon"></div></td>
-                        <td><div data-icon="+" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>Partly cloudy</td>
-                        <td><div data-icon="4" class="icon"></div></td>
-                        <td><div data-icon="A" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Mostly cloudy</td>
-                        <td><div data-icon="3" class="icon"></div></td>
-                        <td><div data-icon="2" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Rain</td>
-                        <td><div data-icon="L" class="icon"></div></td>
-                        <td><div data-icon="K" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">4</th>
-                        <td>Snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">5</th>
-                        <td>Windy</td>
-                        <td><div data-icon="Z" class="icon"></div></td>
-                        <td><div data-icon="Y" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">6</th>
-                        <td>Thunderstorms</td>
-                        <td><div data-icon="I" class="icon"></div></td>
-                        <td><div data-icon="H" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">7</th>
-                        <td>Wintry mix</td>
-                        <td><div data-icon="M" class="icon"></div></td>
-                        <td><div data-icon="K" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">8</th>
-                        <td>Fog</td>
-                        <td><div data-icon="m" class="icon"></div></td>
-                        <td><div data-icon="l" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">9</th>
-                        <td>Hazy</td>
-                        <td><div data-icon="n" class="icon"></div></td>
-                        <td><div data-icon="l" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">10</th>
-                        <td>Hail</td>
-                        <td><div data-icon="u" class="icon"></div></td>
-                        <td><div data-icon="t" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">11</th>
-                        <td>Scattered showers</td>
-                        <td><div data-icon="E" class="icon"></div></td>
-                        <td><div data-icon="D" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">12</th>
-                        <td>Scattered thunderstorms</td>
-                        <td><div data-icon="y" class="icon"></div></td>
-                        <td><div data-icon="x" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">13</th>
-                        <td>Unknown precipitation</td>
-                        <td><div data-icon="{" class="icon"></div></td>
-                        <td><div data-icon="{" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">14</th>
-                        <td>Light rain</td>
-                        <td><div data-icon="E" class="icon"></div></td>
-                        <td><div data-icon="D" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">15</th>
-                        <td>Heavy rain</td>
-                        <td><div data-icon="M" class="icon"></div></td>
-                        <td><div data-icon="K" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">16</th>
-                        <td>Light snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">17</th>
-                        <td>Heavy snow</td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">18</th>
-                        <td>Light rain snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">19</th>
-                        <td>Heavy rain snow</td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">20</th>
-                        <td>Cloudy</td>
-                        <td><div data-icon="1" class="icon"></div></td>
-                        <td><div data-icon="1" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">21</th>
-                        <td>Rain snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">22</th>
-                        <td>Partly clear</td>
-                        <td><div data-icon="S" class="icon"></div></td>
-                        <td><div data-icon="A" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">23</th>
-                        <td>Mostly clear</td>
-                        <td><div data-icon="R" class="icon"></div></td>
-                        <td><div data-icon="A" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">24</th>
-                        <td>Light showers</td>
-                        <td><div data-icon="E" class="icon"></div></td>
-                        <td><div data-icon="D" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">25</th>
-                        <td>Showers</td>
-                        <td><div data-icon="F" class="icon"></div></td>
-                        <td><div data-icon="D" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">26</th>
-                        <td>Heavy showers</td>
-                        <td><div data-icon="M" class="icon"></div></td>
-                        <td><div data-icon="K" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">27</th>
-                        <td>Chance of showers</td>
-                        <td><div data-icon="E" class="icon"></div></td>
-                        <td><div data-icon="D" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">28</th>
-                        <td>Chance of thunderstorms</td>
-                        <td><div data-icon="I" class="icon"></div></td>
-                        <td><div data-icon="H" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">29</th>
-                        <td>Mist</td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">30</th>
-                        <td>Dust</td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">31</th>
-                        <td>Drizzle</td>
-                        <td><div data-icon="h" class="icon"></div></td>
-                        <td><div data-icon="g" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">32</th>
-                        <td>Tornado</td>
-                        <td><div data-icon="^" class="icon"></div></td>
-                        <td><div data-icon="^" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">33</th>
-                        <td>Smoke</td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">34</th>
-                        <td>Ice</td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">35</th>
-                        <td>Sand</td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">36</th>
-                        <td>Squall</td>
-                        <td><div data-icon="W" class="icon"></div></td>
-                        <td><div data-icon="V" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">37</th>
-                        <td>Sandstorm</td>
-                        <td><div data-icon="0" class="icon"></div></td>
-                        <td><div data-icon="Y" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">38</th>
-                        <td>Volcanic ash</td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        <td><div data-icon="k" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">39</th>
-                        <td>Haze</td>
-                        <td><div data-icon="n" class="icon"></div></td>
-                        <td><div data-icon="l" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">40</th>
-                        <td>Fair</td>
-                        <td><div data-icon="3" class="icon"></div></td>
-                        <td><div data-icon="2" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">41</th>
-                        <td>Hurricane</td>
-                        <td><div data-icon="^" class="icon"></div></td>
-                        <td><div data-icon="^" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">42</th>
-                        <td>Tropical storm</td>
-                        <td><div data-icon="I" class="icon"></div></td>
-                        <td><div data-icon="H" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">43</th>
-                        <td>Chance of snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">44</th>
-                        <td>Chance of rain snow</td>
-                        <td><div data-icon="Q" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">45</th>
-                        <td>Cloudy chance of rain</td>
-                        <td><div data-icon="L" class="icon"></div></td>
-                        <td><div data-icon="K" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">46</th>
-                        <td>Cloudy chance of snow</td>
-                        <td><div data-icon="P" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">47</th>
-                        <td>Cloudy chance of rain snow</td>
-                        <td><div data-icon="Q" class="icon"></div></td>
-                        <td><div data-icon="O" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">48</th>
-                        <td>Flurries</td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">49</th>
-                        <td>Freezing rain</td>
-                        <td><div data-icon="u" class="icon"></div></td>
-                        <td><div data-icon="t" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">50</th>
-                        <td>Sleet</td>
-                        <td><div data-icon="u" class="icon"></div></td>
-                        <td><div data-icon="t" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">51</th>
-                        <td>Ice snow</td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        <td><div data-icon="." class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">52</th>
-                        <td>Thin clouds</td>
-                        <td><div data-icon="R" class="icon"></div></td>
-                        <td><div data-icon="A" class="icon"></div></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">53</th>
-                        <td>Unknown</td>
-                        <td><div data-icon="" class="icon"></div></td>
-                        <td><div data-icon="" class="icon"></div></td>
-                        </tr>                        
-                        </tbody>
-                    </table>
-                </div>          
-            </div>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">0</th>
+                            <td>Clear</td>
+                            <td><div data-icon="/" class="icon"></div></td>
+                            <td><div data-icon="+" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Partly cloudy</td>
+                            <td><div data-icon="4" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Mostly cloudy</td>
+                            <td><div data-icon="3" class="icon"></div></td>
+                            <td><div data-icon="2" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Rain</td>
+                            <td><div data-icon="L" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>Snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>Windy</td>
+                            <td><div data-icon="Z" class="icon"></div></td>
+                            <td><div data-icon="Y" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>Thunderstorms</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>Wintry mix</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>Fog</td>
+                            <td><div data-icon="m" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">9</th>
+                            <td>Hazy</td>
+                            <td><div data-icon="n" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">10</th>
+                            <td>Hail</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">11</th>
+                            <td>Scattered showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">12</th>
+                            <td>Scattered thunderstorms</td>
+                            <td><div data-icon="y" class="icon"></div></td>
+                            <td><div data-icon="x" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">13</th>
+                            <td>Unknown precipitation</td>
+                            <td><div data-icon="{" class="icon"></div></td>
+                            <td><div data-icon="{" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">14</th>
+                            <td>Light rain</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">15</th>
+                            <td>Heavy rain</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">16</th>
+                            <td>Light snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">17</th>
+                            <td>Heavy snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">18</th>
+                            <td>Light rain snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">19</th>
+                            <td>Heavy rain snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">20</th>
+                            <td>Cloudy</td>
+                            <td><div data-icon="1" class="icon"></div></td>
+                            <td><div data-icon="1" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">21</th>
+                            <td>Rain snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">22</th>
+                            <td>Partly clear</td>
+                            <td><div data-icon="S" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">23</th>
+                            <td>Mostly clear</td>
+                            <td><div data-icon="R" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">24</th>
+                            <td>Light showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">25</th>
+                            <td>Showers</td>
+                            <td><div data-icon="F" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">26</th>
+                            <td>Heavy showers</td>
+                            <td><div data-icon="M" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">27</th>
+                            <td>Chance of showers</td>
+                            <td><div data-icon="E" class="icon"></div></td>
+                            <td><div data-icon="D" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">28</th>
+                            <td>Chance of thunderstorms</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">29</th>
+                            <td>Mist</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">30</th>
+                            <td>Dust</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">31</th>
+                            <td>Drizzle</td>
+                            <td><div data-icon="h" class="icon"></div></td>
+                            <td><div data-icon="g" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">32</th>
+                            <td>Tornado</td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">33</th>
+                            <td>Smoke</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">34</th>
+                            <td>Ice</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">35</th>
+                            <td>Sand</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">36</th>
+                            <td>Squall</td>
+                            <td><div data-icon="W" class="icon"></div></td>
+                            <td><div data-icon="V" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">37</th>
+                            <td>Sandstorm</td>
+                            <td><div data-icon="0" class="icon"></div></td>
+                            <td><div data-icon="Y" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">38</th>
+                            <td>Volcanic ash</td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            <td><div data-icon="k" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">39</th>
+                            <td>Haze</td>
+                            <td><div data-icon="n" class="icon"></div></td>
+                            <td><div data-icon="l" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">40</th>
+                            <td>Fair</td>
+                            <td><div data-icon="3" class="icon"></div></td>
+                            <td><div data-icon="2" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">41</th>
+                            <td>Hurricane</td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            <td><div data-icon="^" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">42</th>
+                            <td>Tropical storm</td>
+                            <td><div data-icon="I" class="icon"></div></td>
+                            <td><div data-icon="H" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">43</th>
+                            <td>Chance of snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">44</th>
+                            <td>Chance of rain snow</td>
+                            <td><div data-icon="Q" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">45</th>
+                            <td>Cloudy chance of rain</td>
+                            <td><div data-icon="L" class="icon"></div></td>
+                            <td><div data-icon="K" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">46</th>
+                            <td>Cloudy chance of snow</td>
+                            <td><div data-icon="P" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">47</th>
+                            <td>Cloudy chance of rain snow</td>
+                            <td><div data-icon="Q" class="icon"></div></td>
+                            <td><div data-icon="O" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">48</th>
+                            <td>Flurries</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">49</th>
+                            <td>Freezing rain</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">50</th>
+                            <td>Sleet</td>
+                            <td><div data-icon="u" class="icon"></div></td>
+                            <td><div data-icon="t" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">51</th>
+                            <td>Ice snow</td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            <td><div data-icon="." class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">52</th>
+                            <td>Thin clouds</td>
+                            <td><div data-icon="R" class="icon"></div></td>
+                            <td><div data-icon="A" class="icon"></div></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">53</th>
+                            <td>Unknown</td>
+                            <td><div data-icon="" class="icon"></div></td>
+                            <td><div data-icon="" class="icon"></div></td>
+                            </tr>                        
+                            </tbody>
+                        </table>
+                    </div>          
+                </div>
             </article>
 
         </section>    
