@@ -3682,7 +3682,8 @@ textarea.form-control-lg {
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: #1e2125;
-  background-color: #e9ecef;
+  background-color: #ffc800;
+/*  background-color: #e9ecef;*/
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
@@ -3848,7 +3849,6 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-/*  display: block;*/
   padding: 0.5rem 1rem;
   color: #ffc800;
   text-decoration: none;
