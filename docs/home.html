@@ -23,24 +23,48 @@
     <script src="/docs/js/jquery-3.6.0.min.js"></script>
   </head>
   <body id="page-top" data-spy="scroll" data-target="#mainNav">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#page-top"><img src="/docs/images/mullard_el34.png" height="100px" alt="robayris.github.io" /></a>&nbsp;<h6 class="section-subheading fst-italic text-white-50">robayris.github.io</h6>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#portfolio">Connect IQ Apps</a></li>
-                <li class="nav-item"><a class="nav-link" href="#page-top">Documentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#about">About</a></li>
-            </ul>
+      
+    <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+          <!-- Navigation-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#page-top"><img src="/docs/images/mullard_el34.png" height="100px" alt="robayris.github.io" /></a>&nbsp;<h6 class="section-subheading fst-italic text-white-50">robayris.github.io</h6>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#portfolio">Connect IQ Apps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#page-top">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#about">About</a></li>
+                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-  
+        </nav>
+    </header>
+
+    <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+        <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+        <nav class="small" id="toc">
+          <ul class="list-unstyled">
+            <li class="my-2">
+              <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Documentation</button>
+              <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+                <li><a class="d-inline-flex align-items-center rounded" href="#appsettings">In App Settings</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#hrzones">Heart Rate Zones</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#averagepower">Average Power</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#wattprimedecay">Watt Prime Decay</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
+                <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </aside>
+      
     <div class="container-fluid bg-body">
 
         <section id="documentation">
