@@ -23,11 +23,31 @@
     <script src="/docs/js/jquery-3.6.0.min.js"></script>
   </head>
   <body id="page-top" data-spy="scroll" data-target="#mainNav">
-
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#page-top"><img src="/docs/images/mullard_el34.png" height="100px" alt="robayris.github.io" /></a>&nbsp;<h6 class="section-subheading fst-italic text-white-50">robayris.github.io</h6>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#portfolio">Connect IQ Apps</a></li>
+                <li class="nav-item"><a class="nav-link" href="#page-top">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://robayris.github.io/#about">About</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+  
     <div class="container-fluid bg-body">
+
         <section id="documentation">
-          <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Documentation</h2>
-          <article class="my-3" id="appsettings">
+
+            <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Documentation</h2>
+
+            <article class="my-3" id="appsettings">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>In App Settings</h5>
             </div>
@@ -51,9 +71,9 @@
                     <li>Choose the App you want to edit settings for.</li>
                 </ol>
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="powerzones">
+            <article class="my-3" id="powerzones">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Power Zones</h5>
             </div>
@@ -172,9 +192,9 @@
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is continuously calculated during an Activity).  The app displays the percentage your power is within the respective zone.</p>
                 </div>
             </div>    
-          </article>
+            </article>
 
-          <article class="my-3" id="hrzones">
+            <article class="my-3" id="hrzones">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Heart Rate Zones</h5>
             </div>
@@ -185,101 +205,101 @@
                 <p>Use the following table to experiment with Heart Rate Zones.  Update your source HR (LTHR, MAXHR, HRR), below then click the Calculate button below the table.  You can also change each Heart Rate Zone start and End percentages and see the impact.</p>
                 <p>&nbsp;</p>         
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="hrftp" placeholder="161" maxlength=6 value="161">
-                  <label for="hrftp">Source HR:  LTHR, MAXHR or HRR</label>
+                    <input type="text" class="form-control" id="hrftp" placeholder="161" maxlength=6 value="161">
+                    <label for="hrftp">Source HR:  LTHR, MAXHR or HRR</label>
                 </div>
                 <p>LTHR = Lactate Threshold Heart Rate; MAXHR = Maximum Heart Rate; HRR = Heart Rate Reserve (based on Resting HR).</p>
                 <p>&nbsp;</p>         
                 <div class="bd-example">
-                  <table class="table table-striped" id="hrZoneTable">
+                    <table class="table table-striped" id="hrZoneTable">
                     <thead>
                     <tr>
-                      <th scope="col">Heart Rate Zone</th>
-                      <th scope="col">Zone</th>
-                      <th scope="col">Zone Start%</th>
-                      <th scope="col">Zone End%</th>
-                      <th scope="col">HR Start</th>
-                      <th scope="col">HR End</th>
+                        <th scope="col">Heart Rate Zone</th>
+                        <th scope="col">Zone</th>
+                        <th scope="col">Zone Start%</th>
+                        <th scope="col">Zone End%</th>
+                        <th scope="col">HR Start</th>
+                        <th scope="col">HR End</th>
                     </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                        <tr>
                         <th scope="row"><span class="badge rounded-pill pillz-width bg-z1">Recovery</span></th>
                         <td zone-data="z1">Z1</td>
                         <td><input type="text" id="z1hrps" maxlength=4 size=6 value="0">%</td>
                         <td><input type="text" id="z1hrpe" maxlength=4 size=6 value="67">%</td>
                         <td id="z1hrs">0</td>
                         <td id="z1hre">0</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
                         <th scope="row"><span class="badge rounded-pill pillz-width bg-z2">Endurance</span></th>
                         <td zone-data="z2">Z2</td>
                         <td><input type="text" id="z2hrps" maxlength=4 size=6 value="68">%</td>
                         <td><input type="text" id="z2hrpe" maxlength=4 size=6 value="83">%</td>
                         <td id="z2hrs">0</td>
                         <td id="z2hre">0</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
                         <th scope="row"><span class="badge rounded-pill pillz-width bg-z3">Tempo</span></th>
                         <td zone-data="z3">Z3</td>
                         <td><input type="text" id="z3hrps" maxlength=4 size=6 value="84">%</td>
                         <td><input type="text" id="z3hrpe" maxlength=4 size=6 value="94">%</td>
                         <td id="z3hrs">0</td>
                         <td id="z3hre">0</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
                         <th scope="row"><span class="badge rounded-pill pillz-width bg-z4">Threshold</span></th>
                         <td zone-data="z4">Z4</td>
                         <td><input type="text" id="z4hrps" maxlength=4 size=6 value="95">%</td>
                         <td><input type="text" id="z4hrpe" maxlength=4 size=6 value="105">%</td>
                         <td id="z4hrs">0</td>
                         <td id="z4hre">0</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
                         <th scope="row"><span class="badge rounded-pill pillz-width bg-z5">Vo2Max</span></th>
                         <td zone-data="z5">Z5</td>
                         <td><input type="text" id="z5hrps" maxlength=4 size=6 value="106">%</td>
                         <td><input type="text" id="z5hrpe" maxlength=4 size=6 value="125"> MAX%</td>
                         <td id="z5hrs">0</td>
                         <td id="z5hre">0</td>
-                      </tr>
-                      </tbody>
-                  </table>
-                  <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
-                  <script type="text/javascript">
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
+                    <script type="text/javascript">
                     $(function(){
-                      $('#pCalcButton').click(function(){
+                        $('#pCalcButton').click(function(){
                         $('#powerZoneTable td').each(function(){
-                          if ($(this).attr('zone-data')){
+                            if ($(this).attr('zone-data')){
                             ob = $(this).attr('zone-data');
                             $("#"+ob+"ws").text(Math.floor($("#ftp").val() * ($("#"+ob+"ps").val() / 100)));
                             $("#"+ob+"we").text(Math.floor($("#ftp").val() * ($("#"+ob+"pe").val() / 100)));
                             $("#"+ob+"wks").text(($("#"+ob+"ws").text() / $("#weight").val()).toFixed(2));
                             $("#"+ob+"wke").text(($('#'+ob+"we").text() / $("#weight").val()).toFixed(2));
-                          }
+                            }
                         });
-                      });
-                      $('#hrCalcButton').click(function(){
+                        });
+                        $('#hrCalcButton').click(function(){
                         $('#hrZoneTable td').each(function(){
-                          if ($(this).attr('zone-data')){
+                            if ($(this).attr('zone-data')){
                             ob = $(this).attr('zone-data');
                             $("#"+ob+"hrs").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrps").val() / 100)));
                             $("#"+ob+"hre").text(Math.floor($("#hrftp").val() * ($("#"+ob+"hrpe").val() / 100)));
-                          }
+                            }
                         });
-                      });
-                      $("#pCalcButton").trigger("click");
-                      $("#hrCalcButton").trigger("click");
+                        });
+                        $("#pCalcButton").trigger("click");
+                        $("#hrCalcButton").trigger("click");
                     });
-                  </script>
+                    </script>
                 </div>        
                 <p>&nbsp;</p>                    
                 <p class="h6">Z2 - Z5 are configurable in the App (MAX is continuously calculated during an Activity).  The app displays the percentage your HR is within the respective zone.</p>                
 
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="averagepower">
+            <article class="my-3" id="averagepower">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Average Power</h5>
             </div>
@@ -298,9 +318,9 @@
                     <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a>
                 </p>
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="wattprime">
+            <article class="my-3" id="wattprime">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Watt Prime</h5>
             </div>
@@ -310,16 +330,16 @@
                 <p>An App setting lets you choose between the W Prime Balance DIFFERENTIAL calculation (Froncioni and Clarke, which recovers faster when power dips below threshold) or the INTEGRAL calculation (Skiba, et al.). Either setting requires 2 settings - Functional Threshold Power (FTP) and W Prime (in Joules). If your W' Balance goes negative (a breakthrough occurred) the app will automatically adjust your W PRIME and record it in App Settings.</p>
                 <p>&nbsp;</p>                    
                 <ul>
-                  <li>The Watt Prime circle will display in <span class="badge rounded-pill bg-z2"> Blue </span> for values 50-100%, <span class="badge rounded-pill bg-z4"> Orange </span> for values 20-50% and <span class="badge rounded-pill bg-z5"> Red </span> for values less than 20%.</li>
-                  <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill bg-z7"> Purple </span>.</li>
-                  <li>Set W Prime to zero in App Settings if not required.</li>
+                    <li>The Watt Prime circle will display in <span class="badge rounded-pill bg-z2"> Blue </span> for values 50-100%, <span class="badge rounded-pill bg-z4"> Orange </span> for values 20-50% and <span class="badge rounded-pill bg-z5"> Red </span> for values less than 20%.</li>
+                    <li>For a Breakthrough (W Prime less than zero) it will be the colour <span class="badge rounded-pill bg-z7"> Purple </span>.</li>
+                    <li>Set W Prime to zero in App Settings if not required.</li>
                 </ul>
                 <p>&nbsp;</p>                    
                 <p class="h6"><a class="d-flex align-items-center" href="https://perfprostudio.com/help/WPrime.htm">Understanding Work Above Threshold - Dr. Philip Friere Skiba</a></p>
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="wattprimedecay">
+            <article class="my-3" id="wattprimedecay">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Watt Prime Decay</h5>
             </div>
@@ -331,9 +351,9 @@
                 <p>The app can track when you last did an activity and automatically decay your W Prime setting by a daily percentage. You can set a decay of between 0.1% and 2.5% (between 1 and 25 in App Settings).</p>
                 <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="battstatus">
+            <article class="my-3" id="battstatus">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Battery Status</h5>
             </div>
@@ -363,9 +383,9 @@
                 <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
                 </ol>
             </div>
-          </article>
+            </article>
 
-          <article class="my-3" id="weather">
+            <article class="my-3" id="weather">
             <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                 <h5>Weather</h5>
             </div>
@@ -378,16 +398,16 @@
                 <p>&nbsp;</p>         
                 <p>The App will display the current Wind Speed (in km/h or miles/hr depending on your Garmin Profile) and diection by showing a compass arrow indicating the direction the Wind is blowing from.</p>           
                 <div>
-                  <table class="table table-striped">
+                    <table class="table table-striped">
                     <thead>
                     <tr>
-                      <th scope="col">Compass Point</th>
-                      <th scope="col">Wind Direction</th>
-                      <th scope="col">Icon Displayed</th>
+                        <th scope="col">Compass Point</th>
+                        <th scope="col">Wind Direction</th>
+                        <th scope="col">Icon Displayed</th>
                     </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                        <tr>
                         <th scope="row">North (N)</th>
                         <td>Wind blowing from the North</td>
                         <td><div class="icon comp-icon">c</div></td>
@@ -427,8 +447,8 @@
                         <td>Wind blowing from the North West</td>
                         <td><div class="icon comp-icon">e</div></td>
                         </tr>
-                      </tbody>
-                  </table>
+                        </tbody>
+                    </table>
                 </div>        
                 <p>&nbsp;</p>                    
                 <strong>Garmin Weather Conditions:</strong>
@@ -436,17 +456,17 @@
                 <p>The App will calculate the current Sunrise and Sunset time based on your current GPS location to determine whether to display Day Time or Night Time icons.</p>
                 <p>&nbsp;</p>                    
                 <div>
-                  <table class="table table-striped">
+                    <table class="table table-striped">
                     <thead>
                     <tr>
-                      <th scope="col">Garmin ID</th>
-                      <th scope="col">Weather Condition</th>
-                      <th scope="col">Day Time Icon</th>
-                      <th scope="col">Night Time Icon</th>
+                        <th scope="col">Garmin ID</th>
+                        <th scope="col">Weather Condition</th>
+                        <th scope="col">Day Time Icon</th>
+                        <th scope="col">Night Time Icon</th>
                     </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                        <tr>
                         <th scope="row">0</th>
                         <td>Clear</td>
                         <td><div data-icon="/" class="icon"></div></td>
@@ -770,12 +790,14 @@
                         <td><div data-icon="" class="icon"></div></td>
                         <td><div data-icon="" class="icon"></div></td>
                         </tr>                        
-                      </tbody>
-                  </table>
+                        </tbody>
+                    </table>
                 </div>          
             </div>
-          </article>
+            </article>
+
         </section>    
+
     </div>
 
     <!-- Footer-->
