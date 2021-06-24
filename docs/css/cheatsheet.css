@@ -18,7 +18,7 @@ body {
 
 /* stylelint-disable-next-line selector-max-universal */
 .bd-heading + div > * + * {
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 /* Table of contents */
