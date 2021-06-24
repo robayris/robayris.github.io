@@ -23,6 +23,15 @@
     <link href="/docs/css/cheatsheet.css" rel="stylesheet">
     <!-- JQuery core  -->
     <script src="/docs/js/jquery-3.6.0.min.js"></script>
+    <style>
+        #mainNav {
+            /* padding-top: 1.5rem; */
+            /* padding-bottom: 1.5rem; */
+            border: none;
+            /* background-color: transparent; */
+            transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        }        
+    </style>
   </head>
   <body id="page-top" data-spy="scroll" data-target="#mainNav">
 
@@ -49,7 +58,7 @@
         <nav class="small" id="toc">
             <ul class="list-unstyled">
                 <li class="my-2">
-                    <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Documentation</button>
+                    <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Documentation</button>
                     <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
                         <li><a class="d-inline-flex align-items-center rounded" href="#appsettings">In App Settings</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#powerzones">Power Zones</a></li>
