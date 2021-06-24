@@ -24,13 +24,15 @@
     <!-- JQuery core  -->
     <script src="/docs/js/jquery-3.6.0.min.js"></script>
     <style>
-        #mainNav {
-            /* padding-top: 1.5rem; */
-            /* padding-bottom: 1.5rem; */
-            border: none;
-            /* background-color: transparent; */
-            transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        }        
+        @media (min-width: 992px) {
+            #mainNav {
+                padding-top: 0;
+                padding-bottom: 0;
+                border: none;
+                background-color: #1b1d1f;
+                transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+            }        
+        }
     </style>
   </head>
   <body id="page-top" data-spy="scroll" data-target="#mainNav">
