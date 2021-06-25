@@ -11051,7 +11051,7 @@ header.masthead .masthead-heading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+/*
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
@@ -11091,7 +11091,7 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-
+*/
 .timeline {
   position: relative;
   padding: 0;
