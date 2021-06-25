@@ -348,7 +348,7 @@
                     <p>&nbsp;</p>                    
                     <p>There are three Average Power calculations available:</p>          
                     <ul>  
-                        <li>Standard Average Power (direct from the Garmin Activity Information)</li>
+                        <li>Standard Average Power (direct from the Garmin Activity Information and is an Average over the whole activity, unless you press the LAP button, in which case, it's an Average over the Lap.)</li>
                         <li>Strava Weighted Average Power (SWA or xPower).  <a class="d-flex align-items-center" href="https://support.strava.com/hc/en-us/articles/216917147-Strava-Training-Glossary-for-Cycling">Strava Training Glossary</a></li>
                         <li>Normalized Power (NP or isoPower).  <strong>NOTE:</strong>&nbsp;&nbsp;NP starts showing from 60 seconds into an Activity. 
                             <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/blog/what-is-normalized-power/">What is Normalized Power - TrainingPeaks</a>
@@ -356,6 +356,19 @@
                     </ul>  
                     <p class="h6">NOTE:  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS).
                         <a class="d-flex align-items-center" href="https://www.trainingpeaks.com/learn/articles/normalized-power-intensity-factor-training-stress/">Normalized Power, Intensity Factor and Training Stress Score Explained</a>
+                    </p>
+                    <p>&nbsp;</p>                    
+                    <strong>1-30 Second Power Moving Average (MA)</strong>
+                    <p>&nbsp;</p>                    
+                    <p>Another configuration option for TrainingPower and InTheZone is the ability to display the Power Output as a 1-30 second Moving Average (a 3-second MA is the default).  This is a very different option to the Average Power calculations described, above.</p>
+                    <p>A Moving Average is by definition an average of values in a moving Window.  For example, if we use a 3-second MA, then an average is calculated every second, of the previous 3 seconds worth of Power values.  This 3-second window is continuously moving throughout your activity.</p>
+                    <p>Typically, a 3-second Moving Average for Power is recommended as it provides adequate smoothing of the "noisy" power meter readings, whilst still retaining good reactivity.  You will see the option to use a 3-second Moving Average on a lot of training platforms, like Zwift and TrainerRoad, etc.</p>
+                    <p>&nbsp;</p>                    
+                    <p><strong>NOTES:</strong>
+                        <ol>
+                            <li>As the Moving Average is an Average calculation, your instantaneous power output and the calculated Moving Average will almost certainly never equal each other.  One will be higher than the other.  If your power output is increasing, the MA will be less.  If your power output is decreasing the MA will be higher.  The benefit of this, as I already mentioned, is in smoothing out the "noisy" power meter readings.</li>
+                            <li>If you don't want to use a Moving Average, you can set the "Power Moving Average Interval" to "1 Second" in the App Settings (InTheZone and TrainingPower).  This will prevent any MA calculations and will just present the current Instantaneous power output.</li>
+                        </ol>
                     </p>
                 </div>
             </article>
