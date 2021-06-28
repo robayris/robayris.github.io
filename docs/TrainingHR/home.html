@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="robayris.github.io - Training Power" />
+    <meta name="description" content="robayris.github.io - Training HR" />
     <meta name="author" content="Rob Ayris" />
-    <title>robayris.github.io - Training Power</title>
+    <title>robayris.github.io - Training HR</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/docs/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -53,8 +53,8 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuApps">
                             <li><a class="dropdown-item" href="https://robayris.github.io/docs/inthezone/home.html">In The Zone</a></li>
-                            <li><a class="dropdown-item" href="#">Training Power</a></li>
-                            <li><a class="dropdown-item" href="https://robayris.github.io/docs/TrainingHR/home.html">Training HR</a></li>
+                            <li><a class="dropdown-item" href="https://robayris.github.io/docs/TrainingPower/home.html">Training Power</a></li>
+                            <li><a class="dropdown-item" href="#">Training HR</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://robayris.github.io/docs/Radian/home.html">Radian</a></li>
                         </ul>
@@ -106,17 +106,13 @@
                     <h6>Requirements</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h4"><a href="https://apps.garmin.com/en-US/apps/4d0a6a24-400c-4589-ae10-fd26fe01b4ba">Training Power</a> - App Details</p>
-                    <p>&nbsp;</p>
-                    <p>When I'm training I'm particularly focussed on monitoring Power and ensuring I'm sitting in particular zones. I wanted a single data field that could display everything I needed to know, related to power.</p>
-                    <p>&nbsp;</p>
+                    <p class="h4"><a href="https://apps.garmin.com/en-US/apps/6397a4a3-b2d1-4b0e-ac18-145b07fb0a31">Training HR</a> - App Details</p>
+                    <p>When I'm Base Training I'm very focussed on monitoring Heart Rate and ensuring I'm sitting in particular zones. I wanted a single datafield that could display everything I needed to know, related to Heart Rate - that being: HR, HR zone and where I am in that zone, average HR, Average HR zone and Max HR.</p>
                     <p class="h4">Requirements:</p>
-                    <p>&nbsp;</p>
-                    <ul>
-                      <li><p class="h6">This data field requires a power meter and cadence sensor to be connected to your Garmin device.</p></li>
-                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
-                      <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
-                    </ul>       
+                    <p class="h6">This data field displays a number of Heart Rate related values and as such, requires a Heart Rate sensor to be connected to your Garmin device.</p>
+                    <p class="h6">The data field has been optimised for full-width display on Garmin Edge type devices.</p>
+                    <p class="h4">Circles or Bars?:</p>
+                    <p>There is a configuration option in the App Settings that will display the HR zone range and Average HR Zone range as circles instead of the default bars, as per the screen shots.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</p>
                   </div>
             </article>
             <article class="my-3" id="infodisplay">
@@ -125,23 +121,18 @@
                 </div>
                 <div class="modal-links">
                     <p class="h4">Information Displayed:</p>
-                    <p class="h6">(Depending on device and screen configuration)</p>
                     <p>&nbsp;</p>
                     <ul>
                         <li><a href="https://robayris.github.io/docs/home.html#appsettings">App Settings</a> can be set directly on the device (for supported devices) - no need to use your Phone or Garmin Express to update Settings</li>
-                        <li>Display certain metrics as Bars (default) or Circles.  Unfortunately (due to memory constraints) the Edge520 device cannot display in circles mode.</li>
-                        <li><a href="https://robayris.github.io/docs/home.html#battstatus">Battery Status</a> indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6)</li>
-                        <li>Current Power Watts (with a configurable 1-30 second <a href="https://robayris.github.io/docs/home.html#averagepower">Moving Average</a>)</li>
-                        <li><a href="https://robayris.github.io/docs/home.html#averagepower">Average Power</a>, Strava Weighted Average (SWA) Power, or Normalized Power (NP) (option to also display as W/Kg).  If NP is chosen you may also choose to display Intensity Factor (IF) and Training Stress Score (TSS), but only in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030) in Circles mode.</li>
-                        <li><a href="https://robayris.github.io/docs/home.html#wattprime">Watt Prime Balance</a> (See below)</li>
-                        <li><a href="https://robayris.github.io/docs/home.html#powerzones">Power Zone</a> (See below)</li>
-                        <li>Average Power Zone (See below)</li>
-                        <li>Cadence (RPM)</li>
-                        <li>Average cadence (RPM)</li>
-                        <li>Speed, Average Speed and Distance (Kilometres or Miles, depending on Garmin profile)</li>
-                        <li>Gradient % (Kalman Filter Smoothed)</li>
-                        <li>Rear Cassette gear (for supported devices). Front Chain Ring is also highlighted on Edge 530/830/1000/1030x devices in circles display mode.</li>
-                    </ul>
+                        <li>Heart Rate (BPM)</li>
+                        <li><a href="https://robayris.github.io/docs/home.html#hrzones">HR Zone</a>a> (see below)</li>
+                        <li>Maximum HR (during this activity)</li>
+                        <li>Average HR (BPM)</li>
+                        <li>Average HR Zone (as per HR Zones note, below)</li>
+                        <li>Time of Day (available in larger screen configurations)</li>
+                        <li>Elapsed Time (available in larger screen configurations)</li>
+                        <li>Rolling 60 second HR Histogram (Available for Edge 130/130+/530/830/1030x/1000 devices)</li>
+                      </ul>
                 </div>    
             </article>
             <article class="my-3" id="features">
@@ -150,14 +141,13 @@
                 </div>
                 <div class="modal-links">
                     <p>&nbsp;</p>                    
-                    <p class="h4">POWER ZONES (Coggan - FTP based):</p>
-                    <p><a href="https://robayris.github.io/docs/home.html#powerzones">Power Zones</a></p>                    
-                    <p class="h4">Watt Prime (W') BALANCE:</p>
-                    <p><a href="https://robayris.github.io/docs/home.html#wattprime">Watt Prime</a></p>                    
-                    <p class="h4">Watt PRIME (W') AUTO DECAY:</p>
-                    <p><a href="https://robayris.github.io/docs/home.html#wattprimedecay">Watt Prime Decay</a></p>
-                    <p class="h6">TrainingPower is designed to be used in two-field screen layouts with my other App - TrainingHR.</p>
-                    </div>
+                    <p class="h4">Garmin Profile?:</p>
+                    <p>An App Setting lets you choose whether you want to use the HR Zone settings you've defined within your Garmin Profile OR the zones you define within the App Settings. If you choose your Garmin Profile there is no need to provide values for the HR Zones, LTHR, HRR, MaxHR and the Zone Type in the App Settings, you can leave these blank.</p>
+                    <p class="h4">Heart Rate Zones:</p>
+                    <p>You can define up to 5 HR zones in the App Settings. The zones can be based on Lactate Threshold Heart Rate (LTHR), Maximum Heart Rate (MAXHR), or Heart Rate Reserve (HRR). You must choose which Target HR is the basis for your zones in the App Settings.</p>
+                    <p><a href="https://robayris.github.io/docs/home.html#hrzones">Heart Rate Zones</a> will default to the standard Coggan zones, which you can adjust in App Settings.</p>
+                    <p class="h6">TrainingHR is designed to be used in two-field screen layouts with my other App - TrainingPower.</p>
+                </div>
             </article>
             <article class="my-3" id="releases">
                 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
@@ -166,75 +156,80 @@
                 <div class="modal-links">
                     <p class="h2">Release History</p>
                     <p>&nbsp;</p>                    
-                    <p class="h5">v1.8.9:</p>
-                    <ul>
-                        <li>Display Standard Average Power for first 30 seconds of activity when NP has been selected (while NP stabilises from Activity start)</li>
-                    </ul>    
-                    <p class="h5">v1.8.8</p>
-                    <ul>
-                        <li>Remove useUpdateInterval function which was a yes/no setting that allowed the app to only update the Power display every interval (1-30 seconds depending on setting) as it causes issues in settings when updating the App</li>
-                        <li>Code optimizations to better support Fenix5 and Forerunner 935</li>
-                    </ul>    
-                    <p class="h5">v1.8.7:</p>
+                    <p class="h5">v1.7.7:</p>
                     <ul>
                         <li>Add new Circles mode Layouts: Layout 4A (Edge 530/830), Layout 3 (Edge 820) and Layouts 3A, 3B, 4B, 5B, 6B, 7B (Edge 520+)</li>
                     </ul>    
-                    <p class="h5">v1.8.6:</p>
+                    <p class="h5">v1.7.6</p>
                     <ul>
-                        <li>NEW: Display IF (Intensity Factor) and TSS (Training Stress Score) via App setting BUT only when Normalized Power (NP) Averaging has also been set.  Please note, IF and TSS are only available in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030)</li>
-                        <li>FIX:  Improve the smoothing speed and reactivity of the Filter for the calculation of Gradient (all devices)</li>
-                        <li>Optimise 2 field layout for the Edge1030 device to make it consistent with other layouts</li>
+                        <li>Code optimisations to reduce memory and processing</li>
                     </ul>    
-                    <p class="h5">v1.8.5:</p>
+                    <p class="h5">v1.7.5:</p>
                     <ul>
-                        <li>FIX:  If your power output matched your zone 7 power and also matched your maximum power for the activity, the app would crash</li>
-                        <li>FIX:  WPrime balance could show a large negative number in certain situations - such as, high power output for long periods during a long activity</li>
-                        <li>Support the new Garmin AntiAlias feature on supported devices.  With this, graphics are rendered more smoothly, when drawing circles and angular lines</li>
-                        <li>Add FTP setting to the in-app settings function, for supported devices</li>
+                        <li>FIX: App crash from start for specific devices - Fenix 5 and ForeRunner 935</li>
+                        <li>Optimise 1 & 2 field layout for Edge1030 to make it more consistent with other layouts</li>
                     </ul>    
-                    <p class="h5">v1.8.4:</p>
+                    <p class="h5">v1.7.4:</p>
                     <ul>
-                        <li>Add optional (through app settings) battery status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6) Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red - Level checked every 20 mins and then every 5 mins once below 10%.</li>
-                        <li>Added New Circles Mode B for Edge devices (except Edge520/130) - Displays Watt Prime as the bar within the left, main Power circle and Average Power (whichever calculation you chose) as the right, large circle.</li>
-                        <li>Power Zone calculation optimisations</li>
+                        <li>FIX: App could show an error when accessing the in-app settings on a supported device AND you had previously set "Use my Garmin Profile" to YES.</li>
                     </ul>    
-                    <p class="h5">v1.8.3:</p>
+                    <p class="h5">v1.7.3:</p>
                     <ul>
-                        <li>No longer need to supply a Maximum Power setting in App Properties, this is now derived.</li>
+                        <li>NEW Settings option for "Activity Timer Display". You can now choose "LAP time" (or, Elapsed Time, Moving Time, or no Timer display).</li>
+                        <li>Support the new Garmin AntiAlias feature on supported devices. With this, graphics are rendered more smoothly, when drawing circles and angular lines</li>
                     </ul>    
-                    <p class="h5">v1.8.2:</p>
+                    <p class="h5">v1.7.2:</p>
                     <ul>
-                        <li>NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training Power "In App Settings" will just start working.</li>
-                        <li>NEW: W Prime Automatic decay (via App Setting)</li>
+                        <li>Heart Rate Zone Calculation Optimisations</li>
+                    </ul>    
+                    <p class="h5">v1.7.1:</p>
+                    <ul>
+                        <li>NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training HR "In App Settings" will just start working.</li>
                         <li>Support for new Forerunner 745 device</li>
                         <li>Improve efficiency of drawing circles and ARCs</li>
-                        <li>Improve accuracy of Strava Weighted Average and Normalized Power calculations</li>
                         <li>Remove App specific LAP function (from All devices except: original Edge 520, original Fenix5 and FR935) as Garmin and Strava do this better</li>
                     </ul>    
-                    <p class="h5">v1.7.5.2:</p>
+                    <p class="h5">v1.6.5.0:</p>
                     <ul>
-                        <li>Fix: Distance display now follows the units selected in your Garmin Profile (Metric or Imperial)</li>
-                    </ul>    
-                    <p class="h5">v1.7.5.1:</p>
-                    <ul>
-                        <li>Fix: TrainingPower can only support 1 and 2 field layouts on on Fenix5, Fenix6 and FR935 specific devices due to memory constraints.</li>
-                        <li>Highlight downhill gradient green in Edge devices using Circles mode.</li>
-                    </ul>    
-                    <p class="h5">v1.7.5.0:</p>
-                    <ul>
-                        <li>Increase the font size in use for Average Power and Average Cadence in Circles view on supported Edge devices.</li>
+                        <li>Added Settings option to turn on (default) or off the display of Seconds for Time of Day and Timer displays (All devices except original Edge 520). This has the benefit of allowing room for a larger font for Time of Day and Timer.</li>
                         <li>Compiled under v3.2.1 of Connect IQ SDK</li>
                     </ul>    
-                    <p class="h5">v1.7.4.0:</p>
+                    <p class="h5">v1.6.4.0:</p>
                     <ul>
-                        <li>Added Settings option to display Normalized Power (isoPower) All supported devices except original Edge 520, FR935 and Original Fenix5. Normalized power will only begin to display 30 seconds after an activity starts.</li>
-                        <li>Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)</li>
-                        <li>Fix an issue with W/Kg calculation on Average Power</li>
+                        <li>Added Settings option to display Elapsed Time (since Timer Start), Moving Time (excludes time auto-paused), or No Timer</li>
+                        <li>Added Settings option to turn off display of "Time of Day"</li>
+                        <li>Added ability to set Zone1 start at zero (effectively means Zone1 can range from 0 to the start of Zone2)</li>
                     </ul>    
-                    <p class="h5">v1.7.3.0:</p>
+                    <p class="h5">v1.6.3.0:</p>
                     <ul>
-                        <li>Added support for Edge 130/130+ with the following caveats: 1) There are no colours, black and white only - as such the datafield now displays the Power Zones (as numbers - "PowerZone : AvgPowerZone"); 2) There is no support for di2 (so no di2 gears will be displayed); and 3) The datafield only suppoprts circles mode.</li>
-                        <li>Remove superfluous Power Z1 setting from App settings.</li>
+                        <li>Automatically update MAXHR into settings when new maximum achieved. MAXHR will turn blue when a new maximum has been reached.</li>
+                        <li>Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)</li>
+                    </ul>    
+                    <p class="h5">v1.6.2.0:</p>
+                    <ul>
+                        <li>Covid-19 Lockdown Release</li>
+                        <li>New Circles layouts for configurations 3A, 3B, 4B, 5B, 6B, 7B layouts for Edge 530 / 830</li>
+                        <li>New Circles layouts for 2 field screen configurations for Edge 520+ / 820</li>
+                        <li>Added support for Fenix 6 / 6sPro / 6Pro / 6XPro in screen configurations 1, 2 and 4C</li>
+                        <li>Added support for Marq Golfer in screen configurations 1, 2 and 4B</li>
+                    </ul>    
+                    <p class="h5">v1.6.0.0:</p>
+                    <ul>
+                        <li>Added support for Garmin Edge 1030+ devices</li>
+                        <li>New Circles layouts for configurations 2, 3A, 3B, 4B, 5B, 6B, 7B layouts for Edge 1030/1030Bont/1030+</li>
+                        <li>New circles layouts for 2 datafield display in Edge 530/830</li>
+                        <li>New circles layouts for 2 & 3 datafield display in Edge 1000</li>
+                        <li>Added rolling 60 second HR histogram to the new Circles configuration for Edge 530/830/1030x/1000 devices (new property to activate this in settings - default is off)</li>
+                    </ul>    
+                    <p class="h5">V1.5.6.2:</p>
+                    <ul>
+                        <li>Support for MARQ Adventurer and Commander (in 1,2 and 4B datafield layouts) and Fenix 6S (in 1, 2 and 4C datafield layouts).</li>
+                    </ul>    
+                    <p class="h5">V1.5.6:</p>
+                    <ul>
+                        <li>Support for Edge 530/830, Forerunner 945 and Marq devices (in 1, 2 and 4 field display modes)</li>
+                        <li>Add 4 field display options to supported wearable devices</li>
+                        <li>Add LAP function. This works differently to a standard LAP function as I see the main problem with a standard LAP function is what if you want to revert back to Average HR for the entire activity? You can't. With my LAP function when you press the LAP button it starts calculating and displaying average HR from that point - a red "LAP" icon is displayed on screen - When you press the LAP button again, the display reverts back to showing Average HR for the entire activity. This way you can ride out to the bottom of a hill, press the LAP button and see your average HR up the hill, when you get to the top of the hill you can hit the LAP button again and revert to showing average HR for the entire activity. You can do this as many times as you like in an activity. You can also turn off the app's ability to respond to the LAP button in app settings.</li>
                     </ul>    
                 </div>
             </article>
