@@ -9,9 +9,11 @@
 
 **Definitions of App Parameters:**
 
+- In App Settings
 - Power Zones
+- Heart Rate Zones
 - Power Averaging
 - Watt Prime
 - Watt Prime Decay
 - Battery Status
-- Weather Condition Icons
+- Weather
