@@ -10864,6 +10864,7 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #fff;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10871,6 +10872,7 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -11006,9 +11008,18 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+.prodImage {
+  opacity: 0.5;
+}
+
+.prodImage .portfolio-hover {
+  opacity: 1;
+}
+
 .portfolio-section {
   padding: 6rem 0;
-  font-size: 2.5rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: center;
@@ -11024,7 +11035,7 @@ header.masthead .masthead-heading {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background: #fff;
+/*  background: #fff;*/
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -11052,7 +11063,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+/*  background-color: #fff;*/
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
