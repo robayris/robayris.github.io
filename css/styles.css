@@ -10967,7 +10967,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("/images/bike.jpg");
+  background-image: url("/images/circuit1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11005,6 +11005,17 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+}
+section.portfolio {
+/*  padding-top: 10.5rem;
+  padding-bottom: 6rem;*/
+  text-align: center;
+  color: #fff;
+  background-image: url("/images/bike.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
