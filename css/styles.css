@@ -10864,7 +10864,7 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #fff;
+/*  color: #fff;*/
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10899,9 +10899,9 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #1b1d1f;
+/*  padding-top: 1rem;
+  padding-bottom: 1rem;*/
+  background-color: #021a31db;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
