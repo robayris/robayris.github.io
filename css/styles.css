@@ -10944,11 +10944,13 @@ p {
     height: 2rem;
     transition: height 0.3s ease-in-out;
   }
+/*
   #mainNav.navbar-shrink {
-/*    padding-top: 1rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #1b1d1f;*/
+    background-color: #1b1d1f;
   }
+  */
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
