@@ -567,6 +567,16 @@ progress {
   content: "— ";
 }
 
+.thumbnail:hover {
+  position:relative;
+/*  top:-25px;
+  left:-35px;*/
+  width:350px;
+  height:auto;
+  display:block;
+  z-index:999;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
