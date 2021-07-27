@@ -569,8 +569,8 @@ progress {
 
 .thumbnail:hover {
   position:relative;
-  cursor: pointer;
-  width:400px;
+  cursor: zoom-in;
+  width:450px;
   height:auto;
   display:block;
   z-index:999;
