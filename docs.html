@@ -124,6 +124,7 @@
                     <input type="text" class="form-control" id="weight" placeholder="80.0" maxlength=6 value="80.0">
                     <label for="weight">Weight (Kg)</label>
                 </div>
+                <button type="button" id="pCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
                 <div>
                     <table class="table table-striped" id="powerZoneTable">
                         <thead>
@@ -221,7 +222,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" id="pCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
                     <p>&nbsp;</p>
                     <p class="h6">Z2 - Z7 are configurable in the App (MAX is continuously calculated during an Activity).  The app displays the percentage your power is within the respective zone.</p>
                 </div>
@@ -240,6 +240,8 @@
                     <input type="text" class="form-control" id="hrftp" placeholder="161" maxlength=6 value="161">
                     <label for="hrftp">LTHR, MAXHR or HRR</label>
                 </div>
+                <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
+                <p>&nbsp;</p>         
                 <p>LTHR = Lactate Threshold Heart Rate; MAXHR = Maximum Heart Rate; HRR = Heart Rate Reserve (based on Resting HR).</p>
                 <p>&nbsp;</p>         
                 <div class="bd-example">
@@ -297,7 +299,6 @@
                         </tr>
                         </tbody>
                     </table>
-                    <button type="button" id="hrCalcButton" class="btn btn-outline-primary" value="Calculate">Calculate</button>
                     <script type="text/javascript">
                     $(function(){
                         $('#pCalcButton').click(function(){
