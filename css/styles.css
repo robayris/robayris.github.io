@@ -569,7 +569,7 @@ progress {
 
 .thumbnail:hover {
   position:relative;
-  cursor: zoom-in;
+  cursor: zoom-out;
   top:-25px;
   left:-35px;
   width:450px;
