@@ -6216,7 +6216,7 @@ modal-links a:hover {
 }
 
 .fixed-top {
-  position: fixed;
+/*  position: fixed;*/
   top: 0;
   right: 0;
   left: 0;
@@ -10947,6 +10947,7 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
+      position: fixed;
       border: none;
       background-color: #021a31;
       transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
