@@ -57,4 +57,29 @@
 .bg-bs8 {
     background-color: #FFAA55 !important;
 }
+.bg-black {
+    background-color: #000000 !important;
+}
+.bg-white {
+    background-color: #FFFFFF !important;
+}
+.bg-dkblue {
+    background-color: #000055 !important;
+}
+.bg-dkgreen {
+    background-color: #005500 !important;
+}
+.bg-dkred {
+    background-color: #550000 !important;
+}
+.bg-dkgrey {
+    background-color: #555555 !important;
+}
+.bg-blue {
+    background-color: #0000AA !important;
+}
+.bg-grey {
+    background-color: #AAAAAA !important;
+}
+
 
