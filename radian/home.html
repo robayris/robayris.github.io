@@ -109,7 +109,7 @@
                     <p>&nbsp;</p>
                     <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
                     <p>2) Displays a second hand if watch hardware permits (1hz). Second hand can be triggered to stop displaying by making it the same colour as watchface background.</p>
-                    <p>3) Displays 3 dials, one of which can be configured to display Calories (and percentage of calorie target), Altitude, or distance moved today, but also the ability to cycle between these three displays. Dial display cycle will occur every 20 seconds in full-power mode, or every minute in low-power mode. The gauge hand in the dials can be turned off by making it the same colour as the dial background colour.</p>
+                    <p>3) Displays 3 dials, one of which can be configured to display Calories (and percentage of calorie target), Altitude, distance moved today, or Active Weekly Minutes, but also the ability to cycle between these three displays. Dial display cycle will occur every 15 seconds in full-power mode, or every minute in low-power mode. The gauge hand in the dials can be turned off by making it the same colour as the dial background colour.</p>
                     <p>4) Can be configured to reduce data displayed when in "Do Not Disturb" mode, watch not being worn, or when HR is below resting heart rate (within 5%). By reducing data display in this way, battery life can be conserved during periods when the watch isn't in active use (like, when it's not on your wrist, or you might be asleep). Resting Heart rate comes from your Garmin profile, or if it is not set, then Max HR divided by 3. When configured to reduce display based on resting HR, if you're wearing the watch, your HR needs to be less than Resting HR + 5% for 5 or more minutes. If you're not wearing the watch its 30 seconds.</p>
                     <p>5) There are 22 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in settings. Please be aware that colours on the watch face will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
                     <p>&nbsp;</p>
@@ -123,7 +123,7 @@
                         <figcaption class="figure-caption">64 Colour Pallette Web HEX codes - For reference</figcaption>
                     </figure>
                     <p>&nbsp;</p>
-                    <p>6) Displays a graph showing your steps history (from left to right, with left being yesterday and the next to the right being the day before yesterday, and so on). The graph highlights when your steps were above your goal for the day.</p>
+                    <p>6) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on). The graph highlights when your steps were above your goal for the day.</p>
                     <p>7) Displays Floors climbed graphic as an ARC partway around the steps dial on the watch face. The display shows floors climbed as a percentage of goal.</p>
                     <p>8) Shows the current day number of the month as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
                     <p>9) The HR dial shows HR as well as percentage of maximum HR, if you've defined this in your Garmin profile or created any heart rate zones. if no maximum HR is set it will default to using the old standard "220 - your age", so long as your age is set in your Garmin profile.</p>
@@ -256,6 +256,15 @@
                 <div class="modal-links">
                     <p class="h2">Release History</p>
                     <p>&nbsp;</p>
+                    <p class="h5">v1.3.0</p>
+                    <ul>
+                        <li>Fix: (Amoled devices) Flashing may occur in transition from Low to High power mode</li>
+                        <li>Fix: (All devices) Ability to choose '0' for colour settings using the on-device settings function.</li>
+                        <li>Fix: (all devices) When a dial goal is reached the colour of the progression circle will change to the goal achieved colour.</li>
+                        <li>Add: (Amoled devices) Add Settings option to display Weekly Active Minutes (and goal) in the top-left dial display.</li>
+                        <li>Add: (Amoled devices) Separate colour settings for Floors and Steps.</li>
+                        <li>Chg: (All devices) Reverse the order the steps history is displayed (7 days ago on left to yesterday on right) to better match Garmin Connect display</li>
+                    </ul>    
                     <p class="h5">v1.2.4</p>
                     <ul>
                         <li>Fix: Left dial on Venu2s watchface not rendered correctly</li>
