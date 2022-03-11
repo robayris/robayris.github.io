@@ -85,7 +85,10 @@
                 <li class="my-2">
                     <button class="btn d-inline-flex align-items-center" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Documentation</button>
                     <ul class="list-unstyled ps-3 collapse show" id="contents-collapse">
-                        <li><a class="d-inline-flex align-items-center rounded" href="#requirements">Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#general">General Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#amoled">Amoled Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#mips">MIPS Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#colours">Colour Details</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#screens">Screen Layouts</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#releases">Release History</a></li>
                     </ul>
@@ -101,7 +104,7 @@
                     <h6>General Details</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h4"><a href="https://apps.garmin.com/en-US/apps/1b19a80f-906c-4a5e-ba6e-57c193b61387">Radian</a> - Amoled Device App Details</p>
+                    <p class="h4"><a href="https://apps.garmin.com/en-US/apps/1b19a80f-906c-4a5e-ba6e-57c193b61387">Radian</a> - General App Details</p>
                     <p>&nbsp;</p>
                     <p><img src="/radian/images/epix2.png" class="d-inline-block align-top img-fluid thumbnail" width="150" loading="lazy"></p>    
                     <p>&nbsp;</p>
@@ -136,34 +139,27 @@
                     <p>&nbsp;</p>
                     <p><img src="/radian/images/epix2.png" class="d-inline-block align-top img-fluid thumbnail" width="150" loading="lazy"></p>    
                     <p>&nbsp;</p>
-                    <p>There are a lot of great watch faces on the Garmin app store and I have a few favourites. However, I couldn't find one that had everything I wanted, so I created this one. Key aspects:</p>
+                    <p>Amoled (Active-Matrix Organic Light Emitting Diode) devices (such as the Venu series, Epix2 and D2airX10) have a vibrant, high resolution screen, capable of displaying 65,000+ colours.</p>
                     <p>&nbsp;</p>
                     <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
-                    <p>2) Displays a second hand if watch hardware permits (1hz). Second hand can be triggered to stop displaying by making it the same colour as watchface background.</p>
+                    <p>2) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
                     <p>3) Displays 3 dials, one of which can be configured to display Calories (and percentage of calorie target), Altitude, distance moved today, or Active Weekly Minutes, but also the ability to cycle between these three displays. Dial display cycle will occur every 15 seconds in full-power mode, or every minute in low-power mode. The gauge hand in the dials can be turned off by making it the same colour as the dial background colour.</p>
-                    <p>4) Can be configured to reduce data displayed when in "Do Not Disturb" mode, watch not being worn, or when HR is below resting heart rate (within 5%). By reducing data display in this way, battery life can be conserved during periods when the watch isn't in active use (like, when it's not on your wrist, or you might be asleep). Resting Heart rate comes from your Garmin profile, or if it is not set, then Max HR divided by 3. When configured to reduce display based on resting HR, if you're wearing the watch, your HR needs to be less than Resting HR + 5% for 5 or more minutes. If you're not wearing the watch its 30 seconds.</p>
-                    <p>5) There are 22 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in settings. Please be aware that colours on the watch face will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
-                    <p>&nbsp;</p>
-                    <figure class="figure">
-                        <img class="figure-img img-fluid rounded" src="/images/Garmin Colour pallette - 64.png" width="365" role="img" loading="lazy">
-                        <figcaption class="figure-caption">64 Colour Pallette - Use these numbers in App Settings</figcaption>
-                    </figure>
-                    <p>&nbsp;</p>
-                    <figure class="figure">
-                        <img class="figure-img img-fluid rounded" src="/images/Garmin 64 Colour Pallette WEB.png" width="365" role="img" loading="lazy">
-                        <figcaption class="figure-caption">64 Colour Pallette Web HEX codes - For reference</figcaption>
-                    </figure>
-                    <p><a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">Hex colour Picker</a></p>
-                    <p>6) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on). The graph highlights when your steps were above your goal for the day.</p>
+                    <p>4) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands and if the setting is on, the Date.</p>
+                    <p>5) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).</p>
+                    <p>6) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
                     <p>7) Displays Floors climbed graphic as an ARC partway around the steps dial on the watch face. The display shows floors climbed as a percentage of goal.</p>
-                    <p>8) Shows the current day number of the month as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
-                    <p>9) The HR dial shows HR as well as percentage of maximum HR, if you've defined this in your Garmin profile or created any heart rate zones. if no maximum HR is set it will default to using the old standard "220 - your age", so long as your age is set in your Garmin profile.</p>
+                    <p>8) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    <p>9) The watchface can be configured to display to Heart Rate information 2 ways, or not display it at all:</p>
+                    <ul>
+                        <li>The HR dial shows HR as well as percentage of maximum HR, if you've defined this in your Garmin profile or created any heart rate zones. if no maximum HR is set it will default to using the old standard "220 - your age", so long as your age is set in your Garmin profile.</li>
+                        <li>The HR dial can be configured to resemble the training zone display, similar to that in my other apps - TrainingHR or InTheZone.  If you have define Heart Rate zones in your garmin profile the watch face will show where your HR is within each training zone.</li>
+                    </ul>
                     <p>10) The steps dial shows steps as well as percentage of steps goal.</p>
                     <p>&nbsp;</p>
                     <p class="h6">NOTES:</p>
                     <p>&nbsp;</p>
                     <ul>
-                      <li>All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the battery saving functions.</li>
+                      <li>All the functionality of this watch face will no doubt drain the battery more than a simple watch face that just shows the time (or the Garmin watch faces that are not developed in Connect IQ). Please be aware of that and make use of the native garmin battery saving sttings.</li>
                       <li>If after updating from an earlier release of this watch face it stops working, please uninstall and install again.</li>
                       <li>If you are experiencing app crashes, please ensure you have updated to the latest firmware on your device.</li>
                     </ul>   
@@ -179,7 +175,7 @@
                     <p>&nbsp;</p>
                     <p><img src="/radian/images/Fenix6Xpro 2.png" class="d-inline-block align-top img-fluid thumbnail" width="150" loading="lazy"></p>    
                     <p>&nbsp;</p>
-                    <p>There are a lot of great watch faces on the Garmin app store and I have a few favourites. However, I couldn't find one that had everything I wanted, so I created this one. Key aspects:</p>
+                    <p>MIPS (Memory In Pixel System) devices (such as the Fenix5 & 6 series, D2, MARQ and ForeRunner series) have an always on LCD screen, capable of displaying 64 colours (as per the colour charts, below).</p>
                     <p>&nbsp;</p>
                     <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
                     <p>2) Displays a second hand if watch hardware permits (1hz). Second hand can be triggered to stop displaying by making it the same colour as watchface background.</p>
