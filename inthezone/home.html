@@ -89,6 +89,7 @@
                         <li><a class="d-inline-flex align-items-center rounded" href="#infodisplay">Information Displayed</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#screens">Screen Layouts</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#features">Feature Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#gears">Gears Display</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#releases">Release History</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#devices">Compatible Devices</a></li>
                     </ul>
@@ -114,7 +115,7 @@
                     <p>&nbsp;</p>
                     <ul>
                       <li><p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p></li>
-                      <li><p class="h6">There is also a configuration option to display the rear cassette gear, which requires electronic shifting on your bike, linked with your Garmin device.</p></li>
+                      <li><p class="h6">There is also a configuration option to display calculated gearing, or gearing from your electronic shifting, which requires electronic shifting on your bike, linked with your Garmin device. See <a href="#gears">Gears Display</a> for more details.</p></li>
                       <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
                     </ul>       
                 </div>
@@ -146,7 +147,7 @@
                     <li>Timer Configurable:  Off; Elapsed Time; Moving Time; LAP Time</li>
                     <li>Rear Cassette gear (configurable on/off). Front Chain Ring is also highlighted by showing first digit of Cassette gear in Blue if smaller chainring selected, or second digit of cassette gear in blue if larger chainring seleted.</li>
                     <li>Optional display of <a href="https://robayris.github.io/docs.html#weather">Weather</a>:  Current conditions plus a Forecast of next 3 (rolling) hours.  This display is configurable to show all the time, never, for 1 minute, for 2 minutes, for 4 minutes or for 8 minutes, depending also on the UpdateWeather setting.  The weather can update every 20 minutes, or by clicking the LAP button, both, or never (this is configurable).  Weather information is provided by GPS.  If precipitation is 50% chance or greater for a weather forecast, the forecast row will be a <span class="badge rounded-pill bg-z2"> Blue </span> colour.  Weather condition icons automatically adjust depending on sunrise and sunset.</li>
-                    <li>Configurable Background colour of the display.  This allow you to override the auto/night/day setting in the device and set a specific background colour only for this app.  Choices are:  [Follow Device Settings], <span class="badge rounded-pill bg-black"> Black </span> (Default), <span class="badge rounded-pill bg-grey"> White </span>, <span class="badge rounded-pill bg-dkgrey"> Dark Grey </span>, <span class="badge rounded-pill bg-dkblue"> Dark Blue </span>, <span class="badge rounded-pill bg-dkgreen"> Dark Green </span>, <span class="badge rounded-pill bg-dkred"> Dark Red </span>, <span class="badge rounded-pill bg-grey"> Grey </span>, <span class="badge rounded-pill bg-blue"> Blue </span></li>
+                    <li>Configurable Background colour of the display.  This allow you to override the auto/night/day setting in the device and set a specific background colour only for this app.  Choices are:  Follow Device Settings (Default), <span class="badge rounded-pill bg-black"> Black </span>, <span class="badge rounded-pill bg-grey"> White </span>, <span class="badge rounded-pill bg-dkgrey"> Dark Grey </span>, <span class="badge rounded-pill bg-dkblue"> Dark Blue </span>, <span class="badge rounded-pill bg-dkgreen"> Dark Green </span>, <span class="badge rounded-pill bg-dkred"> Dark Red </span>, <span class="badge rounded-pill bg-grey"> Grey </span>, <span class="badge rounded-pill bg-blue"> Blue </span></li>
                     <li>Configurable colour of outlines in the display:  <span class="badge rounded-pill bg-bs5"> Grey </span> (Default), <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span>, <span class="badge rounded-pill bg-bs7"> Yellow </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-z7"> Pink </span></li>
                     <li>Configurable position of all four circles, plus the extra data display.  That is, each primary metric can be moved to a different circle and the extra data display can be placed either top or bottom of screen.  There are currently 12 different combinations defined in App settings to choose from.</li>
                     <li>Configurable display of 60 second rolling histograms for HeartRate, Power or Both.</li>
@@ -268,6 +269,8 @@
                     <h6>Feature Details</h6>
                 </div>
                 <div class="modal-links">
+                    <p class="h2">Feature Details</p>
+                    <p>&nbsp;</p>
                     <p class="h4">Heartrate Zones:</p>
                     <p>&nbsp;</p>
                     <ul>
@@ -284,6 +287,47 @@
                     <p><a href="https://robayris.github.io/docs.html#wattprimedecay">Watt Prime Decay</a></p>                    
                     <p class="h4">Weather Details:</p>
                     <p><a href="https://robayris.github.io/docs.html#weather">Weather</a></p>     
+                  </div>
+            </article>
+            <article class="my-3" id="gears">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h6>Gears Display</h6>
+                </div>
+                <div class="modal-links">
+                    <p class="h2">Gears Display</p>
+                    <p>&nbsp;</p>
+                    <p class="h4">Settings options:</p>
+                    <p>&nbsp;</p>
+                    <ul>
+                      <li>None:  No gears are displayed on your device.</li>
+                      <li>Electronic Shifting:  If you have electreonic shifting (Shimano Di2) iinstalled on your bike and it is connected to your garmin device, then choose this option for accuracy and less processing.</li>
+                      <li>Calculated:  Choose this option if you don't have electronic shifting.  The app will calculate which gear you are in based on your current Cadence and Speed (you must have these sensors connected to your garmin device for this to work).  There are also a series of settings that need to be set in order for the App to properly determine which gear you are using, see below.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h4">Other Gear related settings:</p>
+                    <ul>
+                      <li><b>Wheel Rim Diameter in mm:</b>  You must eneter the diamter of one of your wheel rims.  The most common diameter is 622mm.</li>
+                      <li><b>Tyre Diameter in mm:</b>  You must eneter the diamter of one of your tyres.  There are a range of diameters, but for road bikes the common ones are 19mm, 23mm, 25mm, 28mm and 32mm.</li>
+                      <li>See this <a href="" target="_blank">link</a> for details on wheel and Tyre sizes.  When entering these figures into App settings ensure they are entered separately.  For example, for a 700c / 29er rim, you would enter 622 in the Wheel Diameter setting.  For a 25mm tyre, you would enter 25 in the Tyre width field.</li>
+                    </ul>        
+                    <p>&nbsp;</p>
+                    <p class="h4">Chain Rings (1, 2 or 3):</p>
+                    <ul>
+                      <li><b>Front Chain Ring 1 (smallest):</b>  Start with the smallest, front chain ring on your bike.  This is usually the chain ring closest to the frame.  Enter the number of teeth on this chain ring.  There should always be a value in this setting.</li>
+                      <li><b>Front Chain Ring 2:</b>  Enter the number of teeth on the second chain ring.  If you don't have a second chain ring, just leave this setting as '0'.</li>
+                      <li><b>Front Chain Ring 3:</b>  Enter the number of teeth on the third chain ring.  If you don't have a third chain ring, just leave this setting as '0'.</li>
+                    </ul>        
+                    <p>&nbsp;</p>
+                    <p class="h4">Cassette gears (up to 13):</p>
+                    <ul>
+                        <li><b>For each Cassette gear from smallest to biggest:</b>  Start with the smallest, rear cassette gear on your bike.  This is usually the gear cog closest to the outer frame of your bike.  Enter the number of teeth on this gear and then proceed to the next one.  You can enter up to 13 gears.  If you only have 10 or 11, just leave the remaining gear settings as '0'.</li>
+                        <li>For example, I have an 11 speed Shimano cassette which has gears with the following teeth, in order from smallest to biggest: 11,12,13,14,16,18,20,22,25,28,32.  I would enter each of these values, separately, into the first 11 cassette fields (1-11), leaving the last two fields as '0'.</li>
+                    </ul>        
+                    <p>&nbsp;</p>
+                    <p class="h4">Calculation Smoothing:</p>
+                    <ul>
+                        <li>As the calculations to derive your current gear are affected by Speed and Cadence, the calculations can fluctuate as your speed and cadence naturally varies.  To smooth this out I've added a setting that will mean a gear change will only be registered after the calculations determine you've been in that gear for X number of seconds.  The default value for X is 3 seconds, but you can alter this in App settings from between 0 and 30 seconds.</li>                    
+                    <ul>
                   </div>
             </article>
             <article class="my-3" id="releases">
