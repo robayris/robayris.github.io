@@ -115,7 +115,7 @@
                     <p>&nbsp;</p>
                     <ul>
                       <li><p class="h6">This data field requires a power meter, HeartRate monitor and cadence sensor to be connected to your Garmin device.</p></li>
-                      <li><p class="h6">There is also a configuration option to display calculated gearing, or gearing from your electronic shifting, which requires electronic shifting on your bike, linked with your Garmin device. See <a href="#gears">Gears Display</a> for more details.</p></li>
+                      <li><p class="h6">There is also a configuration option to display calculated gearing, or gearing from your electronic shifting (which requires electronic shifting on your bike, linked with your Garmin device). See <a href="#gears">Gears Display</a> for more details.</p></li>
                       <li><p class="h6">Your data recording interval should be set to 1 second in your Garmin device. That is, not using Smart Recording, and you should TURN OFF auto-pause. Normalised Power and Strava Weighted Power calculations require these settings for accuracy.</p></li>
                     </ul>       
                 </div>
@@ -299,16 +299,16 @@
                     <p class="h4">Settings options:</p>
                     <p>&nbsp;</p>
                     <ul>
-                      <li>None:  No gears are displayed on your device.</li>
-                      <li>Electronic Shifting:  If you have electreonic shifting (Shimano Di2) iinstalled on your bike and it is connected to your garmin device, then choose this option for accuracy and less processing.</li>
-                      <li>Calculated:  Choose this option if you don't have electronic shifting.  The app will calculate which gear you are in based on your current Cadence and Speed (you must have these sensors connected to your garmin device for this to work).  There are also a series of settings that need to be set in order for the App to properly determine which gear you are using, see below.</li>
+                      <li><b>None:</b>  No gears are displayed on your device.</li>
+                      <li><b>Electronic Shifting:</b>  If you have electreonic shifting (Shimano Di2) installed on your bike and it is connected to your garmin device, then choose this option for accuracy and less processing.</li>
+                      <li><b>Calculated:</b>  Choose this option if you don't have electronic shifting.  The app will calculate which gear you are in based on your current Cadence and Speed (you must have these sensors connected to your garmin device for this to work).  There are also a series of settings that need to be set in order for the App to properly determine which gear you are using, see below.</li>
                     </ul>
                     <p>&nbsp;</p>                    
                     <p class="h4">Other Gear related settings:</p>
                     <ul>
                       <li><b>Wheel Rim Diameter in mm:</b>  You must eneter the diamter of one of your wheel rims.  The most common diameter is 622mm.</li>
                       <li><b>Tyre Diameter in mm:</b>  You must eneter the diamter of one of your tyres.  There are a range of diameters, but for road bikes the common ones are 19mm, 23mm, 25mm, 28mm and 32mm.</li>
-                      <li>See this <a href="" target="_blank">link</a> for details on wheel and Tyre sizes.  When entering these figures into App settings ensure they are entered separately.  For example, for a 700c / 29er rim, you would enter 622 in the Wheel Diameter setting.  For a 25mm tyre, you would enter 25 in the Tyre width field.</li>
+                      <li>See this <a href="https://www.bikecalc.com/wheel_size_math" target="_blank">link</a> for details on wheel and Tyre sizes.  When entering these figures into App settings ensure they are entered separately.  For example, for a 700c / 29er rim, you would enter 622 in the Wheel Diameter setting.  For a 25mm tyre, you would enter 25 in the Tyre width field.</li>
                     </ul>        
                     <p>&nbsp;</p>
                     <p class="h4">Chain Rings (1, 2 or 3):</p>
@@ -316,12 +316,14 @@
                       <li><b>Front Chain Ring 1 (smallest):</b>  Start with the smallest, front chain ring on your bike.  This is usually the chain ring closest to the frame.  Enter the number of teeth on this chain ring.  There should always be a value in this setting.</li>
                       <li><b>Front Chain Ring 2:</b>  Enter the number of teeth on the second chain ring.  If you don't have a second chain ring, just leave this setting as '0'.</li>
                       <li><b>Front Chain Ring 3:</b>  Enter the number of teeth on the third chain ring.  If you don't have a third chain ring, just leave this setting as '0'.</li>
+                      <li><b>DEFAULTS:</b>  If you do not enter any values for any of the chain ring fields, default values will be used - Chainring1 = 36, Chainring2 = 46, Chainring3 = 0</li>
                     </ul>        
                     <p>&nbsp;</p>
                     <p class="h4">Cassette gears (up to 13):</p>
                     <ul>
                         <li><b>For each Cassette gear from smallest to biggest:</b>  Start with the smallest, rear cassette gear on your bike.  This is usually the gear cog closest to the outer frame of your bike.  Enter the number of teeth on this gear and then proceed to the next one.  You can enter up to 13 gears.  If you only have 10 or 11, just leave the remaining gear settings as '0'.</li>
                         <li>For example, I have an 11 speed Shimano cassette which has gears with the following teeth, in order from smallest to biggest: 11,12,13,14,16,18,20,22,25,28,32.  I would enter each of these values, separately, into the first 11 cassette fields (1-11), leaving the last two fields as '0'.</li>
+                        <li><b>DEFAULTS:</b>  If you do not enter any values for any of the cassette gear fields, default values will be used, based on a Shimano 14-28T cassette - 14,15,16,17,18,19,20,21,22,25,28.</li>
                     </ul>        
                     <p>&nbsp;</p>
                     <p class="h4">Calculation Smoothing:</p>
