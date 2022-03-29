@@ -330,7 +330,12 @@
                     <ul>
                         <li>As the calculations to derive your current gear are affected by Speed and Cadence, the calculations can fluctuate as your speed and cadence naturally varies.  To smooth this out I've added a setting that will mean a gear change will only be registered after the calculations determine you've been in that gear for X number of seconds.  The default value for X is 3 seconds, but you can alter this in App settings from between 0 and 30 seconds.</li>                    
                     <ul>
-                  </div>
+                    <p>&nbsp;</p>
+                    <p class="h4">Wheel Circumference Tolerance:</p>
+                    <ul>
+                        <li>When calculating the circumference of your wheel (including tyre), we should consider the impact of the riders' weight and the pressure of the tyres - as this will reduce the actual diameter of your wheel, whilst riding.  As such, it's good practice to deduct 2mm from the roll-out circumference.  This setting allows you to override the default setting of 2mm to between 0 and 10mm.  Why would you do this?  If you run bigger tyres, perhaps at a lower pressure, then the true diameter of your wheel will not be accurate as defined by measuring wheel diameter and tyre diameter.  This doesn't matter for measuring speed and distance on most Garmin devices as GPS tracks your distance over time to arrive at a speed.  However, developers do not have access to the wheel size "auto" calculation that garmin updates, so we must collect this settings data from you in order to have all of the variables to make the proper calculations.</li>                    
+                    <ul>
+                </div>
             </article>
             <article class="my-3" id="releases">
                 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
