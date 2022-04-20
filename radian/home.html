@@ -134,9 +134,27 @@
                     <p>&nbsp;</p>
                     <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
                     <p>2) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
-                    <p>3) Displays 3 dials, one of which can be configured to display Calories (and percentage of calorie target), Altitude, distance moved today, or Active Weekly Minutes, but also the ability to cycle between these three displays. Dial display cycle will occur every 15 seconds in full-power mode, or every minute in low-power mode. The gauge hand in the dials can be turned off by making it the same colour as the dial background colour.</p>
+                    <p>3) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
+                    <ul>
+                        <li>Altitude:  Current Altitude in Metres/Feet (depending on your garmin profile)</li>
+                        <li>Calories:  Current calories for the day (Kcal)</li>
+                        <li>Distance:  Current distance travelled today in m/km or ft/mi (depending on your garmin profile)</li>
+                        <li>Weekly Active Minutes:  Current active minutes count for the week compared to your weekly goal</li>
+                        <li>HR vs MAX:  Current HeartRate compared to your Maximum HeartRate (from your garmin profile)</li>
+                        <li>HR vs Zones:  Current HeartRate compared to your HeartRate zones, as defined in your Garmin profile</li>
+                        <li>Steps:  Current steps count for the day</li>
+                        <li>Floors Climbed:  Current count of floors climbed for the day</li>
+                        <li>Body Battery:  Latest state of your Body Battery, expressed as a number in the range of 0-100</li>
+                        <li>Stress:  Latest stress state, expressed as a number in the range of 0-100</li>
+                        <li>Oxygen Saturation:  Last Oxygen Saturation reading taken by your device (if supported)</li>
+                        <li>Atmospheric Pressure:  Latest atmospheric pressure reading by your device, expressed in hecto Pascals (hPa)</li>
+                        <li>Temperature:  Current temperature from your device - in degrees Celcius or degrees Farenheit (depending on your garmin profile).  NOTE, this may be effected by body temperature</li>
+                        <li>VO2Max Cycling:  Your latest VO2Max Cycling metric, from your garmin profile</li>
+                        <li>VO2Max Running:  Your latest VO2Max Running metric, from your garmin profile</li>
+                        <li>Respiration Rate: Latest respiration rate observed by your device (breaths per miniute)</li>
+                    </ul>
                     <p>4) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands and if the setting is on, the Date.</p>
-                    <p>5) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).</p>
+                    <p>5) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
                     <p>6) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
                     <p>7) Displays Floors climbed graphic as an ARC partway around the steps dial on the watch face. The display shows floors climbed as a percentage of goal.</p>
                     <p>8) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
@@ -319,6 +337,10 @@
                 <div class="modal-links">
                     <p class="h2">Release History</p>
                     <p>&nbsp;</p>
+                    <p class="h5">v2.0.1</p>
+                    <ul>
+                        <li>NEW: (Amoled) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators.  You can also choose a primary and secondary metric for each dial and the watch will transition from primary to secondary display 5 seconds into high-power display (ie, when you look at the watch).  You can also choose to display the primary or secondary metric, of each of the three dials during low power mode.  Some of this capability will be rolled out to the MIP devices in an upcoming release.</li>
+                    </ul>    
                     <p class="h5">v1.3.6</p>
                     <ul>
                         <li>FIX: Body Battery display could cause Radian to crash.  Implemented extra sanity checking of the Body Battery data.</li>
