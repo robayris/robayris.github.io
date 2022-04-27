@@ -375,113 +375,146 @@
                     <h6>Release History</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h2">Release History</p>
-                    <p>&nbsp;</p>
-                    <p class="h5">v2.0.3</p>
-                    <ul>
-                        <li>Chg: (Amoled) Renamed setting "Screen Timeout" to be "Transition Delay" and provided more granular settings - in the range of zero to 15 seconds, for this setting.  See above for more details about this setting.</li>
-                    </ul>    
-                    <p class="h5">v2.0.2</p>
-                    <ul>
-                        <li>Add: (Fenix7 Range) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators, similar to the Amoled devices.</li>
-                        <li>Add: (Amoled) New settings for "Always On Display" and "Screen Timeout" to better mirror your device settings (unfortnately, Connect IQ has no means to access these device settings directly).</li>
-                    </ul>    
-                    <p class="h5">v2.0.1</p>
-                    <ul>
-                        <li>NEW: (Amoled) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators.  You can also choose a primary and secondary metric for each dial and the watch will transition from primary to secondary display 5 seconds into high-power display (ie, when you look at the watch).  You can also choose to display the primary or secondary metric, of each of the three dials during low power mode.  Some of this capability will be rolled out to the MIP devices in an upcoming release.</li>
-                    </ul>    
-                    <p class="h5">v1.3.6</p>
-                    <ul>
-                        <li>FIX: Body Battery display could cause Radian to crash.  Implemented extra sanity checking of the Body Battery data.</li>
-                    </ul>    
-                    <p class="h5">v1.3.5</p>
-                    <ul>
-                        <li>Add: Support for new D2Mach1 (Amoled) device.</li>
-                    </ul>    
-                    <p class="h5">v1.3.4</p>
-                    <ul>
-                        <li>Add: (Amoled) Body Battery is an option to display on the Left Dial of the watchface.  Please note, currently only the venu and venu2 family devices support Body Battery, but it will become available on more devices soon, and when it does, it will just work in Radian.</li>
-                        <li>Add: (Amoled devices only) Thickness options for the battery tick marks.</li>
-                    </ul>    
-                    <p class="h5">v1.3.3</p>
-                    <ul>
-                        <li>Add: (Fenix7 series, S62 and Amoled devices) New specific Dial Icons Colour setting (c27).</li>
-                        <li>Add: (Fenix7 series, S62 and Amoled devices) New setting to turn Date Display on/off.</li>
-                        <li>Add: (Amoled devices only) Ability to define colour settings by RGB565 colour code as well as the existing 1-64 colours.</li>
-                    </ul>    
-                    <p class="h5">v1.3.2 (The P.D. Release)</p>
-                    <ul>
-                        <li>Fix: Floors bar growing past scope when going beyond goal.</li>
-                        <li>Fix: Icons to have consistent colour (as defined by the Dial Numbers Colour).</li>
-                        <li>Fix: (Amoled devices) Ensure Low Power Battery tick marks are white.</li>
-                    </ul>    
-                    <p class="h5">v1.3.1 (The P.D. Release)</p>
-                    <ul>
-                        <li>Following notes apply to:  Epix2, Venu, Venu2, Venu2+, Venu2S, Venu Merc, D2AirX10, Approach S62, Fenix 7 series.</li>
-                        <li>Add: Setting that configures the HR dial to display where Your HR is within your garmin profile training zones (similar to that in my TrainingHR and InTheZone apps).  You can also display the standard dial based on MAXHR, or turn the HR dial off completely.</li>
-                        <li>Add: Setting to display Floors climbed as either an ARC around the steps dial, or as a vertical bar under steps history.</li>
-                        <li>Add: Finer grained control over display/not display of dials.</li>
-                    </ul>    
-                    <p class="h5">v1.3.0</p>
-                    <ul>
-                        <li>Fix: (Amoled devices) Flashing may occur in transition from Low to High power mode</li>
-                        <li>Fix: (All devices) Ability to choose '0' for colour settings using the on-device settings function.</li>
-                        <li>Fix: (all devices) When a dial goal is reached the colour of the progression circle will change to the goal achieved colour.</li>
-                        <li>Add: (Amoled devices) Add Settings option to display Weekly Active Minutes (and goal) in the top-left dial display.</li>
-                        <li>Add: (Amoled devices) Separate colour settings for Floors and Steps.</li>
-                        <li>Chg: (All devices) Reverse the order the steps history is displayed (7 days ago on left to yesterday on right) to better match Garmin Connect display</li>
-                    </ul>    
-                    <p class="h5">v1.2.4</p>
-                    <ul>
-                        <li>Fix: Left dial on Venu2s watchface not rendered correctly</li>
-                        <li>Add: Setting for Amoled devices to turn off watch face in low power mode.</li>
-                    </ul>    
-                    <p class="h5">v1.2.3</p>
-                    <ul>
-                        <li>Add: Support for Venu, Venu2s and Venu Mercedes devices</li>
-                        <li>Improvements to screen layout and rendering consistency.</li>
-                    </ul>    
-                    <p class="h5">v1.2.2</p>
-                    <ul>
-                        <li>Fix: Do not display second hand for Amoled devices in Low Power Mode.</li>
-                        <li>Add: Day and Date display for Amoled devices in Low Power Mode.</li>
-                    </ul>    
-                    <p class="h5">v1.2.1</p>
-                    <ul>
-                        <li>Fix: Hour and Minute Hand Highlight colour not able to be set to Black.</li>
-                    </ul>    
-                    <p class="h5">v1.2.0</p>
-                    <ul>
-                        <li>Added support for Amoled devices: Venu2, Venu2+, Epix2 & D2AirX10.</li>
-                        <li>Added In App Settings menu for supported devices (curently Amoled devices and Fenix7 series).</li>
-                        <li>Improved Clock Hand rendering.</li>
-                    </ul>    
-                    <p class="h5">v1.1.2</p>
-                    <ul>
-                        <li>Added support for Fenix 7 series (Fenix 7s / 7 / 7x).</li>
-                    </ul>    
-                    <p class="h5">v1.1.1</p>
-                    <ul>
-                        <li>Added support for FR945LTE.</li>
-                        <li>Added support for new SDK4 createBufferedBitmap() functionality when device firmware supports it.</li>
-                    </ul>    
-                    <p class="h5">v1.1.0</p>
-                    <ul>
-                        <li>Added support for full range of Fenix6 devices.</li>
-                        <li>Added AntiAlias improvements for devices that support it - currently Fenix 6, D2 and MARQ series devices.</li>
-                    </ul>    
-                    <p class="h5">v1.0.31</p>
-                    <ul>
-                        <li>Added support fo MARQ Golfer</li>
-                    </ul>    
-                    <p class="h5">v1.0.30</p>
-                    <ul>
-                        <li>Add support for MARQ Adventurer and Commander</li>
-                    </ul>    
-                    <p class="h5">v1.0.29</p>
-                    <ul>
-                        <li>Better handling of heart rate zones and current sport for max HR calculation. Better handling of Altitude to ensure numerical data</li>
-                    </ul>    
+                    <div class="accordion accordion-flush" id="relHistory">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseOne" aria-expanded="true" aria-controls="relHistory-collapseOne">
+                              Latest Release
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
+                            <div class="accordion-body">
+                                <p class="h5">v2.0.3</p>
+                                <ul>
+                                    <li>Chg: (Amoled) Renamed setting "Screen Timeout" to be "Transition Delay" and provided more granular settings - in the range of zero to 15 seconds, for this setting.  See above for more details about this setting.</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseTwo" aria-expanded="false" aria-controls="relHistory-collapseTwo">
+                              Previous Releases
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
+                            <div class="accordion-body">
+                                <p class="h5">v2.0.2</p>
+                                <ul>
+                                    <li>Add: (Fenix7 Range) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators, similar to the Amoled devices.</li>
+                                    <li>Add: (Amoled) New settings for "Always On Display" and "Screen Timeout" to better mirror your device settings (unfortnately, Connect IQ has no means to access these device settings directly).</li>
+                                </ul>    
+                                <p class="h5">v2.0.1</p>
+                                <ul>
+                                    <li>NEW: (Amoled) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators.  You can also choose a primary and secondary metric for each dial and the watch will transition from primary to secondary display 5 seconds into high-power display (ie, when you look at the watch).  You can also choose to display the primary or secondary metric, of each of the three dials during low power mode.  Some of this capability will be rolled out to the MIP devices in an upcoming release.</li>
+                                </ul>    
+                                <p class="h5">v1.3.6</p>
+                                <ul>
+                                    <li>FIX: Body Battery display could cause Radian to crash.  Implemented extra sanity checking of the Body Battery data.</li>
+                                </ul>    
+                                <p class="h5">v1.3.5</p>
+                                <ul>
+                                    <li>Add: Support for new D2Mach1 (Amoled) device.</li>
+                                </ul>    
+                                <p class="h5">v1.3.4</p>
+                                <ul>
+                                    <li>Add: (Amoled) Body Battery is an option to display on the Left Dial of the watchface.  Please note, currently only the venu and venu2 family devices support Body Battery, but it will become available on more devices soon, and when it does, it will just work in Radian.</li>
+                                    <li>Add: (Amoled devices only) Thickness options for the battery tick marks.</li>
+                                </ul>    
+                                <p class="h5">v1.3.3</p>
+                                <ul>
+                                    <li>Add: (Fenix7 series, S62 and Amoled devices) New specific Dial Icons Colour setting (c27).</li>
+                                    <li>Add: (Fenix7 series, S62 and Amoled devices) New setting to turn Date Display on/off.</li>
+                                    <li>Add: (Amoled devices only) Ability to define colour settings by RGB565 colour code as well as the existing 1-64 colours.</li>
+                                </ul>    
+                                <p class="h5">v1.3.2 (The P.D. Release)</p>
+                                <ul>
+                                    <li>Fix: Floors bar growing past scope when going beyond goal.</li>
+                                    <li>Fix: Icons to have consistent colour (as defined by the Dial Numbers Colour).</li>
+                                    <li>Fix: (Amoled devices) Ensure Low Power Battery tick marks are white.</li>
+                                </ul>    
+                                <p class="h5">v1.3.1 (The P.D. Release)</p>
+                                <ul>
+                                    <li>Following notes apply to:  Epix2, Venu, Venu2, Venu2+, Venu2S, Venu Merc, D2AirX10, Approach S62, Fenix 7 series.</li>
+                                    <li>Add: Setting that configures the HR dial to display where Your HR is within your garmin profile training zones (similar to that in my TrainingHR and InTheZone apps).  You can also display the standard dial based on MAXHR, or turn the HR dial off completely.</li>
+                                    <li>Add: Setting to display Floors climbed as either an ARC around the steps dial, or as a vertical bar under steps history.</li>
+                                    <li>Add: Finer grained control over display/not display of dials.</li>
+                                </ul>    
+                                <p class="h5">v1.3.0</p>
+                                <ul>
+                                    <li>Fix: (Amoled devices) Flashing may occur in transition from Low to High power mode</li>
+                                    <li>Fix: (All devices) Ability to choose '0' for colour settings using the on-device settings function.</li>
+                                    <li>Fix: (all devices) When a dial goal is reached the colour of the progression circle will change to the goal achieved colour.</li>
+                                    <li>Add: (Amoled devices) Add Settings option to display Weekly Active Minutes (and goal) in the top-left dial display.</li>
+                                    <li>Add: (Amoled devices) Separate colour settings for Floors and Steps.</li>
+                                    <li>Chg: (All devices) Reverse the order the steps history is displayed (7 days ago on left to yesterday on right) to better match Garmin Connect display</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseThree" aria-expanded="false" aria-controls="relHistory-collapseThree">
+                              Ancient History
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseThree" class="accordion-collapse collapse" aria-labelledby="relHistory-headingThree">
+                            <div class="accordion-body">
+                                <p class="h5">v1.2.4</p>
+                                <ul>
+                                    <li>Fix: Left dial on Venu2s watchface not rendered correctly</li>
+                                    <li>Add: Setting for Amoled devices to turn off watch face in low power mode.</li>
+                                </ul>    
+                                <p class="h5">v1.2.3</p>
+                                <ul>
+                                    <li>Add: Support for Venu, Venu2s and Venu Mercedes devices</li>
+                                    <li>Improvements to screen layout and rendering consistency.</li>
+                                </ul>    
+                                <p class="h5">v1.2.2</p>
+                                <ul>
+                                    <li>Fix: Do not display second hand for Amoled devices in Low Power Mode.</li>
+                                    <li>Add: Day and Date display for Amoled devices in Low Power Mode.</li>
+                                </ul>    
+                                <p class="h5">v1.2.1</p>
+                                <ul>
+                                    <li>Fix: Hour and Minute Hand Highlight colour not able to be set to Black.</li>
+                                </ul>    
+                                <p class="h5">v1.2.0</p>
+                                <ul>
+                                    <li>Added support for Amoled devices: Venu2, Venu2+, Epix2 & D2AirX10.</li>
+                                    <li>Added In App Settings menu for supported devices (curently Amoled devices and Fenix7 series).</li>
+                                    <li>Improved Clock Hand rendering.</li>
+                                </ul>    
+                                <p class="h5">v1.1.2</p>
+                                <ul>
+                                    <li>Added support for Fenix 7 series (Fenix 7s / 7 / 7x).</li>
+                                </ul>    
+                                <p class="h5">v1.1.1</p>
+                                <ul>
+                                    <li>Added support for FR945LTE.</li>
+                                    <li>Added support for new SDK4 createBufferedBitmap() functionality when device firmware supports it.</li>
+                                </ul>    
+                                <p class="h5">v1.1.0</p>
+                                <ul>
+                                    <li>Added support for full range of Fenix6 devices.</li>
+                                    <li>Added AntiAlias improvements for devices that support it - currently Fenix 6, D2 and MARQ series devices.</li>
+                                </ul>    
+                                <p class="h5">v1.0.31</p>
+                                <ul>
+                                    <li>Added support fo MARQ Golfer</li>
+                                </ul>    
+                                <p class="h5">v1.0.30</p>
+                                <ul>
+                                    <li>Add support for MARQ Adventurer and Commander</li>
+                                </ul>    
+                                <p class="h5">v1.0.29</p>
+                                <ul>
+                                    <li>Better handling of heart rate zones and current sport for max HR calculation. Better handling of Altitude to ensure numerical data</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="my-3" id="devices">
@@ -489,267 +522,305 @@
                     <h6>Compatible Devices</h6>
                 </div>
                 <div class="modal-links">
-                    <ul>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01702-00/v/cf-sm.jpg"
-                                alt="Approach® S60" />
-                            <span>Approach® S60</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02200-00/v/pd-03-sm-32c3215c-7217-4a09-9b06-adeda2ed555a.jpg"
-                                alt="Approach® S62" />
-                            <span>Approach® S62</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02496-09/v/pd-01-sm-bc0a4be7-cac1-424e-9343-dbadb33efabf.jpg"
-                                alt="D2™ Air X10" />
-                            <span>D2™ Air X10</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01733-30/v/cf-sm.jpg"
-                                alt="D2™ Charlie" />
-                            <span>D2™ Charlie</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01988-30/g/cf-sm-87bb0674-cc55-4a52-ad94-32bf9b4e729c.jpg"
-                                alt="D2™ Delta" />
-                            <span>D2™ Delta</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01989-30/g/cf-sm-874810a3-a28b-4484-955d-6c4a24c4f7bf.jpg"
-                                alt="D2™ Delta PX" />
-                            <span>D2™ Delta PX</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01987-30/g/cf-sm-431a8fa0-3449-43e0-9702-5ff6ad991c84.jpg"
-                                alt="D2™ Delta S" />
-                            <span>D2™ Delta S</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01760-00/v/cf-sm.jpg"
-                                alt="Descent™ Mk1" />
-                            <span>Descent™ Mk1</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02582-00/v/sc-02-sm-a9a189e7-e6a6-4a21-a8f2-71d306469085.jpg"
-                                alt="epix™ (Gen 2)" />
-                            <span>epix™ (Gen 2)</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01863-10/v/cf-sm-3d860c6d-aec3-4fcd-8544-3ec55190a637.jpg"
-                                alt="Forerunner® 645" />
-                            <span>Forerunner® 645</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01863-30/v/cf-sm-cf7f4202-dce2-4c43-ab20-0d0ae12b35f3.jpg"
-                                alt="Forerunner® 645 Music" />
-                            <span>Forerunner® 645 Music</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01746-00/v/cf-sm.jpg"
-                                alt="Forerunner® 935" />
-                            <span>Forerunner® 935</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02063-00/v/cf-sm-538e211f-f991-4d7a-91f7-d25d4feb9a99.jpg"
-                                alt="Forerunner® 945" />
-                            <span>Forerunner® 945</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02383-00/v/rf-sm-333473bc-693b-47c4-aaa8-dbb0768ddaa3.jpg"
-                                alt="Forerunner® 945 LTE" />
-                            <span>Forerunner® 945 LTE</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01688-00/v/cf-sm.jpg" alt="fēnix® 5" />
-                            <span>fēnix® 5, quatix® 5</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01988-10/v/cf-sm-c9091bfe-f1af-42b4-bd62-f3b45f46a15d.jpg"
-                                alt="fēnix® 5 Plus" />
-                            <span>fēnix® 5 Plus</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01987-00/v/cf-sm-58f98bed-90e7-4199-b4bc-925aec9690a7.jpg"
-                                alt="fēnix® 5S Plus" />
-                            <span>fēnix® 5S Plus</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01733-00/v/cf-md.jpg" alt="fēnix® 5X" width="150px" />
-                            <span>fēnix® 5X, tactix® Charlie</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-01989-04/v/cf-sm-6dd29412-ddad-4f53-b62d-84eaaa06f258.jpg"
-                                alt="fēnix® 5X Plus" />
-                            <span>fēnix® 5X Plus</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02158-11/v/cf-sm-d9660dd6-f71d-4fe6-8682-2f6d80e12dff.jpg"
-                                alt="fēnix® 6" />
-                            <span>fēnix® 6</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
-                                alt="fēnix® 6 Dual Power" />
-                            <span>fēnix® 6 Dual Power</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02158-02/v/cf-sm-c561cac8-1a27-4bb1-8374-d99dc6afe57a.jpg"
-                                alt="fēnix® 6 Pro" />
-                            <span>fēnix® 6 Pro, fēnix® 6 Sapphire</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
-                                alt="fēnix® 6 Pro Dual Power" />
-                            <span>fēnix® 6 Pro Dual Power</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
-                                alt="fēnix® 6 Pro Solar" />
-                            <span>fēnix® 6 Pro Solar</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
-                                alt="fēnix® 6 Solar" />
-                            <span>fēnix® 6 Solar</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02159-00/v/cf-sm-880ca1fb-2302-4a53-bfda-962e357fd7f8.jpg"
-                                alt="fēnix® 6S" />
-                            <span>fēnix® 6S</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
-                                alt="fēnix® 6S Dual Power" />
-                            <span>fēnix® 6S Dual Power</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02159-14/v/cf-sm-6f0a6934-59f4-467c-8a6d-e74cb01d5ca6.jpg"
-                                alt="fēnix® 6S Pro" />
-                            <span>fēnix® 6S Pro, fēnix® 6S Sapphire</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
-                                alt="fēnix® 6S Pro Dual Power" />
-                            <span>fēnix® 6S Pro Dual Power</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
-                                alt="fēnix® 6S Pro Solar" />
-                            <span>fēnix® 6S Pro Solar</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
-                                alt="fēnix® 6S Solar" />
-                            <span>fēnix® 6S Solar</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02157-01/v/cf-sm-47dff6dd-beb7-42eb-9daa-3585c81c12ea.jpg"
-                            alt="fēnix® 6X Pro" style="float: left;" />
-                            <span>fēnix® 6X Pro, fēnix® 6X Sapphire, fēnix® 6X Pro Solar, tactix® Delta Sapphire, quatix® 6X Solar, tactix® Delta Solar, tactix® Delta Solar Ballistics</span>
-                            <br clear="left" />
-                    </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02540-00/v/rf-sm-79088307-fcf5-4dff-9eb9-3090f92db1bb.jpg"
-                                alt="fēnix® 7" />
-                            <span>fēnix® 7</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02539-00/g/cf-sm-3ecb177b-cbcd-41dd-80e5-c954164a0955.jpg"
-                                alt="fēnix® 7S" />
-                            <span>fēnix® 7S</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02541-11/v/sc-03-sm-cd878574-7789-4323-a2f2-1acebcff5f36.jpg"
-                                alt="fēnix® 7X" />
-                            <span>fēnix® 7X</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-26/g/cf-sm-f78826d3-cb9a-42f0-871c-ca80cc34c5a4.jpg"
-                                alt="MARQ™ Adventurer" />
-                            <span>MARQ™ Adventurer</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-15/g/cf-sm-0b73c33d-2df0-4d7e-b438-fd23d7c4390f.jpg"
-                                alt="MARQ™ Athlete" />
-                            <span>MARQ™ Athlete</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-03/g/cf-sm-614d7b98-9b70-4c8a-bec7-5ee303166767.jpg"
-                                alt="MARQ™ Aviator" />
-                            <span>MARQ™ Aviator</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-06/g/cf-sm-04034f67-9380-4d27-b5aa-678600fb8b5f.jpg"
-                                alt="MARQ™ Captain" />
-                            <span>MARQ™ Captain, MARQ™ Captain: American Magic Edition</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-11/g/rf-sm-517ae5f4-8789-49b5-ad89-d2002ee9f8e3.jpg"
-                                alt="MARQ™ Commander" />
-                            <span>MARQ™ Commander</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-00/g/cf-sm-2f580581-696f-4e11-808b-c8acd963de46.jpg"
-                                alt="MARQ™ Driver" />
-                            <span>MARQ™ Driver</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02006-12/g/cf-sm-4d82de5c-a266-4cb0-abd1-a167526e2669.jpg"
-                                alt="MARQ™ Expedition" />
-                            <span>MARQ™ Expedition</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02394-00/g/pd-01-sm-fab01f49-dd1d-4d6e-8519-0d817c1ae674.jpg"
-                                alt="MARQ™ Golfer" />
-                            <span>MARQ™ Golfer</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02173-52/v/cf-sm-86fc3396-766b-408e-9755-0c8fb5bbacc5.jpg"
-                                alt="Mercedes-Benz Venu®" />
-                            <span>Mercedes-Benz Venu®</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02430-22/v/cf-sm-c77f7728-90d5-4be1-a73b-b988ed45bcc1.png"
-                                alt="Mercedes-Benz Venu® 2" />
-                            <span>Mercedes-Benz Venu® 2</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02429-20/v/cf-sm-06f6a68d-b824-401d-b65e-dd33db5cb6cf.png"
-                                alt="Mercedes-Benz Venu® 2S" />
-                            <span>Mercedes-Benz Venu® 2S</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02158-90/g/rf-sm-c3bd24e1-838f-41a5-b84b-45f8c3bc33ec.jpg"
-                                alt="quatix® 6" />
-                            <span>quatix® 6</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02157-30/g/rf-sm-08137167-34a8-4a4b-8065-ab9f72810db0.jpg"
-                                alt="quatix® 6X" />
-                            <span>quatix® 6X, quatix® 6X Solar, quatix® 6X Dual Power</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02173-12/v/cf-sm-9af674f3-640f-43f0-91df-117ed510ffcf.jpg"
-                                alt="Venu®" />
-                            <span>Venu®</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02430-10/v/cm-sm-26d3d922-fbce-45e1-9851-0fc7cd29f2c0.png"
-                                alt="Venu® 2" />
-                            <span>Venu® 2</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02496-10/v/pd-01-sm-8096ba5b-467d-406a-8207-6e2b8a609d2f.jpg"
-                                alt="Venu® 2 Plus" />
-                            <span>Venu® 2 Plus</span>
-                        </li>
-                        <li>
-                            <img src="https://static.garmincdn.com/en/products/010-02429-10/v/cm-sm-9e11f013-57fa-4143-aeba-20804d29ec5c.png"
-                                alt="Venu® 2S" />
-                            <span>Venu® 2S</span>
-                        </li>
-                   </ul>    
+                    <div class="accordion accordion-flush" id="deviceList">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="deviceList-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseOne" aria-expanded="true" aria-controls="deviceList-collapseOne">
+                              Amoled Devices
+                            </button>
+                          </h2>
+                          <div id="deviceList-collapseOne" class="accordion-collapse collapse" aria-labelledby="deviceList-headingOne">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02496-09/v/pd-01-sm-bc0a4be7-cac1-424e-9343-dbadb33efabf.jpg"
+                                            alt="D2™ Air X10" />
+                                        <span>D2™ Air X10</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02582-50/g/cf-sm-072c4843-2066-4cd6-8d23-35dfcc65dd05.jpg" alt="D2™ Mach 1" />
+                                        <span>D2™ Mach 1</span>
+                                    </li>    
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02582-00/v/sc-02-sm-a9a189e7-e6a6-4a21-a8f2-71d306469085.jpg"
+                                            alt="epix™ (Gen 2)" />
+                                        <span>epix™ (Gen 2)</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02173-12/v/cf-sm-9af674f3-640f-43f0-91df-117ed510ffcf.jpg"
+                                            alt="Venu®" />
+                                        <span>Venu®</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02173-52/v/cf-sm-86fc3396-766b-408e-9755-0c8fb5bbacc5.jpg"
+                                            alt="Mercedes-Benz Venu®" />
+                                        <span>Mercedes-Benz Venu®</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02429-10/v/cm-sm-9e11f013-57fa-4143-aeba-20804d29ec5c.png"
+                                            alt="Venu® 2S" />
+                                        <span>Venu® 2S</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02429-20/v/cf-sm-06f6a68d-b824-401d-b65e-dd33db5cb6cf.png"
+                                            alt="Mercedes-Benz Venu® 2S" />
+                                        <span>Mercedes-Benz Venu® 2S</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02430-10/v/cm-sm-26d3d922-fbce-45e1-9851-0fc7cd29f2c0.png"
+                                            alt="Venu® 2" />
+                                        <span>Venu® 2</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02430-22/v/cf-sm-c77f7728-90d5-4be1-a73b-b988ed45bcc1.png"
+                                            alt="Mercedes-Benz Venu® 2" />
+                                        <span>Mercedes-Benz Venu® 2</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02496-10/v/pd-01-sm-8096ba5b-467d-406a-8207-6e2b8a609d2f.jpg"
+                                            alt="Venu® 2 Plus" />
+                                        <span>Venu® 2 Plus</span>
+                                    </li>
+                                /ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="deviceList-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseTwo" aria-expanded="false" aria-controls="deviceList-collapseTwo">
+                              Current (System 5) MIP Devices
+                            </button>
+                          </h2>
+                          <div id="deviceList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="deviceList-headingTwo">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02539-00/g/cf-sm-3ecb177b-cbcd-41dd-80e5-c954164a0955.jpg"
+                                            alt="fēnix® 7S" />
+                                        <span>fēnix® 7S</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02540-00/v/rf-sm-79088307-fcf5-4dff-9eb9-3090f92db1bb.jpg"
+                                            alt="fēnix® 7" />
+                                        <span>fēnix® 7</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02541-11/v/sc-03-sm-cd878574-7789-4323-a2f2-1acebcff5f36.jpg"
+                                            alt="fēnix® 7X" />
+                                        <span>fēnix® 7X</span>
+                                    </li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="deviceList-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseThree" aria-expanded="false" aria-controls="deviceList-collapseThree">
+                              Other Devices
+                            </button>
+                          </h2>
+                          <div id="deviceList-collapseThree" class="accordion-collapse collapse" aria-labelledby="deviceList-headingThree">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01702-00/v/cf-sm.jpg"
+                                            alt="Approach® S60" />
+                                        <span>Approach® S60</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02200-00/v/pd-03-sm-32c3215c-7217-4a09-9b06-adeda2ed555a.jpg"
+                                            alt="Approach® S62" />
+                                        <span>Approach® S62</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01733-30/v/cf-sm.jpg"
+                                            alt="D2™ Charlie" />
+                                        <span>D2™ Charlie</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01988-30/g/cf-sm-87bb0674-cc55-4a52-ad94-32bf9b4e729c.jpg"
+                                            alt="D2™ Delta" />
+                                        <span>D2™ Delta</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01989-30/g/cf-sm-874810a3-a28b-4484-955d-6c4a24c4f7bf.jpg"
+                                            alt="D2™ Delta PX" />
+                                        <span>D2™ Delta PX</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01987-30/g/cf-sm-431a8fa0-3449-43e0-9702-5ff6ad991c84.jpg"
+                                            alt="D2™ Delta S" />
+                                        <span>D2™ Delta S</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01863-10/v/cf-sm-3d860c6d-aec3-4fcd-8544-3ec55190a637.jpg"
+                                            alt="Forerunner® 645" />
+                                        <span>Forerunner® 645</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01863-30/v/cf-sm-cf7f4202-dce2-4c43-ab20-0d0ae12b35f3.jpg"
+                                            alt="Forerunner® 645 Music" />
+                                        <span>Forerunner® 645 Music</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01746-00/v/cf-sm.jpg"
+                                            alt="Forerunner® 935" />
+                                        <span>Forerunner® 935</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02063-00/v/cf-sm-538e211f-f991-4d7a-91f7-d25d4feb9a99.jpg"
+                                            alt="Forerunner® 945" />
+                                        <span>Forerunner® 945</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02383-00/v/rf-sm-333473bc-693b-47c4-aaa8-dbb0768ddaa3.jpg"
+                                            alt="Forerunner® 945 LTE" />
+                                        <span>Forerunner® 945 LTE</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01688-00/v/cf-sm.jpg" alt="fēnix® 5" />
+                                        <span>fēnix® 5, quatix® 5</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01988-10/v/cf-sm-c9091bfe-f1af-42b4-bd62-f3b45f46a15d.jpg"
+                                            alt="fēnix® 5 Plus" />
+                                        <span>fēnix® 5 Plus</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01987-00/v/cf-sm-58f98bed-90e7-4199-b4bc-925aec9690a7.jpg"
+                                            alt="fēnix® 5S Plus" />
+                                        <span>fēnix® 5S Plus</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01733-00/v/cf-md.jpg" alt="fēnix® 5X" width="150px" />
+                                        <span>fēnix® 5X, tactix® Charlie</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-01989-04/v/cf-sm-6dd29412-ddad-4f53-b62d-84eaaa06f258.jpg"
+                                            alt="fēnix® 5X Plus" />
+                                        <span>fēnix® 5X Plus</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02158-11/v/cf-sm-d9660dd6-f71d-4fe6-8682-2f6d80e12dff.jpg"
+                                            alt="fēnix® 6" />
+                                        <span>fēnix® 6</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
+                                            alt="fēnix® 6 Dual Power" />
+                                        <span>fēnix® 6 Dual Power</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02158-02/v/cf-sm-c561cac8-1a27-4bb1-8374-d99dc6afe57a.jpg"
+                                            alt="fēnix® 6 Pro" />
+                                        <span>fēnix® 6 Pro, fēnix® 6 Sapphire</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
+                                            alt="fēnix® 6 Pro Dual Power" />
+                                        <span>fēnix® 6 Pro Dual Power</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
+                                            alt="fēnix® 6 Pro Solar" />
+                                        <span>fēnix® 6 Pro Solar</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
+                                            alt="fēnix® 6 Solar" />
+                                        <span>fēnix® 6 Solar</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02159-00/v/cf-sm-880ca1fb-2302-4a53-bfda-962e357fd7f8.jpg"
+                                            alt="fēnix® 6S" />
+                                        <span>fēnix® 6S</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
+                                            alt="fēnix® 6S Dual Power" />
+                                        <span>fēnix® 6S Dual Power</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02159-14/v/cf-sm-6f0a6934-59f4-467c-8a6d-e74cb01d5ca6.jpg"
+                                            alt="fēnix® 6S Pro" />
+                                        <span>fēnix® 6S Pro, fēnix® 6S Sapphire</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
+                                            alt="fēnix® 6S Pro Dual Power" />
+                                        <span>fēnix® 6S Pro Dual Power</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
+                                            alt="fēnix® 6S Pro Solar" />
+                                        <span>fēnix® 6S Pro Solar</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
+                                            alt="fēnix® 6S Solar" />
+                                        <span>fēnix® 6S Solar</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02157-01/v/cf-sm-47dff6dd-beb7-42eb-9daa-3585c81c12ea.jpg"
+                                        alt="fēnix® 6X Pro" style="float: left;" />
+                                        <span>fēnix® 6X Pro, fēnix® 6X Sapphire, fēnix® 6X Pro Solar, tactix® Delta Sapphire, quatix® 6X Solar, tactix® Delta Solar, tactix® Delta Solar Ballistics</span>
+                                        <br clear="left" />
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-26/g/cf-sm-f78826d3-cb9a-42f0-871c-ca80cc34c5a4.jpg"
+                                            alt="MARQ™ Adventurer" />
+                                        <span>MARQ™ Adventurer</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-15/g/cf-sm-0b73c33d-2df0-4d7e-b438-fd23d7c4390f.jpg"
+                                            alt="MARQ™ Athlete" />
+                                        <span>MARQ™ Athlete</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-03/g/cf-sm-614d7b98-9b70-4c8a-bec7-5ee303166767.jpg"
+                                            alt="MARQ™ Aviator" />
+                                        <span>MARQ™ Aviator</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-06/g/cf-sm-04034f67-9380-4d27-b5aa-678600fb8b5f.jpg"
+                                            alt="MARQ™ Captain" />
+                                        <span>MARQ™ Captain, MARQ™ Captain: American Magic Edition</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-11/g/rf-sm-517ae5f4-8789-49b5-ad89-d2002ee9f8e3.jpg"
+                                            alt="MARQ™ Commander" />
+                                        <span>MARQ™ Commander</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-00/g/cf-sm-2f580581-696f-4e11-808b-c8acd963de46.jpg"
+                                            alt="MARQ™ Driver" />
+                                        <span>MARQ™ Driver</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02006-12/g/cf-sm-4d82de5c-a266-4cb0-abd1-a167526e2669.jpg"
+                                            alt="MARQ™ Expedition" />
+                                        <span>MARQ™ Expedition</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02394-00/g/pd-01-sm-fab01f49-dd1d-4d6e-8519-0d817c1ae674.jpg"
+                                            alt="MARQ™ Golfer" />
+                                        <span>MARQ™ Golfer</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02158-90/g/rf-sm-c3bd24e1-838f-41a5-b84b-45f8c3bc33ec.jpg"
+                                            alt="quatix® 6" />
+                                        <span>quatix® 6</span>
+                                    </li>
+                                    <li>
+                                        <img src="https://static.garmincdn.com/en/products/010-02157-30/g/rf-sm-08137167-34a8-4a4b-8065-ab9f72810db0.jpg"
+                                            alt="quatix® 6X" />
+                                        <span>quatix® 6X, quatix® 6X Solar, quatix® 6X Dual Power</span>
+                                    </li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="my-3" id="fter">
