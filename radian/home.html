@@ -133,7 +133,7 @@
                     <p>&nbsp;</p>
                     <p>Amoled (Active-Matrix Organic Light Emitting Diode) devices (such as the Venu series, Epix2, D2Mach1, D2AirX10, etc) have a vibrant, high resolution screen, capable of displaying 65,000+ colours.  Key features of Radian for Amoled devices, are as follows:</p>
                     <p>&nbsp;</p>
-                    <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
+                    <p>1) Configuration to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
                     <p>2) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
                     <p>3) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
@@ -152,15 +152,19 @@
                         <li><b>Temperature (Dial/Indicator):</b> Current temperature from your device - in degrees Celcius or degrees Farenheit (depending on your garmin profile).  NOTE, this may be effected by body temperature</li>
                         <li><b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
-                        <li><b>Respiration Rate  (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
+                        <li><b>Battery Level (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it, or as a % if not).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
-                    <p>4) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 10, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
+                    <p>4) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 12, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
                     <p>5) The watchface can be configured to display either the Primary, secondary, or no metric for each of the three dials during low power mode.  Keep in mind that during low power mode, the display is only updated once per minute, so the data displayed will only update once per minute.</p>
                     <p>6) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands, the Date, and also any configured dials to display.</p>
                     <p>7) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
                     <p>8) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
                     <p>9) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
-                    <p>10) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
+                    <p>10) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
+                    <p>11) Ability to show the Notifications Icon and notifications count.</p>
+                    <p>12) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
                     <ol>
                         <li><b>Always On Display:</b> If set to No, then the watch face will completely turn off the display (and all associated processing) during Low Power mode, which has the benefit of reducing the processing required to retrieve metrics and draw the watch face.  This also reduces battery consumption.  If "Always On Display" is set to Yes, then the watch face will revert to the Low Power display mode during low power.</li>
                         <li><b>Transition Delay:</b> Allows you to choose the delay in transitoning from Primary metrics to Secondary metrics.  Valid values are from 0-15 seconds.  If you choose '0', then there will be no transition from Primary to Secondary metrics whilst in High Power mode, but there could be a transition to Secondary metrics when your device transitions to low-power mode, depending on how you set the "Left/Right/Bottom Dial in Low Power" settings.</li>
@@ -179,7 +183,7 @@
                     <p>&nbsp;</p>
                     <p>Some of the MIP device range are being upgraded to Connect IQ System 5, which provides more features and optimisations.  Devices that currently fall in this category are the Fenix7 range, with more to follow.  The new features and optimisations of System 5 allow Radian to operate, for these devices, in a similar way to the Amoled devices, features such as:</p>
                     <p>&nbsp;</p>
-                    <p>1) Displays the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour.</p>
+                    <p>1) Configuration to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
                     <p>2) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
                     <p>3) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, or the metric you choose does not appear on the watchface, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
@@ -199,11 +203,15 @@
                         <li><b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
                         <li><b>Respiration Rate  (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
+                        <li><b>Battery Level (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it, or as a % if not).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
                     <p>4) Each of the three dials and two indicators can display any or all of these metrics (there are some exceptions for display in the Indicators as these rely on a goal for each metric).  If you choose more than one metric in a dial or indicator, then there is another setting that allows you to choose how often the dial should cycle display between those metrics.</p>
                     <p>5) There are 27 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
                     <p>6) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
                     <p>7) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    <p>8) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
+                    <p>9) Ability to show the Notifications Icon and notifications count.</p>
                     <p>&nbsp;</p>
                   </div>
             </article>
@@ -384,9 +392,12 @@
                           </h2>
                           <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
                             <div class="accordion-body">
-                                <p class="h5">v2.0.3</p>
+                                <p class="h5">v2.0.4</p>
                                 <ul>
-                                    <li>Chg: (Amoled) Renamed setting "Screen Timeout" to be "Transition Delay" and provided more granular settings - in the range of zero to 15 seconds, for this setting.  See above for more details about this setting.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to display the Move Bar either on the watchface or in any of the Dials or Indicators.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to display Battery Level (and days if supported) in any of the Dials or Indicators.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to show Clock Ticks only (in various styles), without showing Battery level, around the watch face.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to show Notifications icon and count.</li>
                                 </ul>    
                             </div>
                           </div>
@@ -399,6 +410,10 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v2.0.3</p>
+                                <ul>
+                                    <li>Chg: (Amoled) Renamed setting "Screen Timeout" to be "Transition Delay" and provided more granular settings - in the range of zero to 15 seconds, for this setting.  See above for more details about this setting.</li>
+                                </ul>    
                                 <p class="h5">v2.0.2</p>
                                 <ul>
                                     <li>Add: (Fenix7 Range) Ability to choose from a list of 16 metrics, which metric to display in any of the three circular dials and two indicators, similar to the Amoled devices.</li>
