@@ -154,7 +154,8 @@
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
                         <li><b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
                         <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it, or as a % if not).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
                     <p>4) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 12, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
                     <p>5) The watchface can be configured to display either the Primary, secondary, or no metric for each of the three dials during low power mode.  Keep in mind that during low power mode, the display is only updated once per minute, so the data displayed will only update once per minute.</p>
@@ -185,6 +186,14 @@
                     <p>&nbsp;</p>
                     <p>1) Configuration to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
                     <p>2) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
+                    <p>4) Ability to reduce what's displayed on the screen during Low Power Mode.  Low Power mode occurs when the Backlight turns off on your device.  It can be controlled, somewhat, through the System > Backlight settings menu on your device.  NOTE:  When the device is in Low Power mode the display is only updated once per minute, except for the Seconds hand (if displayed - your choice) which can continue to display every second.</p>
+                    <ol>
+                        <li><b>Reduce Data and Do not Show Seconds Hand</b> Information on the screen is reduced and the Seconds Hand is NOT displayed.</li>
+                        <li><b>Reduce Data Only</b> Information on the screen is reduced, but seconds hand is displayed.</li>
+                        <li><b>Hide Data and Seconds Hand</b> Information Dials and Indicators are turned off, as is the Seconds Hand.</li>
+                        <li><b>Hide Data Only</b> Information Dials and Indicators are turned off, but the Seconds Hand is displayed.</li>
+                        <li><b>Do Nothing</b> The device continues to display as though it was in Full Power mode.  NOTE, however, that the screen is only updated every minute (except for the Seconds Hand).</li>
+                    </ol>
                     <p>3) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, or the metric you choose does not appear on the watchface, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
                         <li><b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
@@ -204,7 +213,8 @@
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
                         <li><b>Respiration Rate  (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
                         <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it, or as a % if not).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
                     <p>4) Each of the three dials and two indicators can display any or all of these metrics (there are some exceptions for display in the Indicators as these rely on a goal for each metric).  If you choose more than one metric in a dial or indicator, then there is another setting that allows you to choose how often the dial should cycle display between those metrics.</p>
                     <p>5) There are 27 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
@@ -392,12 +402,11 @@
                           </h2>
                           <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
                             <div class="accordion-body">
-                                <p class="h5">v2.0.4</p>
+                                <p class="h5">v2.0.5</p>
                                 <ul>
-                                    <li>Add: (Amoled, Fenix7 series) Ability to display the Move Bar either on the watchface or in any of the Dials or Indicators.</li>
-                                    <li>Add: (Amoled, Fenix7 series) Ability to display Battery Level (and days if supported) in any of the Dials or Indicators.</li>
-                                    <li>Add: (Amoled, Fenix7 series) Ability to show Clock Ticks only (in various styles), without showing Battery level, around the watch face.</li>
-                                    <li>Add: (Amoled, Fenix7 series) Ability to show Notifications icon and count.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Battery Level has been split into two metrics:  Battery Level Days and Battery Level %.  You can now choose which one you'd like to display in the Dials or Indicators.</li>
+                                    <li>Chg: (Fenix7 series) Change to the way Low Power Mode is handled on these devices.  There are now more options as to what data to reduce on the screen and whether to display seconds or not.  See the System5 Device section, above, for details.</li>
+                                    <li>Fix: (Amoled, Fenix7 series) Show a label (Done) at where to touch on the In App Menu to confirm update of a setting.</li>
                                 </ul>    
                             </div>
                           </div>
@@ -410,6 +419,13 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v2.0.4</p>
+                                <ul>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to display the Move Bar either on the watchface or in any of the Dials or Indicators.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to display Battery Level (and days if supported) in any of the Dials or Indicators.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to show Clock Ticks only (in various styles), without showing Battery level, around the watch face.</li>
+                                    <li>Add: (Amoled, Fenix7 series) Ability to show Notifications icon and count.</li>
+                                </ul>    
                                 <p class="h5">v2.0.3</p>
                                 <ul>
                                     <li>Chg: (Amoled) Renamed setting "Screen Timeout" to be "Transition Delay" and provided more granular settings - in the range of zero to 15 seconds, for this setting.  See above for more details about this setting.</li>
