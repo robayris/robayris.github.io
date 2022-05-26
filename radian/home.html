@@ -141,9 +141,10 @@
                         <li><b>12, 3 and 6:</b> Dial A at 12, Dial B at 3 and Dial C at 6.  Indicator A to the right of Dial A, Indicator B to the right of Dial C.</li>
                         <li><b>10, 2 and 6 (Version 2):</b> Dial A at 10, Dial B at 2 and Dial C at 6.  Indicator A to the right of Dial A, Indicator B to the left of Dial B.</li>
                     </ol>    
-                    <p>2) Configuration to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
-                    <p>3) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
-                    <p>4) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
+                    <p>2) Option to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
+                    <p>3) Option to show the Battery level icon directly on the watchface, or to show just a single clock tick on the watch face representing the battery level (For example, 75% battery level will display a tick mark at 9 o'clock, 50% at 6 o'clock, and 25% at 3 o'clock, and everything in between).</p>
+                    <p>4) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
+                    <p>5) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
                         <li><b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
                         <li><b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
@@ -162,18 +163,18 @@
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
                         <li><b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
                         <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
-                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
-                    <p>5) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 13, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
-                    <p>6) The watchface can be configured to display either the Primary, secondary, or no metric for each of the three dials during low power mode.  Keep in mind that during low power mode, the display is only updated once per minute, so the data displayed will only update once per minute.</p>
-                    <p>7) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands, the Date, and also any configured dials to display.</p>
-                    <p>8) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
-                    <p>9) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
-                    <p>10) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
-                    <p>11) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
-                    <p>12) Ability to show the Notifications Icon and notifications count.</p>
-                    <p>13) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
+                    <p>6) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 14, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
+                    <p>7) The watchface can be configured to display either the Primary, secondary, or no metric for each of the three dials during low power mode.  Keep in mind that during low power mode, the display is only updated once per minute, so the data displayed will only update once per minute.</p>
+                    <p>8) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands, the Date, and also any configured dials to display.</p>
+                    <p>9) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
+                    <p>10) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
+                    <p>11) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    <p>12) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
+                    <p>13) Ability to show the Notifications Icon and notifications count.</p>
+                    <p>14) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
                     <ol>
                         <li><b>Always On Display:</b> If set to No, then the watch face will completely turn off the display (and all associated processing) during Low Power mode, which has the benefit of reducing the processing required to retrieve metrics and draw the watch face.  This also reduces battery consumption.  If "Always On Display" is set to Yes, then the watch face will revert to the Low Power display mode during low power.</li>
                         <li><b>Transition Delay:</b> Allows you to choose the delay in transitoning from Primary metrics to Secondary metrics.  Valid values are from 0-15 seconds.  If you choose '0', then there will be no transition from Primary to Secondary metrics whilst in High Power mode, but there could be a transition to Secondary metrics when your device transitions to low-power mode, depending on how you set the "Dial A/B/C in Low Power" settings.</li>
@@ -200,9 +201,10 @@
                         <li><b>12, 3 and 6:</b> Dial A at 12, Dial B at 3 and Dial C at 6.  Indicator A to the right of Dial A, Indicator B to the right of Dial C.</li>
                         <li><b>10, 2 and 6 (Version 2):</b> Dial A at 10, Dial B at 2 and Dial C at 6.  Indicator A to the right of Dial A, Indicator B to the left of Dial B.</li>
                     </ol>    
-                    <p>2) Configuration to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
-                    <p>3) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
-                    <p>4) Ability to reduce what's displayed on the screen during Low Power Mode.  Low Power mode occurs when the Backlight turns off on your device.  It can be controlled, somewhat, through the System > Backlight settings menu on your device.  NOTE:  When the device is in Low Power mode the display is only updated once per minute, except for the Seconds hand (if displayed - your choice) which can continue to display every second.</p>
+                    <p>2) Option to show the battery level remaining as the tick marks around the watch face - in a choice of two formats - lines or circles - and choice of colour, or to just show Clock Tick marks.</p>
+                    <p>3) Option to show the Battery level icon directly on the watchface, or to show just a single clock tick on the watch face representing the battery level (For example, 75% battery level will display a tick mark at 9 o'clock, 50% at 6 o'clock, and 25% at 3 o'clock, and everything in between).</p>
+                    <p>4) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
+                    <p>5) Ability to reduce what's displayed on the screen during Low Power Mode.  Low Power mode occurs when the Backlight turns off on your device.  It can be controlled, somewhat, through the System > Backlight settings menu on your device.  NOTE:  When the device is in Low Power mode the display is only updated once per minute, except for the Seconds hand (if displayed - your choice) which can continue to display every second.</p>
                     <ol>
                         <li><b>Reduce Data and Do not Show Seconds Hand</b> Information on the screen is reduced and the Seconds Hand is NOT displayed.</li>
                         <li><b>Reduce Data Only</b> Information on the screen is reduced, but seconds hand is displayed.</li>
@@ -210,7 +212,7 @@
                         <li><b>Hide Data Only</b> Information Dials and Indicators are turned off, but the Seconds Hand is displayed.</li>
                         <li><b>Do Nothing</b> The device continues to display as though it was in Full Power mode.  NOTE, however, that the screen is only updated every minute (except for the Seconds Hand).</li>
                     </ol>
-                    <p>5) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, or the metric you choose does not appear on the watchface, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
+                    <p>6) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, or the metric you choose does not appear on the watchface, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
                         <li><b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
                         <li><b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
@@ -229,15 +231,15 @@
                         <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
                         <li><b>Respiration Rate  (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
                         <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
-                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
                     </ol>
-                    <p>6) Each of the three dials and two indicators can display any or all of these metrics (there are some exceptions for display in the Indicators as these rely on a goal for each metric).  If you choose more than one metric in a dial or indicator, then there is another setting that allows you to choose how often the dial should cycle display between those metrics.</p>
-                    <p>7) There are 27 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
-                    <p>8) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
-                    <p>9) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
-                    <p>10) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
-                    <p>11) Ability to show the Notifications Icon and notifications count.</p>
+                    <p>7) Each of the three dials and two indicators can display any or all of these metrics (there are some exceptions for display in the Indicators as these rely on a goal for each metric).  If you choose more than one metric in a dial or indicator, then there is another setting that allows you to choose how often the dial should cycle display between those metrics.</p>
+                    <p>8) There are 27 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
+                    <p>9) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
+                    <p>10) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    <p>11) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
+                    <p>12) Ability to show the Notifications Icon and notifications count.</p>
                     <p>&nbsp;</p>
                   </div>
             </article>
@@ -246,7 +248,7 @@
                     <h6>MIP Details</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h4">App Details for MIP</p>
+                    <p class="h4">App Details for MIP (Older devices)</p>
                     <p>&nbsp;</p>
                     <p><img src="/radian/images/Fenix6XPro 2.png" class="d-inline-block align-top img-fluid thumbnail" width="150" loading="lazy"></p>    
                     <p>&nbsp;</p>
@@ -411,11 +413,12 @@
                           </h2>
                           <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
                             <div class="accordion-body">
-                                <p class="h5">v2.1.1</p>
+                                <p class="h5">v2.2.0</p>
                                 <ul>
-                                    <li>Fix: (Amoled, Fenix7 series, Vivoactive4) Rounding error with temperature conversion from Celcius to Farenheit.</b></li>
-                                    <li>Chg: (Venu2s) Reduce thickness of Indicator arcs as they dominated the watchface.</li>
-                                    <li>Chg: (Amoled, Fenix7 series, Vivoactive4) Increase the refresh rate for weather (and the temperature metric) from 15 minutes to 10 minutes.</li>
+                                    <li>Fix: (Amoled, Fenix7 series, Vivoactive4) "Goal Reached" and "Goal Not Reached" colours were reversed.</b></li>
+                                    <li>Fix: (Amoled, Fenix7 series, Vivoactive4) Some Indicator goal colours did not follow the settings for these colours.</b></li>
+                                    <li>Fix: (Amoled, Fenix7 series, Vivoactive4) Indicator arc could extend beyond the goal.</li>
+                                    <li>Add: (Amoled, Fenix7 series, Vivoactive4) More options for displaying battery status directly on the watch face (see details above).</li>
                                 </ul>    
                             </div>
                           </div>
@@ -428,6 +431,12 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v2.1.1</p>
+                                <ul>
+                                    <li>Fix: (Amoled, Fenix7 series, Vivoactive4) Rounding error with temperature conversion from Celcius to Farenheit.</b></li>
+                                    <li>Chg: (Venu2s) Reduce thickness of Indicator arcs as they dominated the watchface.</li>
+                                    <li>Chg: (Amoled, Fenix7 series, Vivoactive4) Increase the refresh rate for weather (and the temperature metric) from 15 minutes to 10 minutes.</li>
+                                </ul>    
                                 <p class="h5">v2.1.0</p>
                                 <ul>
                                     <li>Add: (Amoled, Fenix7 series, Vivoactive4) Ability to position the dials in 5 different layouts, with a new setting.</b></li>
