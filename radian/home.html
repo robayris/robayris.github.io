@@ -90,6 +90,7 @@
                         <li><a class="d-inline-flex align-items-center rounded" href="#sys5">System5 Devices</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#mips">MIP Details</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#colours">Colour Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#moon">Moon Phase</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#screens">Screen Layouts</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#releases">Release History</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#devices">Compatible Devices</a></li>
@@ -163,35 +164,38 @@
                     <p>4) Displays a second hand if watch hardware permits. Second hand can be triggered to stop displaying by making it the same colour as the watchface background.</p>
                     <p>5) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
-                        <li><b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
-                        <li><b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
-                        <li><b>Distance (Dial):</b> Current distance travelled today in m/km or ft/mi (depending on your garmin profile)</li>
-                        <li><b>Weekly Active Minutes (Dial/Indicator):</b> Current active minutes count for the week compared to your weekly goal</li>
-                        <li><b>HR vs MAX (Dial/Indicator):</b> Current HeartRate compared to your Maximum HeartRate (from your garmin profile)</li>
-                        <li><b>HR vs Zones (Dial/Indicator):</b> Current HeartRate compared to your HeartRate zones, as defined in your Garmin profile</li>
-                        <li><b>Steps (Dial/Indicator):</b> Current steps count for the day</li>
-                        <li><b>Floors Climbed (Dial/Indicator):</b> Current count of floors climbed for the day</li>
-                        <li><b>Body Battery (Dial/Indicator):</b> Latest state of your Body Battery, expressed as a number in the range of 0-100.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 80 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &gt; 80 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
-                        <li><b>Stress (Dial/Indicator):</b> Latest stress state, expressed as a number in the range of 0-100.  &lt; 25 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 50 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &lt; 75 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 75 = <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>Oxygen Saturation (Dial/Indicator):</b> Last Oxygen Saturation reading taken by your device (if supported).  &lt; 95 = <span class="badge rounded-pill bg-bs4"> Red </span>, &gt; 95 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
-                        <li><b>Atmospheric Pressure (Dial):</b> Latest atmospheric pressure reading by your device, expressed in hecto Pascals (hPa)</li>
-                        <li><b>Temperature (Dial/Indicator):</b> Current temperature from Garmin GPS Weather.  Updates every 15 minutes.  Displays in Degrees or Farenheit.  The bar or arc range indicates where the tempertaure is in the range for today (between min and max temperatures for the day).  If the current temperature is less than 0 the colour will be <span class="badge rounded-pill bg-bs2"> Blue </span>; within the range is <span class="badge rounded-pill bg-bs6"> Green </span>; Above the range is <span class="badge rounded-pill bg-bs8"> Orange </span>; and above 38 degrees (122F) it is <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
-                        <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
-                        <li><b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
-                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon radian-icon">p</div>&nbsp;<b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
+                        <li><div class="icon radian-icon">f</div>&nbsp;<b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
+                        <li><div class="icon radian-icon">w</div>&nbsp;<b>Distance (Dial):</b> Current distance travelled today in m/km or ft/mi (depending on your garmin profile)</li>
+                        <li><div class="icon radian-icon">e</div>&nbsp;<b>Weekly Active Minutes (Dial/Indicator):</b> Current active minutes count for the week compared to your weekly goal</li>
+                        <li><div class="icon radian-icon">a</div>&nbsp;<b>HR vs MAX (Dial/Indicator):</b> Current HeartRate compared to your Maximum HeartRate (from your garmin profile)</li>
+                        <li><div class="icon radian-icon">a</div>&nbsp;<b>HR vs Zones (Dial/Indicator):</b> Current HeartRate compared to your HeartRate zones, as defined in your Garmin profile</li>
+                        <li><div class="icon radian-icon">k</div>&nbsp;<b>Steps (Dial/Indicator):</b> Current steps count for the day</li>
+                        <li><div class="icon radian-icon">k</div>&nbsp;<b>Steps History (Dial):</b> As per 11, below, Displays a bra graph of the last 7 days of Steps history.</li>
+                        <li><div class="icon radian-icon">t</div>&nbsp;<b>Floors Climbed (Dial/Indicator):</b> Current count of floors climbed for the day</li>
+                        <li><div class="icon radian-icon">g</div>&nbsp;<b>Body Battery (Dial/Indicator):</b> Latest state of your Body Battery, expressed as a number in the range of 0-100.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 80 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &gt; 80 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
+                        <li><div class="icon radian-icon">i</div>&nbsp;<b>Stress (Dial/Indicator):</b> Latest stress state, expressed as a number in the range of 0-100.  &lt; 25 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 50 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &lt; 75 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 75 = <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">l</div>&nbsp;<b>Oxygen Saturation (Dial/Indicator):</b> Last Oxygen Saturation reading taken by your device (if supported).  &lt; 95 = <span class="badge rounded-pill bg-bs4"> Red </span>, &gt; 95 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
+                        <li><div>(hPa)</div>&nbsp;<b>Atmospheric Pressure (Dial):</b> Latest atmospheric pressure reading by your device, expressed in hecto Pascals (hPa)</li>
+                        <li><div class="icon radian-icon">s</div>&nbsp;<div class="icon radian-icon">r</div>&nbsp;<b>Temperature (Dial/Indicator):</b> Current temperature from Garmin GPS Weather.  Updates every 15 minutes.  Displays in Degrees or Farenheit.  The bar or arc range indicates where the tempertaure is in the range for today (between min and max temperatures for the day).  If the current temperature is less than 0 the colour will be <span class="badge rounded-pill bg-bs2"> Blue </span>; within the range is <span class="badge rounded-pill bg-bs6"> Green </span>; Above the range is <span class="badge rounded-pill bg-bs8"> Orange </span>; and above 38 degrees (122F) it is <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">v</div>&nbsp;<b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
+                        <li><div class="icon radian-icon">u</div>&nbsp;<b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
+                        <li><div class="icon radian-icon">n</div>&nbsp;<b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">y</div>&nbsp;<b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
+                        <li><div class="icon radian-icon">D</div>&nbsp;<b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon radian-icon">D</div>&nbsp;<b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon moon-icon">3</div>&nbsp;<b>Moon Phase:</b> Displays the current Moon Phase.  See <a href="#moon">below</a> for more details.</li>
                     </ol>
-                    <p>6) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 14, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
+                    <p>6) Each of the three dials (not including the two indicators) can display a Primary Metric and a Secondary metric.  If no secondary metric is selected, then only the Primary metric will be displayed.  If no Primary metric is selected then the Dial will not be displayed at all.  The watchface will display the Primary metric for X seconds (See note, 15, below) before transitioning to the Secondary metric when the device moves from low to high power.</p>
                     <p>7) The watchface can be configured to display either the Primary, secondary, or no metric for each of the three dials during low power mode.  Keep in mind that during low power mode, the display is only updated once per minute, so the data displayed will only update once per minute.</p>
-                    <p>8) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands, the Date, and also any configured dials to display.</p>
-                    <p>9) There are 27 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
-                    <p>10) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
-                    <p>11) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
-                    <p>12) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
-                    <p>13) Ability to show the Notifications Icon and notifications count.</p>
-                    <p>14) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
+                    <p>8) Some Amoled devices (Epix2, D2Mach1 and Venu) support the garmin 'Time To Recovery' feature.  This metric records how many hours of recovery you may need before your next activity and normally pops-up on your device at the end of an activity.  Functionality exists in Radian to allow you to display this metric in one of the dials, effectively replacing the metric currently on the selected dial, with the 'Time To Recover' metric.  This will be displayed while TTR is greater than zero.  Once you have fully recovered (TTR = 0) the dial display will revert back to whatever metric was previously assigned.</p>
+                    <p>9) In Amoled Always On Display mode, the watch face will reduce the amount and intensity of information displayed on the screen when the watch face enters Low Power mode.  The watch face will only show the Hour and Minute hands, the Date, and also any configured dials to display.</p>
+                    <p>10) There are 28 different colour settings that can be applied to the watch face, with Amoled devices you have the choice to choose from the available, numbered (1-64) colours, or to use standard HEX RGB565 colour codes in the format RRGGBB with no '#' or '0x' prefix (for example, full red = FF0000).  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
+                    <p>11) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
+                    <p>12) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
+                    <p>13) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
+                    <p>14) Ability to show the Notifications Icon and notifications count.</p>
+                    <p>15) Unfortunately, there is currently no way to determine the Always On Display or screen timeout settings directly from your device.  Hopefully, Garmin will change this in the future.  Until then, I have provided two additional settings for Radian, as follows:</p>
                     <ol>
                         <li><b>Always On Display:</b> If set to No, then the watch face will completely turn off the display (and all associated processing) during Low Power mode, which has the benefit of reducing the processing required to retrieve metrics and draw the watch face.  This also reduces battery consumption.  If "Always On Display" is set to Yes, then the watch face will revert to the Low Power display mode during low power.</li>
                         <li><b>Transition Delay:</b> Allows you to choose the delay in transitoning from Primary metrics to Secondary metrics.  Valid values are from 0-15 seconds.  If you choose '0', then there will be no transition from Primary to Secondary metrics whilst in High Power mode, but there could be a transition to Secondary metrics when your device transitions to low-power mode, depending on how you set the "Dial A/B/C in Low Power" settings.</li>
@@ -231,28 +235,31 @@
                     </ol>
                     <p>6) Displays 3 circular dials (Left, Right and Bottom) and two indicators (top and bottom), that can be configured to display any of the following metrics (although, the indicators can only display a subset of these as they rely on a goal for each metric).  Some of these metrics may not be available on all Garmin devices.  If you see "NA" displayed as the value, or the metric you choose does not appear on the watchface, then this metric is not currently supported by your device and firmware (please be aware that Garmin controls the firmware update cycle).</p>
                     <ol>
-                        <li><b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
-                        <li><b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
-                        <li><b>Distance (Dial):</b> Current distance travelled today in m/km or ft/mi (depending on your garmin profile)</li>
-                        <li><b>Weekly Active Minutes (Dial/Indicator):</b> Current active minutes count for the week compared to your weekly goal</li>
-                        <li><b>HR vs MAX (Dial/Indicator):</b> Current HeartRate compared to your Maximum HeartRate (from your garmin profile)</li>
-                        <li><b>HR vs Zones (Dial/Indicator):</b> Current HeartRate compared to your HeartRate zones, as defined in your Garmin profile</li>
-                        <li><b>Steps (Dial/Indicator):</b> Current steps count for the day</li>
-                        <li><b>Floors Climbed (Dial/Indicator):</b> Current count of floors climbed for the day</li>
-                        <li><b>Body Battery (Dial/Indicator):</b> Latest state of your Body Battery, expressed as a number in the range of 0-100.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 80 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &gt; 80 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
-                        <li><b>Stress (Dial/Indicator):</b> Latest stress state, expressed as a number in the range of 0-100.  &lt; 25 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 50 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &lt; 75 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 75 = <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>Oxygen Saturation (Dial/Indicator):</b> Last Oxygen Saturation reading taken by your device (if supported).  &lt; 95 = <span class="badge rounded-pill bg-bs4"> Red </span>, &gt; 95 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
-                        <li><b>Atmospheric Pressure (Dial):</b> Latest atmospheric pressure reading by your device, expressed in hecto Pascals (hPa)</li>
-                        <li><b>Temperature (Dial/Indicator):</b> Current temperature from Garmin GPS Weather.  Updates every 15 minutes.  Displays in Degrees or Farenheit.  The bar or arc range indicates where the tempertaure is in the range for today (between min and max temperatures for the day).  If the current temperature is less than the minimum the colour will be <span class="badge rounded-pill bg-bs2"> Blue </span>; within the range is <span class="badge rounded-pill bg-bs6"> Green </span>; Above the range is <span class="badge rounded-pill bg-bs8"> Orange </span>; and above 38 degrees (122F) it is <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
-                        <li><b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
-                        <li><b>Respiration Rate  (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
-                        <li><b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
-                        <li><b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
-                        <li><b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon radian-icon">p</div>&nbsp;<b>Altitude (Dial):</b> Current Altitude in Metres/Feet (depending on your garmin profile)</li>
+                        <li><div class="icon radian-icon">f</div>&nbsp;<b>Calories (Dial):</b> Current calories for the day (Kcal)</li>
+                        <li><div class="icon radian-icon">w</div>&nbsp;<b>Distance (Dial):</b> Current distance travelled today in m/km or ft/mi (depending on your garmin profile)</li>
+                        <li><div class="icon radian-icon">e</div>&nbsp;<b>Weekly Active Minutes (Dial/Indicator):</b> Current active minutes count for the week compared to your weekly goal</li>
+                        <li><div class="icon radian-icon">a</div>&nbsp;<b>HR vs MAX (Dial/Indicator):</b> Current HeartRate compared to your Maximum HeartRate (from your garmin profile)</li>
+                        <li><div class="icon radian-icon">a</div>&nbsp;<b>HR vs Zones (Dial/Indicator):</b> Current HeartRate compared to your HeartRate zones, as defined in your Garmin profile</li>
+                        <li><div class="icon radian-icon">k</div>&nbsp;<b>Steps (Dial/Indicator):</b> Current steps count for the day</li>
+                        <li><div class="icon radian-icon">k</div>&nbsp;<b>Steps History (Dial):</b> As per 11, below, Displays a bra graph of the last 7 days of Steps history.</li>
+                        <li><div class="icon radian-icon">t</div>&nbsp;<b>Floors Climbed (Dial/Indicator):</b> Current count of floors climbed for the day</li>
+                        <li><div class="icon radian-icon">g</div>&nbsp;<b>Body Battery (Dial/Indicator):</b> Latest state of your Body Battery, expressed as a number in the range of 0-100.  &lt; 20 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 80 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &gt; 80 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
+                        <li><div class="icon radian-icon">i</div>&nbsp;<b>Stress (Dial/Indicator):</b> Latest stress state, expressed as a number in the range of 0-100.  &lt; 25 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 50 = <span class="badge rounded-pill bg-bs2"> Blue </span>, &lt; 75 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 75 = <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">l</div>&nbsp;<b>Oxygen Saturation (Dial/Indicator):</b> Last Oxygen Saturation reading taken by your device (if supported).  &lt; 95 = <span class="badge rounded-pill bg-bs4"> Red </span>, &gt; 95 = <span class="badge rounded-pill bg-bs6"> Green </span>.</li>
+                        <li><div>(hPa)</div>&nbsp;<b>Atmospheric Pressure (Dial):</b> Latest atmospheric pressure reading by your device, expressed in hecto Pascals (hPa)</li>
+                        <li><div class="icon radian-icon">s</div>&nbsp;<div class="icon radian-icon">r</div>&nbsp;<b>Temperature (Dial/Indicator):</b> Current temperature from Garmin GPS Weather.  Updates every 15 minutes.  Displays in Degrees or Farenheit.  The bar or arc range indicates where the tempertaure is in the range for today (between min and max temperatures for the day).  If the current temperature is less than 0 the colour will be <span class="badge rounded-pill bg-bs2"> Blue </span>; within the range is <span class="badge rounded-pill bg-bs6"> Green </span>; Above the range is <span class="badge rounded-pill bg-bs8"> Orange </span>; and above 38 degrees (122F) it is <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">v</div>&nbsp;<b>VO2Max Cycling (Dial/Indicator):</b> Your latest VO2Max Cycling metric, from your garmin profile.  For both VO2Max metrics, Age and gender are used to determine a goal range that varies from <span class="badge rounded-pill bg-bs4"> Red </span>, <span class="badge rounded-pill bg-bs8"> Orange </span>, <span class="badge rounded-pill bg-bs2"> Blue </span>, <span class="badge rounded-pill bg-bs6"> Green </span> (Excellent) and <span class="badge rounded-pill bg-z7"> Purple </span> (Superior).</li>
+                        <li><div class="icon radian-icon">u</div>&nbsp;<b>VO2Max Running (Dial/Indicator):</b> Your latest VO2Max Running metric, from your garmin profile</li>
+                        <li><div class="icon radian-icon">n</div>&nbsp;<b>Respiration Rate (Dial/Indicator):</b> Latest respiration rate observed by your device (breaths per miniute).  &lt; 10 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &lt; 20 = <span class="badge rounded-pill bg-bs6"> Green </span>, &lt; 40 = <span class="badge rounded-pill bg-bs8"> Orange </span>, otherwise <span class="badge rounded-pill bg-bs4"> Red </span>.</li>
+                        <li><div class="icon radian-icon">y</div>&nbsp;<b>Move Bar (Dial/Indicator):</b> Display the status of the Garmin Move Bar.</li>
+                        <li><div class="icon radian-icon">D</div>&nbsp;<b>Battery Level Days (Dial/Indicator):</b> Display the Battery Level in Days Remaining (if your firmware supports it).  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon radian-icon">D</div>&nbsp;<b>Battery Level % (Dial/Indicator):</b> Display the Battery Level remaining as a percentage.  &lt; 25 = <span class="badge rounded-pill bg-bs4"> Red </span>, &lt; 50 = <span class="badge rounded-pill bg-bs8"> Orange </span>, &gt; 50 = <span class="badge rounded-pill bg-bs6"> Green </span></li>
+                        <li><div class="icon moon-icon">3</div>&nbsp;<b>Moon Phase:</b> Displays the current Moon Phase.  See <a href="#moon">below</a> for more details.</li>
+                        <li><div class="icon radian-icon">c</div>&nbsp;<b>Time To Recovery (Dial):</b> Some devices (Fenix7 family, Forerunner 255/255m/955 and Vivoactive4) support the garmin 'Time To Recovery' feature.  This metric records how many hours of recovery you may need before your next activity and normally pops-up on your device at the end of an activity.  Functionality exists in Radian to allow you to display this metric in one of the dials.</li>
                     </ol>
                     <p>7) Each of the three dials and two indicators can display any or all of these metrics (there are some exceptions for display in the Indicators as these rely on a goal for each metric).  If you choose more than one metric in a dial or indicator, then there is another setting that allows you to choose how often the dial should cycle display between those metrics.</p>
-                    <p>8) There are 27 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
+                    <p>8) There are 28 different colour settings that can be applied to the watch face, you have the choice to choose from the available, numbered (1-64) colours.  Colour number 27 (for Dial Icons Colour) can be provided with a '0' value which will trigger the dial and indicator icons to follow the goal reached and goal not reached colours defined for dials.</p>
                     <p>9) Displays a graph showing your steps history (from left to right, with left being 7 days ago and the next to the right being 6 dys ago, and so on - closely resembling the format in Garmin Connect). The graph highlights when your steps were above your goal for the day.</p>
                     <p>10) Shows the current day number of the month and day of the week, as well as a Phone connected icon, an alarm icon (if you've set an alarm this icon will display) and a "do not disturb" icon which displays when in do not disturb mode.</p>
                     <p>11) Can be configured to show the Garmin Move Bar directly on the Watch Face.</p>
@@ -295,7 +302,7 @@
                 <div class="modal-links">
                     <p class="h4">Colour Selection Details</p>
                     <p>&nbsp;</p>
-                    <p>There are 27 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image, or for Amoled devices 65,000+ colours. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in App settings.</p>
+                    <p>There are up to 28 different colour settings that can be applied to the watch face, with colours chosen from the available 64 palette colours, as per the attached image, or for Amoled devices 65,000+ colours. The following colour palette shows 64 numbered colours. Just enter this number (1-64) into the colour fields in App settings.</p>
                     <p>For Amoled devices you may choose to enter the 1-64 colour code, or provide an RGB565 colour code in the format RRGGBB.</p>
                     <p>Please be aware that colours on the MIP device watch faces will not be as vibrant as those in the colour palette, due to the backlight differences between watch and computer.</p>
                     <p>&nbsp;</p>
@@ -310,6 +317,34 @@
                     </figure>
                     <p>Use the following link to find the HEX RGB565 colour codes in the format RRGGBB</p>
                     <p>(with no '#' or '0x' prefix - for example, full red = FF0000):&nbsp;&nbsp;<a href="https://htmlcolorcodes.com/" target="_blank">Hex colour Picker</a></p>
+                    <p>&nbsp;</p>
+                  </div>
+            </article>
+            <article class="my-3" id="moon">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h6>Moon Phase</h6>
+                </div>
+                <div class="modal-links">
+                    <p class="h4">Moon Phase</p>
+                    <p>&nbsp;</p>
+                    <p>System5/SDK4 devices have the capability to display the phase of the moon in one of the watch face dials.</p>
+                    <p>&nbsp;</p>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="/radian/images/RadianMoonPhase.png" width="314" role="img" loading="lazy">
+                        <figcaption class="figure-caption">Example Display Epix2, showing 1st quarter moon phase</figcaption>
+                    </figure>
+                    <p>&nbsp;</p>
+                    <p>There are three key pieces of information displayed when Moon Phase is added to a dial:</p>
+                    <ol>
+                        <li><b>Visibility</b> How much of the moon is visible is represented by the percentage number displayed within the dial.  For example, in the Epix2 image, above, the moon is 50% visible (the moon is in the 1st Quarter phase).</li>
+                        <li><b>Phase</b> The arc around the outside of the dial shows which phase the moon is in.  The second figure, below, shows all the phases of the moon.  The moon begins its journey at 0 degrees - with a New Moon.  In the first figure, above, the arc is at 90 degrees indicating the moon is in the 1st quarter phase.  If the arc was at 180 degrees (half of the dial), then it would be a Full Moon - as per the moon phases in the figure, below.</li>
+                        <li><b>Visual Representation</b> The icon in the bottom of the display changes in line with the phase of the moon, showing each of the 8 phases identified in the figure, below.</li>
+                    </ol>
+                    <p>&nbsp;</p>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="/radian/images/moonphases.png" role="img" loading="lazy">
+                        <figcaption class="figure-caption">Moon Phases</figcaption>
+                    </figure>
                     <p>&nbsp;</p>
                   </div>
             </article>
@@ -430,9 +465,12 @@
                           </h2>
                           <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
                             <div class="accordion-body">
-                                <p class="h5">v2.2.1</p>
+                                <p class="h5">v2.3.0</p>
                                 <ul>
-                                    <li>Add: Support for the Forerunner 255, 255 Music and 955 devices.</li>
+                                    <li>Add: (Amoled, System5/SDK4 devices) Moon Phase metric (selectable in any of the 3 dials).  This includes a new colour setting (c28) specifically for this metric.</li>
+                                    <li>Add: (Epix2, D2Mach1, Venu) Ability to override one of the dials with the Garmin 'Time To Recovery' metric.  The dial override will occur whenever 'Time To Recovery' is greater than zero.</li>
+                                    <li>Add: (Fenix7 series, Vivoactive4, Forerunner 255/255m/955) Ability to display the Garmin 'Time To Recovery' metric in one of the three dials.</li>
+                                    <li>Fix: (Amoled, System5/SDK4 devices) Step history graph never reset the maximum steps in the week, which meant the graph would not always use all available space to draw the bars.</li>
                                 </ul>    
                             </div>
                           </div>
@@ -445,6 +483,10 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v2.2.1</p>
+                                <ul>
+                                    <li>Add: Support for the Forerunner 255, 255 Music and 955 devices.</li>
+                                </ul>    
                                 <p class="h5">v2.2.0</p>
                                 <ul>
                                     <li>Fix: (Amoled, Fenix7 series, Vivoactive4) "Goal Reached" and "Goal Not Reached" colours were reversed.</b></li>
@@ -605,309 +647,9 @@
                     <h6>Compatible Devices</h6>
                 </div>
                 <div class="modal-links">
-                    <div class="accordion accordion-flush" id="deviceList">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="deviceList-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseOne" aria-expanded="false" aria-controls="deviceList-collapseOne">
-                              Amoled Devices
-                            </button>
-                          </h2>
-                          <div id="deviceList-collapseOne" class="accordion-collapse collapse" aria-labelledby="deviceList-headingOne">
-                            <div class="accordion-bodyB">
-                                <ul>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02496-09/v/pd-01-sm-bc0a4be7-cac1-424e-9343-dbadb33efabf.jpg"
-                                            alt="D2™ Air X10" />
-                                        <span>D2™ Air X10</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02582-50/g/cf-sm-072c4843-2066-4cd6-8d23-35dfcc65dd05.jpg" alt="D2™ Mach 1" />
-                                        <span>D2™ Mach 1</span>
-                                    </li>    
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02582-00/v/sc-02-sm-a9a189e7-e6a6-4a21-a8f2-71d306469085.jpg"
-                                            alt="epix™ (Gen 2)" />
-                                        <span>epix™ (Gen 2)</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02173-12/v/cf-sm-9af674f3-640f-43f0-91df-117ed510ffcf.jpg"
-                                            alt="Venu®" />
-                                        <span>Venu®</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02173-52/v/cf-sm-86fc3396-766b-408e-9755-0c8fb5bbacc5.jpg"
-                                            alt="Mercedes-Benz Venu®" />
-                                        <span>Mercedes-Benz Venu®</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02429-10/v/cm-sm-9e11f013-57fa-4143-aeba-20804d29ec5c.png"
-                                            alt="Venu® 2S" />
-                                        <span>Venu® 2S</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02429-20/v/cf-sm-06f6a68d-b824-401d-b65e-dd33db5cb6cf.png"
-                                            alt="Mercedes-Benz Venu® 2S" />
-                                        <span>Mercedes-Benz Venu® 2S</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02430-10/v/cm-sm-26d3d922-fbce-45e1-9851-0fc7cd29f2c0.png"
-                                            alt="Venu® 2" />
-                                        <span>Venu® 2</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02430-22/v/cf-sm-c77f7728-90d5-4be1-a73b-b988ed45bcc1.png"
-                                            alt="Mercedes-Benz Venu® 2" />
-                                        <span>Mercedes-Benz Venu® 2</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02496-10/v/pd-01-sm-8096ba5b-467d-406a-8207-6e2b8a609d2f.jpg"
-                                            alt="Venu® 2 Plus" />
-                                        <span>Venu® 2 Plus</span>
-                                    </li>
-                                </ul>    
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="deviceList-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseTwo" aria-expanded="false" aria-controls="deviceList-collapseTwo">
-                              Current (System 5 API 4) MIP Devices
-                            </button>
-                          </h2>
-                          <div id="deviceList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="deviceList-headingTwo">
-                            <div class="accordion-bodyB">
-                                <ul>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02539-00/g/cf-sm-3ecb177b-cbcd-41dd-80e5-c954164a0955.jpg"
-                                            alt="fēnix® 7S" />
-                                        <span>fēnix® 7S</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02540-00/v/rf-sm-79088307-fcf5-4dff-9eb9-3090f92db1bb.jpg"
-                                            alt="fēnix® 7" />
-                                        <span>fēnix® 7</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02541-11/v/sc-03-sm-cd878574-7789-4323-a2f2-1acebcff5f36.jpg"
-                                            alt="fēnix® 7X" />
-                                        <span>fēnix® 7X</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02174-12/v/cf-sm-ea8594d6-289b-4a61-b99c-0566e02a9b43.jpg" alt="vívoactive® 4">
-                                        <span>vívoactive® 4, GarminActive</span>                                        
-                                    </li>
-                                </ul>    
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="deviceList-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deviceList-collapseThree" aria-expanded="false" aria-controls="deviceList-collapseThree">
-                              Other Devices
-                            </button>
-                          </h2>
-                          <div id="deviceList-collapseThree" class="accordion-collapse collapse" aria-labelledby="deviceList-headingThree">
-                            <div class="accordion-bodyB">
-                                <ul>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01702-00/v/cf-sm.jpg"
-                                            alt="Approach® S60" />
-                                        <span>Approach® S60</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02200-00/v/pd-03-sm-32c3215c-7217-4a09-9b06-adeda2ed555a.jpg"
-                                            alt="Approach® S62" />
-                                        <span>Approach® S62</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01733-30/v/cf-sm.jpg"
-                                            alt="D2™ Charlie" />
-                                        <span>D2™ Charlie</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01988-30/g/cf-sm-87bb0674-cc55-4a52-ad94-32bf9b4e729c.jpg"
-                                            alt="D2™ Delta" />
-                                        <span>D2™ Delta</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01989-30/g/cf-sm-874810a3-a28b-4484-955d-6c4a24c4f7bf.jpg"
-                                            alt="D2™ Delta PX" />
-                                        <span>D2™ Delta PX</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01987-30/g/cf-sm-431a8fa0-3449-43e0-9702-5ff6ad991c84.jpg"
-                                            alt="D2™ Delta S" />
-                                        <span>D2™ Delta S</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01863-10/v/cf-sm-3d860c6d-aec3-4fcd-8544-3ec55190a637.jpg"
-                                            alt="Forerunner® 645" />
-                                        <span>Forerunner® 645</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01863-30/v/cf-sm-cf7f4202-dce2-4c43-ab20-0d0ae12b35f3.jpg"
-                                            alt="Forerunner® 645 Music" />
-                                        <span>Forerunner® 645 Music</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01746-00/v/cf-sm.jpg"
-                                            alt="Forerunner® 935" />
-                                        <span>Forerunner® 935</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02063-00/v/cf-sm-538e211f-f991-4d7a-91f7-d25d4feb9a99.jpg"
-                                            alt="Forerunner® 945" />
-                                        <span>Forerunner® 945</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02383-00/v/rf-sm-333473bc-693b-47c4-aaa8-dbb0768ddaa3.jpg"
-                                            alt="Forerunner® 945 LTE" />
-                                        <span>Forerunner® 945 LTE</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01688-00/v/cf-sm.jpg" alt="fēnix® 5" />
-                                        <span>fēnix® 5, quatix® 5</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01988-10/v/cf-sm-c9091bfe-f1af-42b4-bd62-f3b45f46a15d.jpg"
-                                            alt="fēnix® 5 Plus" />
-                                        <span>fēnix® 5 Plus</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01987-00/v/cf-sm-58f98bed-90e7-4199-b4bc-925aec9690a7.jpg"
-                                            alt="fēnix® 5S Plus" />
-                                        <span>fēnix® 5S Plus</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01733-00/v/cf-md.jpg" alt="fēnix® 5X" width="150px" />
-                                        <span>fēnix® 5X, tactix® Charlie</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-01989-04/v/cf-sm-6dd29412-ddad-4f53-b62d-84eaaa06f258.jpg"
-                                            alt="fēnix® 5X Plus" />
-                                        <span>fēnix® 5X Plus</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02158-11/v/cf-sm-d9660dd6-f71d-4fe6-8682-2f6d80e12dff.jpg"
-                                            alt="fēnix® 6" />
-                                        <span>fēnix® 6</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
-                                            alt="fēnix® 6 Dual Power" />
-                                        <span>fēnix® 6 Dual Power</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02158-02/v/cf-sm-c561cac8-1a27-4bb1-8374-d99dc6afe57a.jpg"
-                                            alt="fēnix® 6 Pro" />
-                                        <span>fēnix® 6 Pro, fēnix® 6 Sapphire</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
-                                            alt="fēnix® 6 Pro Dual Power" />
-                                        <span>fēnix® 6 Pro Dual Power</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02410-10/v/rf-sm-f9532945-ccc5-430c-9bd7-8a0f50b7fb1d.jpg"
-                                            alt="fēnix® 6 Pro Solar" />
-                                        <span>fēnix® 6 Pro Solar</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02410-00/v/pd-04-sm-05fc6663-0a28-451a-aa9d-8595a8238209.jpg"
-                                            alt="fēnix® 6 Solar" />
-                                        <span>fēnix® 6 Solar</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02159-00/v/cf-sm-880ca1fb-2302-4a53-bfda-962e357fd7f8.jpg"
-                                            alt="fēnix® 6S" />
-                                        <span>fēnix® 6S</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
-                                            alt="fēnix® 6S Dual Power" />
-                                        <span>fēnix® 6S Dual Power</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02159-14/v/cf-sm-6f0a6934-59f4-467c-8a6d-e74cb01d5ca6.jpg"
-                                            alt="fēnix® 6S Pro" />
-                                        <span>fēnix® 6S Pro, fēnix® 6S Sapphire</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
-                                            alt="fēnix® 6S Pro Dual Power" />
-                                        <span>fēnix® 6S Pro Dual Power</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02409-15/v/rf-sm-4d0f762d-bb36-4d24-b4fe-c897e246ab91.jpg"
-                                            alt="fēnix® 6S Pro Solar" />
-                                        <span>fēnix® 6S Pro Solar</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02409-00/g/rf-sm-af7a3331-c961-4cc9-83c0-2183baba6c2e.jpg"
-                                            alt="fēnix® 6S Solar" />
-                                        <span>fēnix® 6S Solar</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02157-01/v/cf-sm-47dff6dd-beb7-42eb-9daa-3585c81c12ea.jpg"
-                                        alt="fēnix® 6X Pro" style="float: left;" />
-                                        <span>fēnix® 6X Pro, fēnix® 6X Sapphire, fēnix® 6X Pro Solar, tactix® Delta Sapphire, quatix® 6X Solar, tactix® Delta Solar, tactix® Delta Solar Ballistics</span>
-                                        <br clear="left" />
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-26/g/cf-sm-f78826d3-cb9a-42f0-871c-ca80cc34c5a4.jpg"
-                                            alt="MARQ™ Adventurer" />
-                                        <span>MARQ™ Adventurer</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-15/g/cf-sm-0b73c33d-2df0-4d7e-b438-fd23d7c4390f.jpg"
-                                            alt="MARQ™ Athlete" />
-                                        <span>MARQ™ Athlete</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-03/g/cf-sm-614d7b98-9b70-4c8a-bec7-5ee303166767.jpg"
-                                            alt="MARQ™ Aviator" />
-                                        <span>MARQ™ Aviator</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-06/g/cf-sm-04034f67-9380-4d27-b5aa-678600fb8b5f.jpg"
-                                            alt="MARQ™ Captain" />
-                                        <span>MARQ™ Captain, MARQ™ Captain: American Magic Edition</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-11/g/rf-sm-517ae5f4-8789-49b5-ad89-d2002ee9f8e3.jpg"
-                                            alt="MARQ™ Commander" />
-                                        <span>MARQ™ Commander</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-00/g/cf-sm-2f580581-696f-4e11-808b-c8acd963de46.jpg"
-                                            alt="MARQ™ Driver" />
-                                        <span>MARQ™ Driver</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02006-12/g/cf-sm-4d82de5c-a266-4cb0-abd1-a167526e2669.jpg"
-                                            alt="MARQ™ Expedition" />
-                                        <span>MARQ™ Expedition</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02394-00/g/pd-01-sm-fab01f49-dd1d-4d6e-8519-0d817c1ae674.jpg"
-                                            alt="MARQ™ Golfer" />
-                                        <span>MARQ™ Golfer</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02158-90/g/rf-sm-c3bd24e1-838f-41a5-b84b-45f8c3bc33ec.jpg"
-                                            alt="quatix® 6" />
-                                        <span>quatix® 6</span>
-                                    </li>
-                                    <li>
-                                        <img src="https://static.garmincdn.com/en/products/010-02157-30/g/rf-sm-08137167-34a8-4a4b-8065-ab9f72810db0.jpg"
-                                            alt="quatix® 6X" />
-                                        <span>quatix® 6X, quatix® 6X Solar, quatix® 6X Dual Power</span>
-                                    </li>
-                                </ul>    
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                    <p>&nbsp;</p>
+                    <p class="h5">Please visit the 'Compatible Devices' TAB on my Garmin device page, here:&nbsp;<a href="https://apps.garmin.com/en-US/apps/1b19a80f-906c-4a5e-ba6e-57c193b61387">Training HR App Page</a></p>
+                    <p>&nbsp;</p>
                 </div>
             </article>
             <article class="my-3" id="fter">
