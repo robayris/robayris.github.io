@@ -134,7 +134,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.ol-rom {list-style-type: lower-roman;}
+.ol-rom {list-style-type: lower-alpha;}
 
 abbr[title],
 abbr[data-bs-original-title] {
