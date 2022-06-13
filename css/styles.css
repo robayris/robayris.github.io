@@ -134,6 +134,8 @@ p {
   margin-bottom: 1rem;
 }
 
+ol.ol-rom {list-style-type: lower-roman;}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
