@@ -464,9 +464,10 @@
                           </h2>
                           <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
                             <div class="accordion-body">
-                                <p class="h5">v2.3.2</p>
+                                <p class="h5">v2.3.3</p>
                                 <ul>
-                                    <li>Fix: (Venu2s, Fenix 7 family) [ERA] Error/crash attempting to draw the Battery icon, if Battery icon was chosen to be displayed.</li>
+                                    <li>Fix: (Amoled) Choosing to display Primary Metric in Low Power Mode only ever showed the Secondary Metric.</li>
+                                    <li>Chg: (Amoled, System5/SDK4 devices) Change to the Dials display for when you've reached (and surpassed) your goal for Steps, Active Mins and Floors.  Once your original goal is reached the current value arc will begin again from 12 o'clock, instead of continuing to display a full goal-reached coloured circle around the dial.  The next goal then becomes a multiple of the original goal.  For example, if the original goal was 4,000 steps, and you've completed 10,000 steps, then you will see the number "2" at 3 o'clock and the dial will show a goal-reached coloured arc from 12 to 6 o'clock, indicating you are half way through the second multiple of the original goal.</li>
                                 </ul>    
                             </div>
                           </div>
@@ -479,6 +480,10 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v2.3.2</p>
+                                <ul>
+                                    <li>Fix: (Venu2s, Fenix 7 family) [ERA] Error/crash attempting to draw the Battery icon, if Battery icon was chosen to be displayed.</li>
+                                </ul>    
                                 <p class="h5">v2.3.1</p>
                                 <ul>
                                     <li>Fix: (Amoled, System5/SDK4 devices) Time To Recovery not resetting at zero.</li>
