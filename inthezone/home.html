@@ -344,95 +344,126 @@
                     <h6>Release History</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h2">Release History</p>
-                    <p>&nbsp;</p>                    
-                    <p class="h5">v1.3.2:</p>
-                    <ul>
-                        <li>ADD:  New Setting to Include counting zero power when auto paused or not.</li>
-                        <li>ADD:  In The Zone will now remember its current state if you power off your device during an activity, particularly beneficial for the Average calculations NP and SWA and also Watt Prime.</li>
-                    </ul>    
-                    <p class="h5">v1.3.1:</p>
-                    <ul>
-                        <li>Chg:  Improve the accuracy of Normalised Power (NP) calculations.</li>
-                    </ul>    
-                    <p class="h5">v1.3.0:</p>
-                    <ul>
-                        <li>Add:  Support for Edge Explorer 2 device.</li>
-                    </ul>    
-                    <p class="h5">v1.2.4:</p>
-                    <ul>
-                        <li>Add:  Support for Edge1040 devices.</li>
-                    </ul>    
-                    <p class="h5">v1.2.3:</p>
-                    <ul>
-                        <li>Fix:  Tyre Diameter was being overwritten in On Device Settings by Wheel Diameter.</li>
-                        <li>Fix:  When you stop the timer at the end of an activity sometimes WP would show a large negative number.</li>
-                        <li>Fix:  Show a label (Done) at where to touch on the In App Menu to confirm update of a setting.</li>
-                    </ul>    
-                    <p class="h5">v1.2.2:</p>
-                    <ul>
-                        <li>Chg:  Increase the wheel circumference tolerance setting to 0-50mm.</li>
-                    </ul>    
-                    <p class="h5">v1.2.1:</p>
-                    <ul>
-                        <li>Add:  Support for the new D2 Mach1 device.</li>
-                        <li>Add:  Option that allows you to override the default wheel circumference tolerance of 2mm (see above for details).</li>
-                        <li>Chg:  The gear calculations to be based off ratios rather than speed as this reduces the number of calculations required every second.  Thanks P.D. for the formula transposition.</li>
-                    </ul>    
-                    <p class="h5">v1.2.0:</p>
-                    <ul>
-                        <li>Add:  Option to calculate the current gear (for those without electronic shifting).  Requires configuring a bunch of new app settings (see above for details).</li>
-                        <li>Chg:  Increase the size of the battery remaining 'dot'.</li>
-                        <li>Chg:  Display the label 'Gear' instead of 'Cog'.</li>
-                        <li>Chg:  Don't display Average Cadence at all if you have selected to display IF and TSS.</li>
-                    </ul>    
-                    <p class="h5">v1.1.0:</p>
-                    <ul>
-                        <li>Add:  Support for the Epix2 Amoled device in 1 datafield layout configuration.  Labels are displayed briefly before activity starts.</li>
-                    </ul>    
-                    <p class="h5">v1.0.9:</p>
-                    <ul>
-                        <li>Chg:  Change layout of IF, TSS, Altitude and Ascent to maximise font size for data display.</li>
-                    </ul>    
-                    <p class="h5">v1.0.8:</p>
-                    <ul>
-                        <li>Add:  Settings option to display Altitude, Total Ascent, Both or none.</li>
-                    </ul>    
-                    <p class="h5">v1.0.7:</p>
-                    <ul>
-                        <li>FIX:  Ensure we have forecasts to display before attempting to display them (Extending the v1.0.3 Fix).</li>
-                    </ul>    
-                    <p class="h5">v1.0.6:</p>
-                    <ul>
-                        <li>FIX:  Potential error displayed when exiting an activity.</li>
-                        <li>FIX:  Potential error displayed during weather calculation and display.</li>
-                        <li>Improve:  Do not store location data for weather anymore.</li>
-                    </ul>    
-                    <p class="h5">v1.0.5:</p>
-                    <ul>
-                        <li>Reduce Minimum supported Garmin Connect IQ SDK version down to 3.1.0 (was 3.2.0) to allow for more regional devices.</li>
-                    </ul>    
-                    <p class="h5">v1.0.4:</p>
-                    <ul>
-                        <li>ADD: Ability to override the device specific background colour settings of auto/night/day, specifically for this App</li>
-                    </ul>    
-                    <p class="h5">v1.0.3:</p>
-                    <ul>
-                        <li>FIX: Cater for situations where no Weather Forecast information is available, only current conditions</li>
-                        <li>FIX: Altitude displays a long decimal number briefly at startup</li>
-                        <li>FIX: In App Settings for FTP, WPRIME, WPRIME Decay and Z2-Z7 could generate an error</li>
-                        <li>FIX: Temporary (Edge530 device). Due to a Garmin bug that causes a device to restart from In App Settings, I have had to make a change to In App Settings for the Edge530 device to exit out of Settings after changing any setting.  This is to prevent the restart condition.  Once Garmin has addressed the bug, I will revert this change.  NOTE, there are no issues updating App settings from your phone.</li>
-                    </ul>    
-                    <p class="h5">v1.0.2:</p>
-                    <ul>
-                        <li>Do not show Weather until Activity has started OR showWeather is set to Always</li>
-                        <li>Display Standard Average Power for first 30 seconds of activity when NP has been chosen (whilst NP establishes itself in first 30 seconds).</li>
-                        <li>Improve scaling of Histograms for better readability</li>
-                    </ul>    
-                    <p class="h5">v1.0.1:</p>
-                    <ul>
-                        <li>Initial Release (New combined version - with new configuration options and features - of two of my apps: TrainingPower and TrainingHR).</li>
-                    </ul>   
+                    <div class="accordion accordion-flush" id="relHistory">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseOne" aria-expanded="true" aria-controls="relHistory-collapseOne">
+                              Latest Release
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
+                            <div class="accordion-body">
+                                <p class="h5">v1.3.2:</p>
+                                <ul>
+                                    <li>ADD:  New Setting to Include counting zero power when auto paused or not.</li>
+                                    <li>ADD:  In The Zone will now remember its current state if you power off your device during an activity, particularly beneficial for the Average calculations NP and SWA and also Watt Prime.</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseTwo" aria-expanded="false" aria-controls="relHistory-collapseTwo">
+                              Previous Releases
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
+                            <div class="accordion-body">
+                                <p class="h5">v1.3.1:</p>
+                                <ul>
+                                    <li>Chg:  Improve the accuracy of Normalised Power (NP) calculations.</li>
+                                </ul>    
+                                <p class="h5">v1.3.0:</p>
+                                <ul>
+                                    <li>Add:  Support for Edge Explorer 2 device.</li>
+                                </ul>    
+                                <p class="h5">v1.2.4:</p>
+                                <ul>
+                                    <li>Add:  Support for Edge1040 devices.</li>
+                                </ul>    
+                                <p class="h5">v1.2.3:</p>
+                                <ul>
+                                    <li>Fix:  Tyre Diameter was being overwritten in On Device Settings by Wheel Diameter.</li>
+                                    <li>Fix:  When you stop the timer at the end of an activity sometimes WP would show a large negative number.</li>
+                                    <li>Fix:  Show a label (Done) at where to touch on the In App Menu to confirm update of a setting.</li>
+                                </ul>    
+                                <p class="h5">v1.2.2:</p>
+                                <ul>
+                                    <li>Chg:  Increase the wheel circumference tolerance setting to 0-50mm.</li>
+                                </ul>    
+                                <p class="h5">v1.2.1:</p>
+                                <ul>
+                                    <li>Add:  Support for the new D2 Mach1 device.</li>
+                                    <li>Add:  Option that allows you to override the default wheel circumference tolerance of 2mm (see above for details).</li>
+                                    <li>Chg:  The gear calculations to be based off ratios rather than speed as this reduces the number of calculations required every second.  Thanks P.D. for the formula transposition.</li>
+                                </ul>    
+                                <p class="h5">v1.2.0:</p>
+                                <ul>
+                                    <li>Add:  Option to calculate the current gear (for those without electronic shifting).  Requires configuring a bunch of new app settings (see above for details).</li>
+                                    <li>Chg:  Increase the size of the battery remaining 'dot'.</li>
+                                    <li>Chg:  Display the label 'Gear' instead of 'Cog'.</li>
+                                    <li>Chg:  Don't display Average Cadence at all if you have selected to display IF and TSS.</li>
+                                </ul>    
+                                <p class="h5">v1.1.0:</p>
+                                <ul>
+                                    <li>Add:  Support for the Epix2 Amoled device in 1 datafield layout configuration.  Labels are displayed briefly before activity starts.</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseThree" aria-expanded="false" aria-controls="relHistory-collapseThree">
+                              Ancient History
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseThree" class="accordion-collapse collapse" aria-labelledby="relHistory-headingThree">
+                            <div class="accordion-body">
+                                <p class="h5">v1.0.9:</p>
+                                <ul>
+                                    <li>Chg:  Change layout of IF, TSS, Altitude and Ascent to maximise font size for data display.</li>
+                                </ul>    
+                                <p class="h5">v1.0.8:</p>
+                                <ul>
+                                    <li>Add:  Settings option to display Altitude, Total Ascent, Both or none.</li>
+                                </ul>    
+                                <p class="h5">v1.0.7:</p>
+                                <ul>
+                                    <li>FIX:  Ensure we have forecasts to display before attempting to display them (Extending the v1.0.3 Fix).</li>
+                                </ul>    
+                                <p class="h5">v1.0.6:</p>
+                                <ul>
+                                    <li>FIX:  Potential error displayed when exiting an activity.</li>
+                                    <li>FIX:  Potential error displayed during weather calculation and display.</li>
+                                    <li>Improve:  Do not store location data for weather anymore.</li>
+                                </ul>    
+                                <p class="h5">v1.0.5:</p>
+                                <ul>
+                                    <li>Reduce Minimum supported Garmin Connect IQ SDK version down to 3.1.0 (was 3.2.0) to allow for more regional devices.</li>
+                                </ul>    
+                                <p class="h5">v1.0.4:</p>
+                                <ul>
+                                    <li>ADD: Ability to override the device specific background colour settings of auto/night/day, specifically for this App</li>
+                                </ul>    
+                                <p class="h5">v1.0.3:</p>
+                                <ul>
+                                    <li>FIX: Cater for situations where no Weather Forecast information is available, only current conditions</li>
+                                    <li>FIX: Altitude displays a long decimal number briefly at startup</li>
+                                    <li>FIX: In App Settings for FTP, WPRIME, WPRIME Decay and Z2-Z7 could generate an error</li>
+                                    <li>FIX: Temporary (Edge530 device). Due to a Garmin bug that causes a device to restart from In App Settings, I have had to make a change to In App Settings for the Edge530 device to exit out of Settings after changing any setting.  This is to prevent the restart condition.  Once Garmin has addressed the bug, I will revert this change.  NOTE, there are no issues updating App settings from your phone.</li>
+                                </ul>    
+                                <p class="h5">v1.0.2:</p>
+                                <ul>
+                                    <li>Do not show Weather until Activity has started OR showWeather is set to Always</li>
+                                    <li>Display Standard Average Power for first 30 seconds of activity when NP has been chosen (whilst NP establishes itself in first 30 seconds).</li>
+                                    <li>Improve scaling of Histograms for better readability</li>
+                                </ul>    
+                                <p class="h5">v1.0.1:</p>
+                                <ul>
+                                    <li>Initial Release (New combined version - with new configuration options and features - of two of my apps: TrainingPower and TrainingHR).</li>
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="my-3" id="devices">
