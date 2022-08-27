@@ -260,119 +260,152 @@
                     <h6>Release History</h6>
                 </div>
                 <div class="modal-links">
-                    <p class="h2">Release History</p>
-                    <p>&nbsp;</p>                    
-                    <p class="h5">v1.9.2:</p>
-                    <ul>
-                        <li>Chg:  Improve the accuracy of Normalised Power (NP) calculations.</li>
-                        <li>ADD:  New setting that allows you to include power zeros when paused or Not.</li>
-                        <li>ADD:  TrainingPower will now remember its current state if you power off your device during an activity, particularly beneficial for the Average calculations NP and SWA and also Watt Prime</li>
-                    </ul>    
-                    <p class="h5">v1.9.1:</p>
-                    <ul>
-                        <li>ADD:  Support for Edge Explorer2 device</li>
-                    </ul>    
-                    <p class="h5">v1.8.16:</p>
-                    <ul>
-                        <li>ADD:  Support for Edge1040 devices</li>
-                    </ul>    
-                    <p class="h5">v1.8.15:</p>
-                    <ul>
-                        <li>ADD:  Support for Forerunner 255, 255 Music and 955 devices</li>
-                    </ul>    
-                    <p class="h5">v1.8.14:</p>
-                    <ul>
-                        <li>ADD:  Support for Amoled D2 Mach 1 device in layouts:  1, 2, 3C, 4C and smaller 5, 6, 7, 8</li>
-                        <li>FIX:  Only calculate Watt Prime remaining when the Activity timer is running</li>
-                        <li>Chg:  Set Circles A mode as the default layout for new Edge device installations</li>
-                    </ul>    
-                    <p class="h5">v1.8.13:</p>
-                    <ul>
-                        <li>ADD:  Support for Amoled Epix2 device in layouts:  1, 2, 3C, 4C and smaller 5, 6, 7, 8</li>
-                    </ul>    
-                    <p class="h5">v1.8.12:</p>
-                    <ul>
-                        <li>ADD:  Support for Fenix 7/7s/7x devices</li>
-                    </ul>    
-                    <p class="h5">v1.8.11:</p>
-                    <ul>
-                        <li>FIX:  Bug with all Wearable devices not displaying current power</li>
-                    </ul>    
-                    <p class="h5">v1.8.10:</p>
-                    <ul>
-                        <li>ADD:  In App Settings for Edge820 and Edge520+ devices</li>
-                        <li>FIX:  An error might be displayed on Edge520+ and Edge820 devices in CirclesA mode</li>
-                    </ul>    
-                    <p class="h5">v1.8.9:</p>
-                    <ul>
-                        <li>Display Standard Average Power for first 30 seconds of activity when NP has been selected (while NP stabilises from Activity start)</li>
-                    </ul>    
-                    <p class="h5">v1.8.8</p>
-                    <ul>
-                        <li>Remove useUpdateInterval function which was a yes/no setting that allowed the app to only update the Power display every interval (1-30 seconds depending on setting) as it causes issues in settings when updating the App</li>
-                        <li>Code optimizations to better support Fenix5 and Forerunner 935</li>
-                    </ul>    
-                    <p class="h5">v1.8.7:</p>
-                    <ul>
-                        <li>Add new Circles mode Layouts: Layout 4A (Edge 530/830), Layout 3 (Edge 820) and Layouts 3A, 3B, 4B, 5B, 6B, 7B (Edge 520+)</li>
-                    </ul>    
-                    <p class="h5">v1.8.6:</p>
-                    <ul>
-                        <li>NEW: Display IF (Intensity Factor) and TSS (Training Stress Score) via App setting BUT only when Normalized Power (NP) Averaging has also been set.  Please note, IF and TSS are only available in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030)</li>
-                        <li>FIX:  Improve the smoothing speed and reactivity of the Filter for the calculation of Gradient (all devices)</li>
-                        <li>Optimise 2 field layout for the Edge1030 device to make it consistent with other layouts</li>
-                    </ul>    
-                    <p class="h5">v1.8.5:</p>
-                    <ul>
-                        <li>FIX:  If your power output matched your zone 7 power and also matched your maximum power for the activity, the app would crash</li>
-                        <li>FIX:  WPrime balance could show a large negative number in certain situations - such as, high power output for long periods during a long activity</li>
-                        <li>Support the new Garmin AntiAlias feature on supported devices.  With this, graphics are rendered more smoothly, when drawing circles and angular lines</li>
-                        <li>Add FTP setting to the in-app settings function, for supported devices</li>
-                    </ul>    
-                    <p class="h5">v1.8.4:</p>
-                    <ul>
-                        <li>Add optional (through app settings) battery status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6) Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red - Level checked every 20 mins and then every 5 mins once below 10%.</li>
-                        <li>Added New Circles Mode B for Edge devices (except Edge520/130) - Displays Watt Prime as the bar within the left, main Power circle and Average Power (whichever calculation you chose) as the right, large circle.</li>
-                        <li>Power Zone calculation optimisations</li>
-                    </ul>    
-                    <p class="h5">v1.8.3:</p>
-                    <ul>
-                        <li>No longer need to supply a Maximum Power setting in App Properties, this is now derived.</li>
-                    </ul>    
-                    <p class="h5">v1.8.2:</p>
-                    <ul>
-                        <li>NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training Power "In App Settings" will just start working.</li>
-                        <li>NEW: W Prime Automatic decay (via App Setting)</li>
-                        <li>Support for new Forerunner 745 device</li>
-                        <li>Improve efficiency of drawing circles and ARCs</li>
-                        <li>Improve accuracy of Strava Weighted Average and Normalized Power calculations</li>
-                        <li>Remove App specific LAP function (from All devices except: original Edge 520, original Fenix5 and FR935) as Garmin and Strava do this better</li>
-                    </ul>    
-                    <p class="h5">v1.7.5.2:</p>
-                    <ul>
-                        <li>Fix: Distance display now follows the units selected in your Garmin Profile (Metric or Imperial)</li>
-                    </ul>    
-                    <p class="h5">v1.7.5.1:</p>
-                    <ul>
-                        <li>Fix: TrainingPower can only support 1 and 2 field layouts on on Fenix5, Fenix6 and FR935 specific devices due to memory constraints.</li>
-                        <li>Highlight downhill gradient green in Edge devices using Circles mode.</li>
-                    </ul>    
-                    <p class="h5">v1.7.5.0:</p>
-                    <ul>
-                        <li>Increase the font size in use for Average Power and Average Cadence in Circles view on supported Edge devices.</li>
-                        <li>Compiled under v3.2.1 of Connect IQ SDK</li>
-                    </ul>    
-                    <p class="h5">v1.7.4.0:</p>
-                    <ul>
-                        <li>Added Settings option to display Normalized Power (isoPower) All supported devices except original Edge 520, FR935 and Original Fenix5. Normalized power will only begin to display 30 seconds after an activity starts.</li>
-                        <li>Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)</li>
-                        <li>Fix an issue with W/Kg calculation on Average Power</li>
-                    </ul>    
-                    <p class="h5">v1.7.3.0:</p>
-                    <ul>
-                        <li>Added support for Edge 130/130+ with the following caveats: 1) There are no colours, black and white only - as such the datafield now displays the Power Zones (as numbers - "PowerZone : AvgPowerZone"); 2) There is no support for di2 (so no di2 gears will be displayed); and 3) The datafield only suppoprts circles mode.</li>
-                        <li>Remove superfluous Power Z1 setting from App settings.</li>
-                    </ul>    
+                    <div class="accordion accordion-flush" id="relHistory">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseOne" aria-expanded="true" aria-controls="relHistory-collapseOne">
+                              Latest Release
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseOne" class="accordion-collapse collapse show" aria-labelledby="relHistory-headingOne">
+                            <div class="accordion-body">
+                                <p class="h5">v1.9.2:</p>
+                                <ul>
+                                    <li>Chg:  Improve the accuracy of Normalised Power (NP) calculations.</li>
+                                    <li>ADD:  New setting that allows you to include power zeros when paused or Not.</li>
+                                    <li>ADD:  TrainingPower will now remember its current state if you power off your device during an activity, particularly beneficial for the Average calculations NP and SWA and also Watt Prime</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseTwo" aria-expanded="false" aria-controls="relHistory-collapseTwo">
+                              Previous Releases
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
+                            <div class="accordion-body">
+                                <p class="h5">v1.9.1:</p>
+                                <ul>
+                                    <li>ADD:  Support for Edge Explorer2 device</li>
+                                </ul>    
+                                <p class="h5">v1.8.16:</p>
+                                <ul>
+                                    <li>ADD:  Support for Edge1040 devices</li>
+                                </ul>    
+                                <p class="h5">v1.8.15:</p>
+                                <ul>
+                                    <li>ADD:  Support for Forerunner 255, 255 Music and 955 devices</li>
+                                </ul>    
+                                <p class="h5">v1.8.14:</p>
+                                <ul>
+                                    <li>ADD:  Support for Amoled D2 Mach 1 device in layouts:  1, 2, 3C, 4C and smaller 5, 6, 7, 8</li>
+                                    <li>FIX:  Only calculate Watt Prime remaining when the Activity timer is running</li>
+                                    <li>Chg:  Set Circles A mode as the default layout for new Edge device installations</li>
+                                </ul>    
+                                <p class="h5">v1.8.13:</p>
+                                <ul>
+                                    <li>ADD:  Support for Amoled Epix2 device in layouts:  1, 2, 3C, 4C and smaller 5, 6, 7, 8</li>
+                                </ul>    
+                                <p class="h5">v1.8.12:</p>
+                                <ul>
+                                    <li>ADD:  Support for Fenix 7/7s/7x devices</li>
+                                </ul>    
+                                <p class="h5">v1.8.11:</p>
+                                <ul>
+                                    <li>FIX:  Bug with all Wearable devices not displaying current power</li>
+                                </ul>    
+                                <p class="h5">v1.8.10:</p>
+                                <ul>
+                                    <li>ADD:  In App Settings for Edge820 and Edge520+ devices</li>
+                                    <li>FIX:  An error might be displayed on Edge520+ and Edge820 devices in CirclesA mode</li>
+                                </ul>    
+                                <p class="h5">v1.8.9:</p>
+                                <ul>
+                                    <li>Display Standard Average Power for first 30 seconds of activity when NP has been selected (while NP stabilises from Activity start)</li>
+                                </ul>    
+                                <p class="h5">v1.8.8</p>
+                                <ul>
+                                    <li>Remove useUpdateInterval function which was a yes/no setting that allowed the app to only update the Power display every interval (1-30 seconds depending on setting) as it causes issues in settings when updating the App</li>
+                                    <li>Code optimizations to better support Fenix5 and Forerunner 935</li>
+                                </ul>    
+                                <p class="h5">v1.8.7:</p>
+                                <ul>
+                                    <li>Add new Circles mode Layouts: Layout 4A (Edge 530/830), Layout 3 (Edge 820) and Layouts 3A, 3B, 4B, 5B, 6B, 7B (Edge 520+)</li>
+                                </ul>    
+                                <p class="h5">v1.8.6:</p>
+                                <ul>
+                                    <li>NEW: Display IF (Intensity Factor) and TSS (Training Stress Score) via App setting BUT only when Normalized Power (NP) Averaging has also been set.  Please note, IF and TSS are only available in 1 & 2 field layouts (Edge 130/130+/520+/820/530/830); 1,2 & 3 field layouts (Edge 1000); 1,2, 3A, 3B, 4B, 5B, 6B & 7B layouts (Edge 1030)</li>
+                                    <li>FIX:  Improve the smoothing speed and reactivity of the Filter for the calculation of Gradient (all devices)</li>
+                                    <li>Optimise 2 field layout for the Edge1030 device to make it consistent with other layouts</li>
+                                </ul>    
+                                <p class="h5">v1.8.5:</p>
+                                <ul>
+                                    <li>FIX:  If your power output matched your zone 7 power and also matched your maximum power for the activity, the app would crash</li>
+                                    <li>FIX:  WPrime balance could show a large negative number in certain situations - such as, high power output for long periods during a long activity</li>
+                                    <li>Support the new Garmin AntiAlias feature on supported devices.  With this, graphics are rendered more smoothly, when drawing circles and angular lines</li>
+                                    <li>Add FTP setting to the in-app settings function, for supported devices</li>
+                                </ul>    
+                                <p class="h5">v1.8.4:</p>
+                                <ul>
+                                    <li>Add optional (through app settings) battery status indicator for Edge and Watch devices (except for Edge 520/130, Fenix 5/5x/6) Battery Level: 75-100% Green, 50-75% Blue, 20-50% Orange, less than 20% Red - Level checked every 20 mins and then every 5 mins once below 10%.</li>
+                                    <li>Added New Circles Mode B for Edge devices (except Edge520/130) - Displays Watt Prime as the bar within the left, main Power circle and Average Power (whichever calculation you chose) as the right, large circle.</li>
+                                    <li>Power Zone calculation optimisations</li>
+                                </ul>    
+                                <p class="h5">v1.8.3:</p>
+                                <ul>
+                                    <li>No longer need to supply a Maximum Power setting in App Properties, this is now derived.</li>
+                                </ul>    
+                                <p class="h5">v1.8.2:</p>
+                                <ul>
+                                    <li>NEW: Getting ready to support "In App Settings" (that is, not having to use Garmin Connect or your phone to change App settings). This is currently device firmware dependent, to which Garmin does not provide advice on which devices will receive firmware updates or when updates will be made available. Currently, only the Fenix6, D2 and MARQ devices have the firmware to support this functionality. I'm hopeful the Edge devices (at least some) will soon too. Once a device receives a firmware update that supports in app settings, Training Power "In App Settings" will just start working.</li>
+                                    <li>NEW: W Prime Automatic decay (via App Setting)</li>
+                                    <li>Support for new Forerunner 745 device</li>
+                                    <li>Improve efficiency of drawing circles and ARCs</li>
+                                    <li>Improve accuracy of Strava Weighted Average and Normalized Power calculations</li>
+                                    <li>Remove App specific LAP function (from All devices except: original Edge 520, original Fenix5 and FR935) as Garmin and Strava do this better</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="relHistory-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relHistory-collapseThree" aria-expanded="false" aria-controls="relHistory-collapseThree">
+                              Ancient History
+                            </button>
+                          </h2>
+                          <div id="relHistory-collapseThree" class="accordion-collapse collapse" aria-labelledby="relHistory-headingThree">
+                            <div class="accordion-body">
+                                <p class="h5">v1.7.5.2:</p>
+                                <ul>
+                                    <li>Fix: Distance display now follows the units selected in your Garmin Profile (Metric or Imperial)</li>
+                                </ul>    
+                                <p class="h5">v1.7.5.1:</p>
+                                <ul>
+                                    <li>Fix: TrainingPower can only support 1 and 2 field layouts on on Fenix5, Fenix6 and FR935 specific devices due to memory constraints.</li>
+                                    <li>Highlight downhill gradient green in Edge devices using Circles mode.</li>
+                                </ul>    
+                                <p class="h5">v1.7.5.0:</p>
+                                <ul>
+                                    <li>Increase the font size in use for Average Power and Average Cadence in Circles view on supported Edge devices.</li>
+                                    <li>Compiled under v3.2.1 of Connect IQ SDK</li>
+                                </ul>    
+                                <p class="h5">v1.7.4.0:</p>
+                                <ul>
+                                    <li>Added Settings option to display Normalized Power (isoPower) All supported devices except original Edge 520, FR935 and Original Fenix5. Normalized power will only begin to display 30 seconds after an activity starts.</li>
+                                    <li>Standardize colours used to be from 64 colour pallette (except Edge130, which is only Black and White)</li>
+                                    <li>Fix an issue with W/Kg calculation on Average Power</li>
+                                </ul>    
+                                <p class="h5">v1.7.3.0:</p>
+                                <ul>
+                                    <li>Added support for Edge 130/130+ with the following caveats: 1) There are no colours, black and white only - as such the datafield now displays the Power Zones (as numbers - "PowerZone : AvgPowerZone"); 2) There is no support for di2 (so no di2 gears will be displayed); and 3) The datafield only suppoprts circles mode.</li>
+                                    <li>Remove superfluous Power Z1 setting from App settings.</li>
+                                </ul>    
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="my-3" id="devices">
