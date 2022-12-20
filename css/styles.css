@@ -4437,6 +4437,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
+  font-weight: bold;
   color: #1b1d1f;
   text-align: left;
   background-color: #fff;
@@ -4519,7 +4520,7 @@ textarea.form-control-lg {
 
 .accordion-body {
   padding: 1rem 1.25rem;
-  background: #f8f9fa;
+/*  background: #f8f9fa;*/
 }
 
 .accordion-bodyB {
