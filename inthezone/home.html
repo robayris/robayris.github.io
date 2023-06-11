@@ -89,6 +89,7 @@
                         <li><a class="d-inline-flex align-items-center rounded" href="#infodisplay">Information Displayed</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#screens">Screen Layouts</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#features">Feature Details</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#laps">LAP Summary</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#gears">Gears Display</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#releases">Release History</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#devices">Compatible Devices</a></li>
@@ -129,6 +130,7 @@
                 <ul>
                     <p>&nbsp;</p>
                     <li><a href="https://robayris.github.io/docs.html#appsettings">App Settings</a> can be set directly on the device - no need to use your Phone or Garmin Express to update Settings</li>
+                    <li><a href="#laps">Lap Summary Display</a> (optional, with configuration options)</li>
                     <li><a href="https://robayris.github.io/docs.html#battstatus">Battery Status indicator</a></li>
                     <li>Current Power output in Watts (with a configurable 1-30 second <a href="https://robayris.github.io/docs.html#averagepower">Moving Average</a>)</li>
                     <li><a href="https://robayris.github.io/docs.html#averagepower">Average Power Options</a>:  Average Power, Strava Weighted Average Power, or Normalized Power (NP)</li>
@@ -290,6 +292,40 @@
                     <p><a href="https://robayris.github.io/docs.html#weather">Weather</a></p>     
                   </div>
             </article>
+            <article class="my-3" id="laps">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h6>LAP Summary</h6>
+                </div>
+                <div class="modal-links">
+                    <p class="h2">Lap Summary Display</p>
+                    <p>&nbsp;</p>                    
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="/images/lap_summary.png" width="200" role="img" loading="lazy">
+                        <figcaption class="figure-caption">InTheZone - LAP Summary Display</figcaption>
+                    </figure>
+                    <p>&nbsp;</p>                    
+                    <p>The LAP Summary display details</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                        <li>Upon selecting the LAP button on your device, or setting your device to trigger a LAP based on distance or time, the LAP summary display will be shown.  This presents the following data:</li>
+                        <li>In the Heading of th LAP Summary display will be the LAP number and time duration of this lap (in, HH:MM:SS).</li>
+                        <li>The first column of data shows (top to bottom):  LAP average Power (W), LAP average Heartrate (BPM), LAP average Cadence and LAP average Speed.  You will notice that the average Power and HR values are highlighted by a colour.  This colour relates to where each of these values sits within your respective zones.  The image, above, shows a Pink colour for Power (Z6 - Anaerobic) and a Blue colour for HR (Z2 - Endurance).</li>
+                        <li>The second column of data shows (top to bottom):  (km/mi) LAP Distance, Asc (m/ft) LAP Ascent, Grad (Gradient) LAP Gradient in %.</li>
+                        <li>All data presented is displayed as per the Units setting on your device (ie, metric or imperial).</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p>LAP Summary display - Configuration options and Notes</p>
+                    <p>&nbsp;</p>                    
+                    <p class=""h3">There are three App settings that determine how LAP data is presented on the screen:</p>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                        <li>The first configuration option is:  <strong>Show LAP Summary</strong> - For this setting, you have 5 options:  OFF (to completely turn off the LAP Summary display and associated calculations), 10, 20, 30, 40, 50, 60 seconds display (to allow the LAP summary display to show based on press of the LAP key, or device configured auto time or distance trigger, for the selected period of time).</li>
+                        <li>If you also have selected the WEather display to trigger on LAP press, then both displays will be shown on LAP trigger.</li>
+                        <li>If you start an activity and do not press the LAP button (or you have not configured auto-lap), then all averages on the screen are for the entire activity.  However, once LAP is triggered within an activity then the main display will show the current LAP averages for whatever averages you're showing on the screen, such as Power Standard Average, HR Average, Cadence Average.  <strong>Note</strong>, however, that if you have selected Strava Weighted Average, or Normalised Power then these two will <strong>always</strong> be shown and calculated for the entire activity.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                </div>
+            </article>
             <article class="my-3" id="gears">
                 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                     <h6>Gears Display</h6>
@@ -355,7 +391,8 @@
                             <div class="accordion-body">
                                 <p class="h5">v1.3.4:</p>
                                 <ul>
-                                    <li>ADD:  Support for Edge 540/840 series devices.</li>
+                                    <li>ADD:  Optional LAP Summary page.</li>
+                                    <li>Chg:  (Edge 540/840/1040) Temporary workaround for Garmin font positioning bug.</li>
                                 </ul>    
                             </div>
                           </div>
@@ -368,6 +405,10 @@
                           </h2>
                           <div id="relHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="relHistory-headingTwo">
                             <div class="accordion-body">
+                                <p class="h5">v1.3.4:</p>
+                                <ul>
+                                    <li>ADD:  Support for Edge 540/840 series devices.</li>
+                                </ul>    
                                 <p class="h5">v1.3.3:</p>
                                 <ul>
                                     <li>ADD:  Support for Forerunner 965 and 265.  NOTE, FR265 does not support electronic gear shifting for cycling.</li>
