@@ -65,6 +65,7 @@
                         <li><a class="d-inline-flex align-items-center rounded" href="#averagepower">Average Power</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#wattprime">Watt Prime</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#wattprimedecay">Watt Prime Decay</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="#gradient">Gradient Display</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#battstatus">Battery Status</a></li>
                         <li><a class="d-inline-flex align-items-center rounded" href="#weather">Weather</a></li>
                     </ul>
@@ -402,6 +403,45 @@
                     <p>For example, if my WPrime is 20,000 and I set a decay of 5 (equating to 0.5%), then each day of inactivity, my W Prime will decay by 0.5% (in this case, 100J) of the current value. It checks the last activity date and calculates the the new WPrime each time the App starts. If you don't want your W Prime to automatically decay, set the decay to zero in App Settings (this is the default setting).</p>
                 </div>
             </article>
+            <article class="my-3" id="gradient">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h6>Gradient Calculation</h6>
+                </div>
+                <div>
+                    <p class="h2 text-center">Gradient Calculation</p>
+                    <p>&nbsp;</p>                    
+                    <p>Gradient is calculated every second during an activity from barometric sensor readings and distance travelled since the last reading on your device.  For best accuracy, it is recommended to use a separate speed sensor on your bike as relying on GPS data for distance can be less accurate during an activity.</p>
+                    <p>&nbsp;</p>                    
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="/images/gradient.png" height="180" role="img" loading="lazy">
+                        <figcaption class="figure-caption">InTheZone & TrainingPower - Gradient Display</figcaption>
+                    </figure>
+                    <p>&nbsp;</p>                    
+                    <ul>
+                    <li>When the Gradient display is white or black coloured text, it indicates an incline.</li>
+                    <li>When the Gradient display is green coloured text, it indicates a decline.</li>
+                    <li>When the Gradient display shows a '-' it indicates there is no gradient, ie a flat surface, or no barometric pressure informtion is available from the sensor.</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">How is Gradient calculated?</p>
+                    <p>&nbsp;</p>                    
+                    <p>Garmin does not make a gradient metric available to CIQ developers, so we have to manually calculate it from available metrics.</p>
+                    <p>Gradient is calculated by the standard formula:  <b>gradient = rise / run</b>.  Both rise and run are delta calculations.  That is, delta is the difference in altitude and distance since the last reading (which is typically every second - a recommended device setting!).</p>
+                    <ul>
+                    <li>Altitude is calculated from barometric (atmospheric pressure) readings on your device and is smoothed over a period of time, see below.</li>
+                    <li>Distance is calculated from the speed sensor on your bike (more accurate and recommended) or from available GPS data (less accurate during an activity).</li>
+                    </ul>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">The Gradient Filter</p>
+                    <p>&nbsp;</p>                    
+                    <p>Both TrainingPower and InTheZone use a Kalman filter to smooth out the noisy sensor readings, however, it is not perfect.</p>
+                    <p>&nbsp;</p>                    
+                    <p class="h6">Can I turn gradient display off?</p>
+                    <p>&nbsp;</p>                    
+                    <p>Yes.  There is an App setting to toggle on/off the display of Gradient.  Turning it off stops the calculations, which also helps in conserving battery life.<b>0</b></p>                    
+                    <p>&nbsp;</p>                    
+                </div>
+            </article>
             <article class="my-3" id="battstatus">
                 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
                     <h6>Battery Status Indicator</h6>
@@ -434,6 +474,7 @@
                     <li>Set your Average Power to "Standard Average" (In The Zone and TrainingPower).</li>
                     <li>Set your Power Averaging (1-30 seconds) to be 1 second, in App Settings (In The Zone and TrainingPower).</li>
                     <li>Turn off gear shifting calculation (In The Zone).</li>
+                    <li>Turn off the Gradient display (and calculations) by setting the Gradient Filter to 0.</li>
                     </ol>
                 </div>
             </article>
